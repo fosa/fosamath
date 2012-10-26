@@ -1,0 +1,2 @@
+\select@language {ngerman}
+\contentsline {section}{\numberline {1}Formelsammlung Mathematik}{1}{section.1}
