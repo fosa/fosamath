@@ -1,0 +1,103 @@
+\section{Vektorgeometrie in der Ebene}
+
+\subsection{Anstand zweier Puntke}
+\[ \boxed{ \overline{P_1 P_2} = \sqrt{ (x_2 - x_1)^2 + (y_2 - y_1)^2 } } \]
+
+\subsection{Geradengleichungen}
+
+\subsubsection{Normalform (explizite Form)}
+\[ \boxed{ g: y= mx + q }\]
+\[ \boxed{ \text{Steigung } m = \frac{y_2 - y_1}{x_2 - x_1} = \frac{\Delta y}{\Delta x}  = tan \varphi } \]
+
+\subsubsection{Koordinatenform (implizite Form)}
+\[ \boxed{ g: ax + by + c = 0 } \]
+
+\subsubsection{Achsenabschnittsform}
+\[ \boxed{ g: \frac{x}{p} + \frac{y}{q} = 1 } \]
+
+\subsubsection{Hesse'sche Normalform}
+\[ \boxed{ g:  \frac{ax + by + c}{\sqrt{ a^2 + b^2 } } = 0 }  \]
+
+\subsubsection{Parameterform}
+\[ \boxed{ 
+    g: \vec{r} = \vec{r_0} + t \cdot \vec{a}  = 
+      \left( 
+	\begin{array}{cc} 
+	  x_0 \\ y_0
+	\end{array}
+      \right)
+      + t \cdot 
+      \left( 
+	\begin{array}{cc} 
+	  a_x \\ a_y
+	\end{array}
+      \right)  
+   }
+\]
+
+
+\subsection{Normalenvektor}
+Der Normalenvektor ist ein Vektor, welcher senkrecht auf einem anderen Vektor bzw. einer Geraden liegt. Hier im Beispiel in welchem $ \vec{n} \bot g(x)$
+\[ \boxed{ \vec{n} = 
+      \left( 
+	\begin{array}{cc} 
+	  n_x \\ n_y
+	\end{array}
+      \right)
+      =
+      \left( 
+	\begin{array}{cc} 
+	  a \\ b
+	\end{array}
+      \right)
+      =
+      \left( 
+	\begin{array}{cc} 
+	  -a_y \\ a_x
+	\end{array}
+      \right)
+} \]
+\noindent
+Der Richtungsvektor von $g(x)$ ist 
+$  
+      \left( 
+	\begin{array}{cc} 
+	  a_x \\ a_y
+	\end{array}
+      \right)
+      \Rightarrow 
+      \left( 
+	\begin{array}{cc} 
+	  -a_y \\ a_x
+	\end{array}
+      \right)
+      = \vec{n}
+$.
+
+\subsection{Abstand Punkt zu Gerade}
+Für eine Gerade $g: ax + by + c = 0$ und einen Punkt $P_1 (x_1 | y_1)$ gilt:
+\[ \boxed{ d = \left| \frac{ax_1 + by_1 + c}{\sqrt{a^2 + b^2}} \right| } \]
+
+\subsection{Schnittwinkel zwischen Geraden}
+Für den spitzen Schnittwinkel $\varphi$ zwischen den Geraden 
+
+$g_1: y = m_1x + q_1$ und $g_2: y = m_2x + q_2$ gilt:
+\[ \boxed{ tan\varphi = \left| \frac{m_2 - m_1}{1 + m_1 \cdot m_2} \right| } \\ \text{für } \varphi \neq 90^{\circ} \]
+
+\[ \boxed{ g_1 || g_2 \Leftrightarrow m_1 = m_2 \text{und } g_1 \bot g_2 \Leftrightarrow m_2 = - \frac{1}{m_1} } \\ \text{für } m_1 \neq 0 \]
+
+\section{Vektorgeometrie im Raum}
+
+\subsection{Ortsvektor}
+Ein Ortsvektor beschreibt den Vektor vom Urspung des Koordinatensystems $O(0|0|0)$ zu einem beliebigen Punkt $P(x|y|z)$.
+\[	\boxed{ \vec{r} = \overrightarrow{OP} = x\vec{e_x} + y\vec{e_y} + z\vec{e_z} :=
+	\left( 
+	  \begin{array}{ccc} 
+	    x \\ y \\ z
+	  \end{array}
+	\right) }
+\]
+\noindent
+Die Vektoren $\vec{e_x},\vec{e_y},\vec{e_z}$ sind die Einheitsvektoren des Koordinatensystems (meist einfach 1 ohne Einheit).
+\subsection{Länge eines Ortsvektors (Betrag)}
+\[ \boxed{ |\vec{r}| = r = \sqrt{x^2 + y^2 1 z^2} } \]
