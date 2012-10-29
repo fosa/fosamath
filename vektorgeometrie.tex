@@ -99,5 +99,113 @@ Ein Ortsvektor beschreibt den Vektor vom Urspung des Koordinatensystems $O(0|0|0
 \]
 \noindent
 Die Vektoren $\vec{e_x},\vec{e_y},\vec{e_z}$ sind die Einheitsvektoren des Koordinatensystems (meist einfach 1 ohne Einheit).
-\subsection{Länge eines Ortsvektors (Betrag)}
+\subsection{Länge eines Ortsvektors (Norm bzw. Betrag)}
 \[ \boxed{ |\vec{r}| = r = \sqrt{x^2 + y^2 1 z^2} } \]
+
+\subsection{Länge eines Vektors (Norm bzw. Betrag)}
+\[ \boxed{ |\vec{a}| = a = \overrightarrow{P_1P_2} = \sqrt{a_x^2 + a_y^2 + a_z^2} } \]
+In dieser Form entspricht $a$ der Raumdiagonale im Quader zu $(a_x|a_y|a_z)$.
+
+\subsection{Vektor aus Anfangs- und Endpunkt}
+Möchte man den Vektor $\vec{a}$ von $P_1$ (Anfangspunkt) zu $P_2$ (Endpunkt) haben, so rechnet man Anfang - Ende, bzw. $\vec{P_2} - \vec{P_1}$.
+\[  \boxed{
+    \vec{a} = \overrightarrow{P_1P_2} = \vec{r_2} - \vec{r_1} =
+    \left( 
+	  \begin{array}{ccc} 
+	    x_2 - x_1 \\ y_2 - y_1 \\ z_2 - z_1
+	  \end{array}
+	\right)
+    }
+\]
+
+\subsection{Distanz zweier Punkte}
+Um die Distanz von $P_1$ zu $P_2$ zu ermitteln, berechnet man die Norm von $\overrightarrow{P_1P_2}$.
+\[ \boxed{
+   \overline{P_1P_2} = \sqrt{ (x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 + z_1)^2 }
+   }
+\]
+
+\subsection{Mittelpunkt einer Strecke}
+\[ \boxed{ \vec{r_M} = \frac{1}{2} \cdot (\vec{r_1} + \vec{r_2}) } \]
+\[ \boxed{ \Rightarrow x_M = \frac{x_1 + x_2}{2} \\ y_m = \frac{y_1 + y_2}{2} \\ z_M = \frac{z_1 + z_2}{2} } \]
+
+\section{Rechenoperationen mit Vektoren}
+
+\subsection{Addition/Subtraktion}
+\[ \boxed{ \vec{a}\pm\vec{b} =  
+    \left( 
+	  \begin{array}{ccc} 
+	    a_x \\ a_y \\ a_z
+	  \end{array}
+	\right)
+	\pm
+	\left( 
+	  \begin{array}{ccc} 
+	    b_x \\ b_y \\ b_z
+	  \end{array}
+	\right)
+	=
+	\left( 
+	  \begin{array}{ccc} 
+	    a_x \pm b_x \\ a_y \pm b_y \\ a_z \pm b_z
+	  \end{array}
+	\right)
+} \]
+
+\subsection{Multiplikation mit Skalar}
+\[ \boxed{ k \cdot \vec{a} = k \cdot 
+\left( 
+	  \begin{array}{ccc} 
+	    a_x \\ a_y \\ a_z
+	  \end{array}
+	\right)
+	=
+	\left( 
+	  \begin{array}{ccc} 
+	    k \cdot a_x \\ k \cdot a_y \\ k \cdot a_z
+	  \end{array}
+	\right)
+	} \\ \text{für } k \in \mathbb{R}
+\]
+
+\subsection{Skalarprodukt}
+\[ \boxed{ \vec{a} \cdot \vec{b} = a \cdot b \cdot cos(\varphi) = a_x b_x + a_y b_y + a_z b_z } \]
+Der Winkel $\varphi$ ist der Zwischenwinkel von $\vec{a}$ und $\vec{b}$.
+
+\noindent
+Für $\vec{a} \neq \vec{0}$, $\vec{b} \neq \vec{0}$ gilt: $\vec{a} \bot \vec{b} \Leftrightarrow \vec{a} \cdot \vec{b} = 0$!
+
+\subsection{Winkel zwischen zwei Vektoren}
+\[ \boxed{ cos \varphi = \frac{\vec{a} \cdot \vec{b} }{||\vec{a}|| \cdot ||\vec{b}||} } \]
+\[ \boxed{ cos \varphi = \frac{a_x b_x + a_y b_y + a_z b_z}{ \sqrt{a_x^2 + a_y^2 + a_z^2} \sqrt{b_x^2 + b_y^2 + b_z^2} } } \]
+
+\subsection{Vektorprodukt (Kreuzprodukt)}
+Mit dem Vektorprodukt erhält man einen Vektor der senkrecht zur Ebene steht, also den Normalenvektor zur Ebene.
+
+\[ \boxed{ \vec{c} = \vec{a} \times \vec{b} = 
+\left( 
+	  \begin{array}{ccc} 
+	    a_x \\ a_y \\ a_z
+	  \end{array}
+	\right)
+	\times
+	\left( 
+	  \begin{array}{ccc} 
+	    b_x \\ b_y \\ b_z
+	  \end{array}
+	\right)
+	=
+	\left( 
+	  \begin{array}{ccc} 
+	    a_y b_z - a_z b_y \\ a_z b_x - a_x b_z \\ a_x b_y - a_y b_x
+	  \end{array}
+	\right)
+} \]
+\noindent
+Die Fläche die von $\vec{a}$ und $\vec{b}$ aufgespannt wird, entspricht der Norm des Vektorprodukts $c=|\vec{a}\times\vec{b}| = a \cdot b \cdot sin \varphi$ .
+Zu Beachten ist, dass $\vec{b} \times \vec{a} = -(\vec{a} \times \vec{b}) $
+
+\subsection{Spatprodukt}
+Das Spatprodukt entspricht dem Volumen welches von drei Vektoren aufgespannt wird.
+
+\[ \boxed{ (\vec{a},\vec{b},\vec{c}) = (\vec{a} \times \vec{b}) \cdot \vec{c} = (\vec{b} \times \vec{c}) \cdot \vec{a} = (\vec{c} \times \vec{a}) \cdot \vec{b} } \]
