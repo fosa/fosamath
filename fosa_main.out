@@ -1,6 +1,6 @@
 \BOOKMARK [0][-]{chapter.1}{Vektorgeometrie}{}% 1
 \BOOKMARK [1][-]{section.1.1}{Vektorgeometrie in der Ebene}{chapter.1}% 2
-\BOOKMARK [2][-]{subsection.1.1.1}{Anstand zweier Puntke}{section.1.1}% 3
+\BOOKMARK [2][-]{subsection.1.1.1}{Abstand zweier Puntke}{section.1.1}% 3
 \BOOKMARK [2][-]{subsection.1.1.2}{Geradengleichungen}{section.1.1}% 4
 \BOOKMARK [2][-]{subsection.1.1.3}{Normalenvektor}{section.1.1}% 5
 \BOOKMARK [2][-]{subsection.1.1.4}{Abstand Punkt zu Gerade}{section.1.1}% 6
@@ -19,15 +19,19 @@
 \BOOKMARK [2][-]{subsection.1.3.4}{Winkel zwischen zwei Vektoren}{section.1.3}% 19
 \BOOKMARK [2][-]{subsection.1.3.5}{Vektorprodukt \(Kreuzprodukt\)}{section.1.3}% 20
 \BOOKMARK [2][-]{subsection.1.3.6}{Spatprodukt}{section.1.3}% 21
-\BOOKMARK [0][-]{chapter.2}{Folgen}{}% 22
-\BOOKMARK [0][-]{chapter.3}{Reihen}{}% 23
-\BOOKMARK [0][-]{chapter.4}{Differenzieren}{}% 24
-\BOOKMARK [1][-]{section.4.1}{Ableitungsregeln}{chapter.4}% 25
-\BOOKMARK [2][-]{subsection.4.1.1}{Grundoperationen}{section.4.1}% 26
-\BOOKMARK [2][-]{subsection.4.1.2}{Spezielle Regeln}{section.4.1}% 27
-\BOOKMARK [1][-]{section.4.2}{Kurvendiskussion}{chapter.4}% 28
-\BOOKMARK [2][-]{subsection.4.2.1}{Steigen und Fallen}{section.4.2}% 29
-\BOOKMARK [2][-]{subsection.4.2.2}{Kr\374mmungsverhalten}{section.4.2}% 30
-\BOOKMARK [2][-]{subsection.4.2.3}{Extremum}{section.4.2}% 31
-\BOOKMARK [2][-]{subsection.4.2.4}{Wendepukt}{section.4.2}% 32
-\BOOKMARK [2][-]{subsection.4.2.5}{Sattelpunkt}{section.4.2}% 33
+\BOOKMARK [0][-]{chapter.2}{Folgen und Reihen}{}% 22
+\BOOKMARK [1][-]{section.2.1}{Folgen}{chapter.2}% 23
+\BOOKMARK [2][-]{subsection.2.1.1}{rekursive Darstellung}{section.2.1}% 24
+\BOOKMARK [2][-]{subsection.2.1.2}{arithmetische Folgen}{section.2.1}% 25
+\BOOKMARK [2][-]{subsection.2.1.3}{geometrische Folgen}{section.2.1}% 26
+\BOOKMARK [0][-]{chapter.3}{Differenzieren}{}% 27
+\BOOKMARK [1][-]{section.3.1}{Ableitungsregeln}{chapter.3}% 28
+\BOOKMARK [2][-]{subsection.3.1.1}{Grundoperationen}{section.3.1}% 29
+\BOOKMARK [2][-]{subsection.3.1.2}{Spezielle Regeln}{section.3.1}% 30
+\BOOKMARK [1][-]{section.3.2}{Kurvendiskussion}{chapter.3}% 31
+\BOOKMARK [2][-]{subsection.3.2.1}{Tangentengleichnung}{section.3.2}% 32
+\BOOKMARK [2][-]{subsection.3.2.2}{Steigen und Fallen}{section.3.2}% 33
+\BOOKMARK [2][-]{subsection.3.2.3}{Kr\374mmungsverhalten}{section.3.2}% 34
+\BOOKMARK [2][-]{subsection.3.2.4}{Extremum}{section.3.2}% 35
+\BOOKMARK [2][-]{subsection.3.2.5}{Wendepukt}{section.3.2}% 36
+\BOOKMARK [2][-]{subsection.3.2.6}{Sattelpunkt}{section.3.2}% 37
