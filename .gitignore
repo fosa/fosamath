@@ -3,3 +3,6 @@
 *.toc
 *.out
 *.tmp
+autobuild/build/*
+autobuild/tmp/*
+autobuild/latestversion
