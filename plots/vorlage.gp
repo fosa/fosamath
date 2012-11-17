@@ -30,7 +30,7 @@ plot f(x)
 
 # replot for other output (as example png)
 set terminal png
-# set terminal size 200,300
+set size 1,1 
 set output 'vorlageplot.png'
 plot f(x)
 
