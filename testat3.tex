@@ -19,7 +19,7 @@ c)
 \[\Rightarrow \underline{\underline{\alpha = \frac{\pi}{2} - \beta = \frac{\pi}{2} - \arctan(m(\ell)) = \frac{\pi}{2} - \arctan\left(\sinh\left(\frac{\ell}{c}\right)\right)}}\]
 \section{Maximale Fläche}
 Aufgabenstellung: \\
-%\includegraphics
+\includegraphics[width=0.8\textwidth]{bilder/maximale_flaeche.pdf}
 \[a \cdot x^2 + b \cdot y^2 = c\]
 Lösung:
 \[A = 4 \cdot A_1\]
@@ -43,3 +43,23 @@ $\rightarrow$ Weil die Fläche nur positiv sein kann, gilt nur $x \leq 0$
 \[A = 4 \sqrt{\frac{c}{2a}} \left(\frac{c - a \sqrt{\frac{c}{2a}}^2}{b}\right)^{\frac{1}{2}}\]
 \[A = 4 \sqrt{\frac{c}{2a} \left(\frac{c - a \frac{c}{2a}}{b}\right)}\]
 \[\underline{\underline{A = 2 \sqrt{\frac{c^2}{ab} } = \frac{2c}{\sqrt{ab}}}}\]
+\section{Statue}
+Aufgabenstellung: \\
+\includegraphics[width=0.8\textwidth]{bilder/statue.pdf}
+\[ b = \text{Erde zu Statuenfuss} \]
+\[ a = \text{Satuenfuss zu Statuenkopf} \]
+\[ d = \text{Statue zu Betrachter} \]
+\[ \alpha = \text{Winkel von Statuenkopf zu Statuenfuss} \]
+Wo ist der Winkel $\alpha$ maximal? Dort wo die Ableitung der Funktion $\alpha(d)$ Null ergibt also $\alpha'(d)=0$ ist. 
+Um dies zu bestimmen muss $\alpha$ definiert werden. 
+Da dies auf Anhieb nicht möglich ist, kann man sich folgende Überlegung machen:
+\[ \beta = \text{Winkel Betrachter zu Statuenboden} \]
+\[ \gamma = \text{Winkel Betrachter zu Statuenkopf} \]
+\[ \Rightarrow \gamma = \alpha + \beta \]
+\[ tan(\gamma) = \tan(\alpha + \beta) = \left(\frac{a+b}{d}\right) \]
+\[ \Rightarrow \alpha + \beta = arctan\left(\frac{a+b}{d}\right) \]
+Nun haben wir eine neue Unbekannte $\beta$. Diese muss eliminiert bzw. substituiert werden durch etwas bekanntes oder gesuchtes.
+\[ \tan(\beta) = \left(\frac{b}{d}\right) \rightarrow \beta = arctan\left(\frac{b}{d}\right) \]
+\[ \Rightarrow \alpha = arctan\left(\frac{a+b}{d}\right) - \beta = arctan\left(\frac{a+b}{d}\right) - arctan\left(\frac{b}{d}\right) \]
+\[ \alpha' \stackrel{!}{=} 0 \rightarrow \alpha' = \frac{-(a+b)}{d^2 + (a+b)^2} + \frac{b}{d^2 + b^2} = 0 \]
+\[ \Rightarrow d = \sqrt{ab + b^2} \]
