@@ -2,15 +2,26 @@
 \section{Polynomfunktion}
 Punkt mit lokalem Extremwert: $(e,g)$\\
 Punkt mit Wendepunkt: $(h,i)$
-\[a \cdot x^3 + b \cdot x^2 + c \cdot x + d = 0\]
-\[\]
+\[f(x) = a \cdot x^3 + b \cdot x^2 + c \cdot x + d\]
+\[f'(x) = 3 \cdot a \cdot x^2 + 2 \cdot b \cdot x + c\]
+\[f''(x) = 6 \cdot a \cdot x + 2 \cdot b\]
+\[f'''(x) = 6 \cdot a\]
 \[f(e) = g\]
 \[f'(e) = 0\]
 \[f''(e) \neq 0\]
 \[f(h) = i\]
 \[f''(h) = 0\]
 \[f'''(h) \neq 0\]
-
+Solve mit TR:
+\[\text{solve}\left(\begin{matrix}
+a \cdot e^3 + b \cdot e^2 + c \cdot e + d = g\\
+3 \cdot a \cdot e^2 + 2 \cdot b \cdot e + c = 0\\
+6 \cdot a \cdot e + 2 \cdot b \neq 0\\
+a \cdot h^3 + b \cdot h^2 + c \cdot h + d = i\\
+6 \cdot a \cdot x + 2 \cdot b\\
+6 \cdot a \neq 0
+\end{matrix} \quad ,a,b,c,d\right)\]
+\[f(x) = a \cdot x^3 + b \cdot x^2 + c \cdot x + d\]
 
 \section{Kettenlinie}
 Aufgabenstellung: 
@@ -21,15 +32,16 @@ a)\\
 \[h = a \cdot \cosh\left(\frac{\ell}{c}\right) - a \cdot \underbrace{\cosh\left(\frac{x}{c}\right)}_1\]
 \[\rightarrow x = 0\]
 \[\Rightarrow h_{max} = a \cdot \cosh\left(\frac{\ell}{c}\right)-a\]
-\[\underline{\underline{h(\ell) = a \cosh\left(\frac{\ell}{c}\right) - 10}}\]
+\[\underline{\underline{h(\ell) = a \cosh\left(\frac{\ell}{c}\right) - a}}\]
 b)
-\[h(\ell_1) =a \cdot \cosh\left(\frac{\ell}{c}\right) - 10\]
+\[h(\ell_1) =a \cdot \cosh\left(\frac{\ell}{c}\right) - a\]
 \[\cosh\left(\frac{\ell}{c}\right) = \frac{h(\ell_1 + a}{a}\]
 \[\Rightarrow \underline{\underline{\arccosh\left(\frac{h(\ell_1 + a}{a}\right) \cdot a}}\]
 c)
 \[m(\ell) = h'(\ell) = \sinh\left(\frac{\ell}{c}\right)\]
 \[m(\ell) = \tan(\beta) \quad\]
 \[\Rightarrow \underline{\underline{\alpha = \frac{\pi}{2} - \beta = \frac{\pi}{2} - \arctan(m(\ell)) = \frac{\pi}{2} - \arctan\left(\sinh\left(\frac{\ell}{c}\right)\right)}}\]
+
 \section{Maximale Fläche}
 Aufgabenstellung: \\
 \includegraphics[width=0.8\textwidth]{bilder/maximale_flaeche.pdf}
