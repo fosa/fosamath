@@ -1,4 +1,5 @@
-testatmath
-==========
+fosamath
+========
 
-Musterlösungen zu Mathematiktestaten
+Formelsammlung für das Modul MATH1
+Aktueller Build: http://fosa.adinox.ch/

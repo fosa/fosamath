@@ -1,0 +1,53 @@
+% coding:utf-8
+\section{Kurvendiskussion}
+
+\subsection{Tangentengleichnung}
+\[ \boxed{T(x) = f'(x_0)(x - x_0) + f(x_0)} \]
+
+\subsection{Normale zur Tangente}
+\[ \boxed{ T(x) = \frac{-1}{f'(x_0)} \cdot (x-x_0) + f(x_0) } \]
+
+\subsection{Steigen und Fallen}
+
+\[ \boxed{ \begin{matrix}
+f'(x) \geq 0 \text{ auf } I & \Rightarrow  & f \text{ ist monoton wachsend in $I$} \\
+f'(x) \leq 0 \text{ auf } I & \Rightarrow  & f \text{ ist monoton fallend in $I$} \\
+f'(x) > 0 \text{ auf } I & \Rightarrow  & f \text{ ist streng monoton wachsend in $I$} \\
+f'(x) < 0 \text{ auf } I & \Rightarrow  & f \text{ ist streng monoton fallend in $I$}
+\end{matrix} } \]
+
+\noindent
+$I$ entspricht einem Intervall! Dies bedeutet, ist $f'(x)$ über den gesamten Bereich immer $\geq 0$ so ist $f$ monoton wachsend.
+Ist $f'(x)$ über den gesamten Bereich $\leq 0$ so ist sie monoton fallend.
+
+\subsection{Krümmungsverhalten}
+
+\[ \boxed{ \begin{matrix}
+f''(x) > 0 \text{ auf } I & \Rightarrow  & \text{ Kurve ist konvex } \\
+f''(x) < 0 \text{ auf } I & \Rightarrow  & \text{ Kurve ist konkav }
+\end{matrix} } \]
+
+\subsection{Extremum}
+Ein Extremum ist ein Punkt, zu welchem die Ableitung $0$ ergibt.
+Solch ein Extremum kann ein Maximum oder Minimum sein.
+Zusätzlich ist zu definieren ob es sich um ein lokales oder globales Extremum handelt.
+
+\[ \boxed{ \begin{matrix}
+f'(x_0) = 0 \land f''(x_0) < 0 & \Rightarrow & \text{lokales Maximum in $x_0$} \\
+f'(x_0) = 0 \land f''(x_0) > 0 & \Rightarrow & \text{lokales Minimum in $x_0$} 
+\end{matrix} } \]
+
+\subsection{Wendepunkt}
+Als Wendepukt bezeichnet man jene Stelle, an welcher die Krümmung der Funktion wechselt (konkav zu konvex und umgekehrt).
+Im Wendepunkt ist die Steigung jeweils von beiden Seiten aus betrachtet (d.h aus $x_0 > 0$ und $x_0<0$) extremal.
+
+\[ \boxed{ \begin{matrix}
+f''(x_0) = 0 \land f'''(x_0) \neq 0 & \Rightarrow & \text{Wendepunkt in $x_0$}
+\end{matrix} } \]
+
+\subsection{Sattelpunkt}
+Ein Sattelpunkt ist ein Wendepunkt mit horizontaler Wendetangente.
+
+\[ \boxed{ \begin{matrix}
+f'(x_0) =  f''(x_0) = 0 \land f'''(x_0) \neq 0 & \Rightarrow & \text{Sattelpunkt in $x_0$}
+\end{matrix} } \]
