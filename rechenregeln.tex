@@ -6,7 +6,14 @@
 \[ \boxed{\frac{a}{b} : \frac{c}{d} = \frac{a}{b} \cdot \frac{d}{c} = \frac{a \cdot d}{b \cdot c}} \]
 
 \subsection{Polynomdivision}
-
+Beispiel: 
+\[ \boxed{\begin{array}{rrrlrl}
+&(9x^3 &- 6&x^2 &- 8x&):(3x + 4) = \underline{\underline{3x^2 + 2x}}\\
+-&(9x^3 &- 12&x^2)&&\\
+&&6&x^2 &- 8x&\\
+&&-(6&x^2 &- 8x&)\\
+&&&&0&
+\end{array}} \]
 
 \subsection{Potenzen}
 \[ \boxed{a^n = a \cdot a^{n-1} \quad a^1 = a} \]
@@ -83,18 +90,3 @@ Erste Binomische Formel:
 
 \subsection{Verkettete Funktionen}
 \[ \boxed{f(g(x)) = f \circ g} \]
-
-\subsection{Grenzwert}
-Um den Grenzwert von $a_n$ zu rechnen schreibt man den Limes
-$\lim\limits_{n \to \infty} a_n$
-Meist muss eine manuelle Anpassung vorgenommen werden um den Grenzwert zu ermitteln. 
-Dies ist insbesondere dann der Fall, wenn mehrere male der Index vorkommt.
-Hierzu erweitert man den Ausdruck mit dem Index der höchsten Potenz reziprok (der im Zähler vorkommt!). 
-\[ \begin{array}{ll}
-\lim\limits_{n \rightarrow \infty} a_n & \\
-&= \lim\limits_{n \rightarrow \infty} \left(\dfrac{u \cdot n^3 + v}{z \cdot n^4 + p} \right)\\\\
-&= \lim\limits_{n \rightarrow \infty} \left(\dfrac{\frac{1}{n^3}}{\frac{1}{n^3}} \cdot \dfrac{u \cdot n^3 + v}{z \cdot n^4 + p} \right)\\\\\\
-% &= \lim\limits_{n \rightarrow \infty} \left(\dfrac{u +\overbrace{\frac{v}{n^3}}^0}{z \cdot n + \underbrace{ \frac{p}{n^3}}_0} \right)\\\\
-&= \lim\limits_{n \rightarrow \infty} \left(\dfrac{u +\smash{\overbrace{\frac{v}{n^3}}^0}\vphantom{\dfrac{v}{n^3}}}{z \cdot n + \smash{\underbrace{\frac{p}{n^3}}_0}\vphantom{\dfrac{p}{n^3}}} \right)\\\\\\
-&= \lim\limits_{n \rightarrow \infty} \left(\dfrac{u}{z \cdot n}\right) = 0
-\end{array}\]
