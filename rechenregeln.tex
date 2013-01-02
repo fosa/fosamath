@@ -83,3 +83,17 @@ Erste Binomische Formel:
 
 \subsection{Verkettete Funktionen}
 \[ \boxed{f(g(x)) = f \circ g} \]
+
+\subsection{Grenzwert}
+Um den Grenzwert von $a_n$ zu rechnen schreibt man den Limes
+\[ \lim\limits_{n \to \infty} a_n \]
+Meist muss eine manuelle Anpassung vorgenommen werden um den Grenzwert zu ermitteln. 
+Dies ist insbesondere dann der Fall, wenn mehrere male der Index vorkommt.
+Hierzu erweitert man den Ausdruck mit dem Index der höchsten Potenz reziprok (der in Zähler vorkommt!). 
+\[ \begin{array}{ll}
+\lim\limits_{n \rightarrow \infty} a_n & \\
+&= \lim\limits_{n \rightarrow \infty} \dfrac{u \cdot n^3 + v}{z \cdot n^4 + p} \\\\
+&= \lim\limits_{n \rightarrow \infty} \dfrac{\frac{1}{n^3}}{\frac{1}{n^3}} \cdot \dfrac{u \cdot n^3 + v}{z \cdot n^4 + p} \\\\
+&= \lim\limits_{n \rightarrow \infty} \dfrac{u +\overbrace{\frac{v}{n^3}}^0}{z \cdot n + \underbrace{ \frac{p}{n^3}}_0} \\\\
+&= \lim\limits_{n \rightarrow \infty} \dfrac{u}{z \cdot n} = 0
+\end{array}\]
