@@ -40,6 +40,39 @@
 \author{Daniel Winz, Ervin Mazlagic, Adrian Imboden}
 \date{\today}
 
+
+\usepackage{fancyhdr}                        % http://en.wikibooks.org/wiki/LaTeX/Page_Layout#Customising_with_fancyhdr
+
+\pagestyle{fancy} %eigener Seitenstil
+\fancyhf{} %alle Kopf- und Fußzeilenfelder bereinigen
+
+\addtolength{\textheight}{3.5cm}
+\addtolength{\voffset}{-1.5cm}
+\addtolength{\textwidth}{1cm}
+\addtolength{\evensidemargin}{-5mm}
+\addtolength{\oddsidemargin}{-5mm}
+
+\addtolength{\headwidth}{1cm}
+
+%\rhead{\setlength{\unitlength}{1mm}
+%\begin{picture}(-2,7)
+%    \includegraphics[width=35mm]{hslu_logo2.PNG}
+%\end{picture}}
+
+\fancyhead[L]{} %Kopfzeile links
+\fancyhead[C]{} %zentrierte Kopfzeile
+\fancyhead[RO]{\rightmark}
+\fancyhead[LE]{\leftmark}
+%\fancyhead[R]{\includegraphics[scale=0.25]{hslu_logo2.PNG}}
+\renewcommand{\headrulewidth}{0.4pt} %obere Trennlinie
+\fancyfoot[L]{}
+\fancyfoot[C]{}
+\fancyfoot[RO]{\thepage}
+\fancyfoot[LE]{\thepage}
+\renewcommand{\footrulewidth}{0.4pt} %untere Trennlinie
+
+
+
 \begin{document}
 
 \maketitle
