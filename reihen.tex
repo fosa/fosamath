@@ -17,4 +17,17 @@ a_1 :& S_n = a_1 \cdot \dfrac{1-q^n}{1-q}
 
 \[ \boxed{\text{Für } q = 1: \quad S_n = a_1 \left(1+1^1 + 1^2 + \ldots + 1^{n-1}\right) = a_1 n} \]
 Unendliche geometrische Reihe
-\[ \boxed{\text{Für } |q| < 1: S = \lim_{n \rightarrow \infty} S_n = \frac{a_1}{1 - q}} \]
+\[ \boxed{\text{Für } |q| < 1: S = \lim_{n \rightarrow \infty} S_n = \frac{a_1}{1 - q}} \] 
+
+\subsection{Konvergenz}
+
+\subsubsection*{Geometrische Reihe}
+Um die Konvergenzfrage einer geometrischen Reihe zu klären betrachtet man
+\[ \lim\limits_{n \rightarrow \infty} \left| \frac{a_{n+1}}{a_n} \right| \]
+Hierbei können drei verschiedene Ergebnisse entstehen:
+\[ \boxed{\begin{array}{ll}
+|q| < 1 & \text{die Reihe konvergiert} \\
+|q| > 1 & \text{die Reihe divergiert} \\
+|q| = 1 & \text{keine Aussage möglich}
+\end{array}} \]
+Dies wird oft als Quotientenkriterium bezeichnet.
