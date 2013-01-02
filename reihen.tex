@@ -21,7 +21,7 @@ Unendliche geometrische Reihe
 
 \subsection{Konvergenz}
 
-\subsubsection*{Geometrische Reihe}
+\subsubsection*{Quotientenkriterium}
 Um die Konvergenzfrage einer geometrischen Reihe zu klären betrachtet man
 \[ \lim\limits_{n \rightarrow \infty} \left| \frac{a_{n+1}}{a_n} \right| \]
 Hierbei können drei verschiedene Ergebnisse entstehen:
@@ -31,3 +31,26 @@ Hierbei können drei verschiedene Ergebnisse entstehen:
 |q| = 1 & \text{keine Aussage möglich}
 \end{array}} \]
 Dies wird oft als Quotientenkriterium bezeichnet.
+
+\subsubsection*{Wurlzelkrierium}
+Eine weitere Methode zur Klärung der Konvergenzfrage liefert das so genannte Wurzelkriterium.
+\[ \lim\limits_{n \rightarrow \infty} \left( |a_k| \right)^{\frac{1}{n}} = q\]
+Daraus können wie beim Quotientenkriterium drei Fälle eintreten:
+\[ \boxed{\begin{array}{ll}
+|q| < 1 & \text{die Reihe konvergiert} \\
+|q| > 1 & \text{die Reihe divergiert} \\
+|q| = 1 & \text{keine Aussage möglich} 
+\end{array}} \]
+
+
+\ifti
+\subsection*{Reihen mit dem TI89 berechnen}
+$\sum$\verb{(Ausdruck,Variable,untere Grenze, obere Grenze){ \\
+$\sum$\verb{(EXP,VAR,LOW,HIGH){ \\\\
+\begin{tabular}{lll}
+EXP  & Ausdruck      & bezeichnet den Term der die Reihe beschreibt \\
+VAR  & Variable      & bezeichnet die inkrementierte Variable \\
+LOW  & untere Grenze & Anfangspunkt der Inkrementierung \\
+HIGH & obere Grenze  & Endpunkt der Inkrementierung \\
+\end{tabular}
+\fi
