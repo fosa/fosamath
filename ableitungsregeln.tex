@@ -4,6 +4,35 @@
 \subsection{Schreibweisen}
 \[ \boxed{f(x)' = \frac{d}{dx} f(x) = \dot{x}} \]
 
+\subsection{Stetigkeit}
+Eine Funktion wird als stetig bezeichnet, wenn die Funktion keine 
+Sprungstellen\footnote{Salopp gesagt heisst dies, dass die Funktion ohne Absetzten des Stiftes gezeichnet werden kann.}
+hat (für das MATH-Modul ist diese Definition ausreichend).
+
+\subsection{Differenzierbarkeit}
+Der Begriff Differenzierbarkeit sagt aus, dass wenn eine Funktion
+differenzierbar ist, zu jedem Punkt genau eine Tangente existiert. 
+Damit dies möglich ist, muss die Funktion stetig sein.\\\\
+Bsp.: $f(x)=|x|$ ist stetig aber nicht differenzierbar in $x=0$, 
+denn vom positiven Bereich aus betrachtet hat die Funktion die Steigung 1.
+Vom negativen Bereich aus betrachtet hat die Funktion die Steigung -1. 
+Im Punkt $x=0$ ist somit nicht klar, welche Steigung gilt.\\\\
+Bsp.: 
+$ \quad \quad f(x) = \left\lbrace 
+\begin{array}{ll}
+	\dfrac{\alpha \cdot x}{\xi} & x \leq \gamma \\
+	\dfrac{\beta \cdot x}{\psi}  & x > \gamma 
+\end{array} \right.  $ \\
+In diesem Beispiel ist die Funktion $f$ definiert hin zu $\gamma$ 
+(von rechts und von links aus).
+Soll die Funktion an der Stelle $\gamma$ differenzierbar sein, 
+so müssen in $\gamma$ die Funktionswerte und Steigungen von beiden Seiten her
+identisch sein. \\
+D.h. im Punkt $x=\gamma$ gilt, dass 
+$\frac{\alpha \cdot x}{\xi} = \frac{\beta \cdot x}{\psi}$ und
+$\left(\frac{\alpha \cdot x}{\xi}\right)' = 
+ \left(\frac{\beta \cdot x}{\psi} \right)'$ ist.
+
 \subsection{Grundoperationen}
 
 \subsubsection{Summenregel}
