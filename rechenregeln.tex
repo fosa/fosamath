@@ -115,3 +115,22 @@ Erste Binomische Formel:
 \[ \boxed{\lim\limits_{x \to x_0}\left(\log{(f_1(x))}\right) = \log{\lim\limits_{x \to x_0}(f_1(x))}} \]
 
 \subsection{Berechnung von Grenzwerten}
+Um Grenzwerte zu ermitteln muss der Ausdruck so angepasst werden, dass eindutig bestimmt werden kann, was sich daraus ergibt.
+Dies wird durch Anwenden der zuvor aufgezeigten Rechnereglen erreicht.\\\\
+Bsp.: $ \quad \quad \lim\limits_{n \rightarrow \infty} \left( \dfrac{\alpha \cdot n^2}{n^2-1} \right) $ \\\\
+Um den Grenzwert zu ermitteln muss der Ausdruck erweitert werden und zwar so, dass
+\begin{itemize}
+\item der Term äquivalent bleibt
+\item Variabeln des Indezes entfallen
+\end{itemize}
+Um die geforderten Bedingungen zu erfüllen wird der Term durch den reziproken Wert des Indezes mit der höchsten Potenz (im Zähler!) erweitert. In diesem Fall mit $\frac{1}{n^2}$. 
+Eine weitere Regel besagt, dass Konstante Faktoren vorangenommen werden können.
+Nun sieht es wie folgt aus:\\\\
+\indent \indent \indent $ \alpha \lim\limits_{n \rightarrow \infty} 
+    \left( \dfrac{\frac{1}{n^2} \cdot (n^2) }{ \frac{1}{n^2} \cdot (n^2 -1) } \right)  $\\\\\\
+Vereinfacht man diesen Ausdruck durch elementare Algebra so erhält man: \\\\
+\indent \indent \indent $ \alpha \lim\limits_{n \rightarrow \infty} \left( \dfrac{1}{1-
+\smash{\underbrace{\frac{1}{n^2}}_0 } \vphantom{\dfrac{1}{n^2}} } \right) $\\\\\\
+Der Audruck $\frac{1}{n^2}$ geht für $n \rightarrow \infty$ zu $0$. Daraus ergibt sich das folgende:\\\\\\
+\indent \indent \indent $ \alpha \cdot 1 = \alpha $
+
