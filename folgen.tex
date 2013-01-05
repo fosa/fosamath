@@ -40,7 +40,16 @@ a_1 :& a_n = q^{n-1} a_1
 
 \ifti
 \subsubsection{Folgen mit dem TI-89}
-seq($a_n$, Variable, $n_1$, $n_2$)
+%seq($a_n$, Variable, $n_1$, $n_2$)\\\\
+\verb{seq(EXP,VAR,LOW,HIGH[,STEP]){\\\\
+\begin{tabular}{lll}
+EXP	& Ausdruck	& bezeichnet den Term \\
+VAR 	& Variabel	& bezeichnet die inkrementierte Variabel \\
+LOW	& untere Grenze	& Anfangspunkt der Inkrementierung \\
+HIGH	& obere Grenze	& Endpunkt der Inkrementierung \\
+STEP	& n-Schritte	& Zeigt Resultate mit n-ten Schritt
+\end{tabular}\\\\
+Bsp.: \verb{seq(1/x,x,1,10,5){ erzeugt die Ausgabe \verb?{1   1/6}?
 \fi
 \ifnspire
 \subsubsection{Folgen mit dem TI-Nspire}
