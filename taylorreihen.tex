@@ -6,6 +6,20 @@ Ein Ausdruck der Form
 nennt man eine Potenzreihe
 
 \subsection{Konvergenzradius}
+Der Konvergenzradius sagt aus, innerhalb von welchem Intervall (ausgehend vom Approximationspunkt)
+eine Potenzreihe konvergiert. Der Begriff Radius ist dabei ein Skalar auf $\Omega$ und nicht im $\mathbb{R}^2$.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\textwidth]{konvergenzradius.pdf}
+\end{figure}
+
+\[ \boxed{ \begin{array}{lll} 
+    |x| < R & \Rightarrow & \text{Potenzreihe ist konvergent} \\
+    |x| > R & \Rightarrow & \text{Potenzreihe ist divergent} \\
+    |x| = R & \Rightarrow & \text{überprüfen was für $x=R$ und $-x=R$ gilt}
+\end{array} } \]
+
 \[ \boxed{a_k = \frac{f^{(K)}(x_0)}{K!}} \]
 \[ \boxed{R = \frac{1}{q} = \lim_{n \rightarrow \infty} \left| \frac{a_n}{a_{n + 1}} \right|} \]
 
