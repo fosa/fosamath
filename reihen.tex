@@ -18,6 +18,11 @@ a_1 :& S_n = a_1 \cdot \dfrac{1-q^n}{1-q}
 \[ \boxed{\text{Für } q = 1: \quad S_n = a_1 \left(1+1^1 + 1^2 + \ldots + 1^{n-1}\right) = a_1 n} \]
 Unendliche geometrische Reihe
 \[ \boxed{\text{Für } |q| < 1: S = \lim_{n \rightarrow \infty} S_n = \frac{a_1}{1 - q}} \] 
+Um das $n$-te Glied einer geometrischen Reihen zu berechnen gilt:\\
+$ q = \frac{a_n}{a_{n-1}} = \frac{a_{n-1}}{a_{n-2}} $ \\
+$ \Rightarrow  a_n = a_{(n-1)} \cdot q = a_{(n-2)} \cdot q^2 = a_{(n - (n-1))} \cdot q^{(n-1)} = a_1 \cdot q^{(n-1)} $
+\[ \boxed{ a_n = a_1 \cdot q^{n-1} } \]
+\[ \boxed{ a_{n+1} = a_1 \cdot q^n } \]
 
 \subsection{Konvergenz}
 
