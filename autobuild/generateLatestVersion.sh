@@ -11,7 +11,38 @@ echo new hash: $hash
 if [ x$(cat $currpwd/latesthash) = x$hash ]; then
  echo already latest version
 else
- make
+ pdflatex fosa_main
+ pdflatex fosa_main
+ pdflatex fosa_main
+ pdflatex fosa_main
+ pdflatex fosa_main
+
+ pdflatex fosa_main_ti89
+ pdflatex fosa_main_ti89
+ pdflatex fosa_main_ti89
+ pdflatex fosa_main_ti89
+ pdflatex fosa_main_ti89
+ pdflatex fosa_main_ti89
+
+ pdflatex fosa_main_tinspire
+ pdflatex fosa_main_tinspire
+ pdflatex fosa_main_tinspire
+ pdflatex fosa_main_tinspire
+ pdflatex fosa_main_tinspire
+ pdflatex fosa_main_tinspire
+ pdflatex fosa_main_tinspire
+
+
+ pdflatex fosa_main_tiboth
+ pdflatex fosa_main_tiboth
+ pdflatex fosa_main_tiboth
+ pdflatex fosa_main_tiboth
+ pdflatex fosa_main_tiboth
+ pdflatex fosa_main_tiboth
+ pdflatex fosa_main_tiboth
+ pdflatex fosa_main_tiboth
+ pdflatex fosa_main_tiboth
+
  hash=$(git log | head -n1 | sed -e 's/ /\n/g' | tail -n1)
  cp fosa_main.pdf $currpwd/build/fosa_$hash.pdf
  cp fosa_main.pdf $currpwd/build/fosa_latest.pdf
