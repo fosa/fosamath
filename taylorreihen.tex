@@ -26,9 +26,11 @@ eine Potenzreihe konvergiert. Der Begriff Radius ist dabei ein Skalar auf $\Omeg
 \subsection{Taylorreihe mit Entwicklungspunkt $x_0 = 0$}
 Eine Taylorreihe mit Entwicklungspunkt $x_0 = 0$ wird auch MacLaurin-Reihe genannt
 \[ \boxed{f(x) = \sum_{K=0}^{\infty}\frac{f^{(K)}(0)}{K!} x^K} \]
+\[ \boxed{f(x) = \underbrace{\sum_{K=0}^{n}\frac{f^{(K)}(0)}{K!} x^K}_{T_{(n,x_0)}(x)\text{ (Taylorreihe)}} + \underbrace{\sum_{K=n+1}^{\infty}\frac{f^{(K)}(0)}{K!} x^K}_{R_{n+1}(x)\text{ (Restgliedformel)}}} \]
 
 \subsection{Taylorreihe mit Entwicklungspunkt $x_0 \neq 0$}
 \[ \boxed{f(x) = \sum_{K=0}^{\infty}\frac{f^{(K)}(x_0)}{K!}\cdot (x-x_0)^K} \]
+\[ \boxed{f(x) = \underbrace{\sum_{K=0}^{n}\frac{f^{(K)}(0)}{K!} (x - x_0)^K}_{T_{(n,x_0)}(x)\text{ (Taylorreihe)}} + \underbrace{\sum_{K=n+1}^{\infty}\frac{f^{(K)}(0)}{K!} (x - 0)^K}_{R_{n+1}(x)\text{ (Restgliedformel)}}} \]
 
 \subsection{Einfache Funktionen als Taylorreihen}
 \[ \boxed{e^x = \sum_{K=0}^{\infty} \frac{x^K}{K!}} \]
