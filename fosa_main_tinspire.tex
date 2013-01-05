@@ -40,16 +40,44 @@
 \author{Daniel Winz, Ervin Mazlagic, Adrian Imboden}
 \date{\today}
 
+
+\usepackage{fancyhdr}                        % http://en.wikibooks.org/wiki/LaTeX/Page_Layout#Customising_with_fancyhdr
+
+\pagestyle{fancy} %eigener Seitenstil
+\fancyhf{} %alle Kopf- und Fußzeilenfelder bereinigen
+
+\addtolength{\textheight}{3.5cm}
+\addtolength{\voffset}{-1.5cm}
+\addtolength{\textwidth}{1cm}
+\addtolength{\evensidemargin}{-5mm}
+\addtolength{\oddsidemargin}{-5mm}
+
+\addtolength{\headwidth}{1cm}
+
+%\rhead{\setlength{\unitlength}{1mm}
+%\begin{picture}(-2,7)
+%    \includegraphics[width=35mm]{hslu_logo2.PNG}
+%\end{picture}}
+
+\fancyhead[L]{} %Kopfzeile links
+\fancyhead[C]{} %zentrierte Kopfzeile
+\fancyhead[RO]{\rightmark}
+\fancyhead[LE]{\leftmark}
+%\fancyhead[R]{\includegraphics[scale=0.25]{hslu_logo2.PNG}}
+\renewcommand{\headrulewidth}{0.4pt} %obere Trennlinie
+\fancyfoot[L]{}
+\fancyfoot[C]{}
+\fancyfoot[RO]{\thepage}
+\fancyfoot[LE]{\thepage}
+\renewcommand{\footrulewidth}{0.4pt} %untere Trennlinie
+
+
+
 \begin{document}
 
 \maketitle
 
-\chapter*{Über diese Arbeit}
-Dies ist das Ergebnis einer Zusammenarbeit auf Basis freier Texte erstellt von Studierenden der Fachhochschule Luzern. 
-
-Dieses Schriftstück ist lizenziert unter der GPLv2 und der \TeX-  bzw. \LaTeX- Code ist auf \url{github.com/daniw/fosamath} hinterlegt.
-Eine aktuelle PDF-Ausgabe ist auf \url{fosa.adnox.ch} abgelegt. 
-
+\include{about}
 
 \tableofcontents
 
@@ -72,10 +100,13 @@ Eine aktuelle PDF-Ausgabe ist auf \url{fosa.adnox.ch} abgelegt.
 \chapter{Integral}
 \include{integral}
 \include{integrationsregeln}
-\include{taylorreihen}
-\include{fourierreihen}
-
 \include{abl_int_spez_funk}
+
+\chapter{Taylorreihen}
+\include{taylorreihen}
+
+\chapter{Fourierreihen}
+\include{fourierreihen}
 
 \end{document}
 

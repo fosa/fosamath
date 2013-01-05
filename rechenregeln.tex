@@ -6,6 +6,24 @@
 \[ \boxed{\frac{a}{b} : \frac{c}{d} = \frac{a}{b} \cdot \frac{d}{c} = \frac{a \cdot d}{b \cdot c}} \]
 
 \subsection{Polynomdivision}
+Beispiel: 
+% \[ \boxed{\begin{array}{rrrlrl}
+% &(9x^3 &- 6&x^2 &- 8x&):(3x + 4) = \underline{\underline{3x^2 + 2x}}\\
+% -&(9x^3 &- 12&x^2)&&\\
+% &&6&x^2 &- 8x&\\
+% &&-(6&x^2 &- 8x&)\\
+% &&&&0&
+% \end{array}} \]
+
+\begin{tabular}{|r@{}r@{}r@{}r@{}l@{}r@{}r@{}l|}
+\hline
+\rule{0pt}{12pt}&&$(9x^3 $&$- 6$&$x^2 $&$- 8x$&$)$&$:(3x + 4) = \underline{\underline{3x^2 + 2x}}$\\
+&$-$&$(9x^3 $&$- 12$&$x^2)$&$\downarrow\,\,$&&\\
+\cline{2-5}\rule{0pt}{12pt}&&&$6$&$x^2 $&$- 8x$&&\\
+&&&$-(6$&$x^2 $&$- 8x$&$)$&\\
+\cline{4-7}\rule{0pt}{12pt}&&&&&$0$&&\\
+\hline
+\end{tabular}
 
 
 \subsection{Potenzen}
@@ -61,6 +79,7 @@ $G$: Gegenkathete
 \[ \boxed{\sin x = \sqrt{1-\cos^2x} = \sqrt{\frac{\tan^2x}{1+\tan^2x}}} \]
 \[ \boxed{\cos x = \sqrt{1-\sin^2x} = \sqrt{\frac{1}{1+\tan^2x}}} \]
 \[ \boxed{\tan x = \frac{\sin x}{\sqrt{1-\sin^2x}} = \frac{\sqrt{1-\cos^2x}}{\cos x} = \frac{\sin x}{\cos x}} \]
+\[ \boxed{\sin^2 x + \cos^2 x = 1} \]
 
 \subsection{Spezielle Werte der Winkelfunktionen}
 \begin{tabular}{|l|c|c|c|c|c|}
@@ -74,3 +93,44 @@ $G$: Gegenkathete
 \subsection{Quadratische Gleichung}
 \[ \boxed{f(x) = a \cdot x^2 + b \cdot x + c} \]
 \[ \boxed{x_{1,2}=\frac{-b\pm\sqrt{b^2-4ac}}{2a}} \]
+
+\subsection{Binomische Formeln}
+Erste Binomische Formel: 
+\[ \boxed{(a + b)^2 = a^2 + 2 \cdot a \cdot b + b^2} \]Zweite Binomische Formel: 
+\[ \boxed{(a - b)^2 = a^2 - 2 \cdot a \cdot b + b^2} \]Dritte Binomische Formel: 
+\[ \boxed{(a + b) \cdot (a - b) = a^2 - b^2} \]
+
+\subsection{Verkettete Funktionen}
+\[ \boxed{f(g(x)) = f \circ g} \]
+
+\subsection{Grenzwerte}
+\[ \boxed{\lim\limits_{x \to x_0}(f_1(x) + f_2(x)) = \lim\limits_{x \to x_0}(f_1(x)) + \lim\limits_{x \to x_0}(f_2(x))} \]
+\[ \boxed{\lim\limits_{x \to x_0}(f_1(x) - f_2(x)) = \lim\limits_{x \to x_0}(f_1(x)) - \lim\limits_{x \to x_0}(f_2(x))} \]
+\[ \boxed{\lim\limits_{x \to x_0}(f_1(x) \cdot f_2(x)) = \lim\limits_{x \to x_0}(f_1(x)) \cdot \lim\limits_{x \to x_0}(f_2(x))} \]
+\[ \boxed{\lim\limits_{x \to x_0}\left(\frac{f_1(x)}{f_2(x)}\right) = \frac{\lim\limits_{x \to x_0}(f_1(x))}{\lim\limits_{x \to x_0}(f_2(x))}} \]
+\[ \boxed{\lim\limits_{x \to x_0}(c \cdot f_1(x)) = c \cdot \lim\limits_{x \to x_0}(f_1(x))} \]
+\[ \boxed{\lim\limits_{x \to x_0}\left(c^{(f_1(x))}\right) = c^{\left(\lim\limits_{x \to x_0}(f_1(x))\right)}} \]
+\[ \boxed{\lim\limits_{x \to x_0}\left((f_1(x))^n\right) = \left(\lim\limits_{x \to x_0}(f_1(x))\right)^n} \]
+\[ \boxed{\lim\limits_{x \to x_0}\left(\sqrt[n]{(f_1(x))}\right) = \sqrt[n]{\lim\limits_{x \to x_0}(f_1(x))}} \]
+\[ \boxed{\lim\limits_{x \to x_0}\left(\log{(f_1(x))}\right) = \log{\lim\limits_{x \to x_0}(f_1(x))}} \]
+
+\subsection{Berechnung von Grenzwerten}
+Um Grenzwerte zu ermitteln muss der Ausdruck so angepasst werden, dass eindutig bestimmt werden kann, was sich daraus ergibt.
+Dies wird durch Anwenden der zuvor aufgezeigten Rechnereglen erreicht.\\\\
+Bsp.: $ \quad \quad \lim\limits_{n \rightarrow \infty} \left( \dfrac{\alpha \cdot n^2}{n^2-1} \right) $ \\\\
+Um den Grenzwert zu ermitteln muss der Ausdruck erweitert werden und zwar so, dass
+\begin{itemize}
+\item der Term äquivalent bleibt
+\item Variabeln des Indezes entfallen
+\end{itemize}
+Um die geforderten Bedingungen zu erfüllen wird der Term durch den reziproken Wert des Indezes mit der höchsten Potenz (im Zähler!) erweitert. In diesem Fall mit $\frac{1}{n^2}$. 
+Eine weitere Regel besagt, dass Konstante Faktoren vorangenommen werden können.
+Nun sieht es wie folgt aus:\\\\
+\indent \indent \indent $ \alpha \lim\limits_{n \rightarrow \infty} 
+    \left( \dfrac{\frac{1}{n^2} \cdot (n^2) }{ \frac{1}{n^2} \cdot (n^2 -1) } \right)  $\\\\\\
+Vereinfacht man diesen Ausdruck durch elementare Algebra so erhält man: \\\\
+\indent \indent \indent $ \alpha \lim\limits_{n \rightarrow \infty} \left( \dfrac{1}{1-
+\smash{\underbrace{\frac{1}{n^2}}_0 } \vphantom{\dfrac{1}{n^2}} } \right) $\\\\\\
+Der Audruck $\frac{1}{n^2}$ geht für $n \rightarrow \infty$ zu $0$. Daraus ergibt sich das folgende:\\\\\\
+\indent \indent \indent $ \alpha \cdot 1 = \alpha $
+

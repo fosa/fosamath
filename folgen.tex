@@ -1,7 +1,17 @@
 % coding:utf-8
 \section{Folgen}
-$a_1$ ist das erste Glied einerFolge\\
+$a_1$ ist das erste Glied einer Folge\\
 $a_n$ ist das $n$-te Glied einer Folge
+
+\subsection{Form}
+Eine Folge kann drei spezielle Formen annehmen. Für $(a_n)_{n \in \mathbb{N}}$ gilt die Folge je
+nach den als
+\subsubsection*{monoton wachsend}
+$ \boxed{ a_{n+1} \geq a_n \quad \forall \quad n \in \mathbb{N} } $ Bsp.: $a_n = 2^n$, $a_{n+1} = 2^{n+1}$
+\subsubsection*{monoton fallend}
+$ \boxed{ a_{n+1} \leq a_n \quad \forall \quad n \in \mathbb{N} } $ Bsp.: $a_n = \frac{1}{n}$, $a_{n+1} = \frac{1}{n+1}$
+\subsubsection*{alternierend}
+$ \boxed{ a_{n+1} \cdot a_n < 0 } $ Bsp.: $a_n := (-2)^n$, $a_{n+1} = (-2)^{n+1} \cdot (-2)^n = (-2)^{2n+1}$
 
 \subsection{rekursive Darstellung}
 Bei der rekursiven Darstellung wird eine Folge durch einen Startwert und eine Abbildungsvorschrift dargestellt. \\
@@ -12,14 +22,57 @@ Bei der rekursiven Darstellung wird eine Folge durch einen Startwert und eine Ab
 
 \subsection{arithmetische Folgen}
 $d$ ist die Differenz zwischen zwei benachbarten Gliedern\\
-\[ \boxed{a_{n+1} - a_n = d} \]
+\[ \boxed{d = a_{n+1} - a_n} \]
 \[ \boxed{a_{n+1} = a_n + d} \]
-\[ \boxed{a_n = a_1 + (n - 1)d} \]
+\[ \boxed{ \begin{matrix} 
+a_0 :& a_n =& a_0 + n \cdot d \\
+a_1 :& a_n =& a_1 + (n - 1)d 
+\end{matrix}}\]
 
 \subsection{geometrische Folgen}
 $q$ ist der Quotient von zwei benachbarten Gliedern\\
 \[ \boxed{\frac{a_{n+1}}{a_n} = q} \]
-\[ \boxed{a_{n+1} = a_n * q} \]
-\[ \boxed{a_n = q^{n-1} a_1} \]
+\[ \boxed{a_{n+1} = a_n \cdot q} \]
+\[ \boxed{\begin{array}{ll}
+a_0 :& a_n = q^{n} a_0\\
+a_1 :& a_n = q^{n-1} a_1
+\end{array}} \]
+
+\ifti
+\subsubsection{Folgen mit dem TI-89}
+%seq($a_n$, Variable, $n_1$, $n_2$)\\\\
+\verb{seq(EXP,VAR,LOW,HIGH[,STEP]){\\\\
+\begin{tabular}{lll}
+EXP	& Ausdruck	& bezeichnet den Term \\
+VAR 	& Variabel	& bezeichnet die inkrementierte Variabel \\
+LOW	& untere Grenze	& Anfangspunkt der Inkrementierung \\
+HIGH	& obere Grenze	& Endpunkt der Inkrementierung \\
+STEP	& n-Schritte	& Zeigt Resultate mit n-ten Schritt
+\end{tabular}\\\\
+Bsp.: \verb{seq(1/x,x,1,10,5){ erzeugt die Ausgabe \verb?{1   1/6}?
+\fi
+\ifnspire
+\subsubsection{Folgen mit dem TI-Nspire}
+seq($a_n$, Variable, $n_1$, $n_2$)
+\fi
 
 \subsection{Konvergenz von Folgen}
+Eine Folge ist konvergent, wenn der Grenzwert der Folge eine reelle Zahl ist
+\[ \boxed{\lim\limits_{n \to \infty} a_n = a \quad a \in \mathbf{R}}\]
+
+\subsubsection{Rechenregeln}
+$ a_n \xrightarrow[\rightarrow \infty]{} a $, $ b_n \xrightarrow[n \rightarrow \infty]{} b $
+\[ \boxed{ a_n + b_n \xrightarrow[]{n \rightarrow \infty} a + b } \]
+\[ \boxed{ a_n - b_n \xrightarrow[]{n \rightarrow \infty} a - b } \]
+\[ \boxed{ a_n \cdot b_n \xrightarrow[]{n \rightarrow \infty} a \cdot b } \]
+\[ \boxed{ \alpha \cdot a_n \xrightarrow[]{n \rightarrow \infty} \alpha \cdot a, \quad \alpha \in \mathbb{R} } \]
+\[ \boxed{ \frac{a_n}{b_n} \xrightarrow[]{n \rightarrow \infty} \frac{a}{b}, \quad \text{falls} \quad b_n \neq 0 \quad \forall \quad n \in \mathbb{N} } \]
+
+\ifti
+\subsubsection{Konvergenz von Folgen mit dem TI-89}
+limit($a_n$, $n$, $\infty)$
+\fi
+\ifnspire
+\subsubsection{Konvergenz von Folgen mit dem TI-Nspire}
+$\lim\limits_{\boxed{n}\to\boxed{\infty}}(\boxed{a_n})$
+\fi
