@@ -49,10 +49,11 @@
 \addtolength{\textheight}{3.5cm}
 \addtolength{\voffset}{-1.5cm}
 \addtolength{\textwidth}{1cm}
-% \addtolength{\evensidemargin}{-5mm}
 \addtolength{\evensidemargin}{-15mm}
-% \addtolength{\oddsidemargin}{-5mm}
 \addtolength{\oddsidemargin}{5mm}
+
+\addtolength{\textheight}{\topmargin-\evensidemargin-\hoffset+\voffset}
+\setlength{\topmargin}{\evensidemargin+\hoffset-\voffset}
 
 \addtolength{\headwidth}{1cm}
 
