@@ -1,29 +1,10 @@
 % coding:utf-8
 \documentclass[a5paper,10pt,fleqn]{book}
 
-\usepackage[utf8]{inputenc} % für input utf8
-\usepackage[T1]{fontenc} %Schriftcodierung mit UTF-8
-\usepackage{textcomp} %Erweiterung von fontenc
-\usepackage{lmodern} %Erweiterung des Zeichensatzes
+\usepackage{fosa_layout}
 
-\usepackage{graphics}
-\usepackage{graphicx}
-\usepackage[ngerman]{babel}
-\usepackage{amsmath}
-%\usepackage[all]{xy}
-%\usepackage[xindy]{glossaries}
-\usepackage{makeidx}
-\usepackage{pdfpages}
-\usepackage{graphicx}
-\usepackage{hyperref}
-\usepackage{amssymb}
-\usepackage{ifthen}
-
-\newboolean{ti}
 %\setboolean{ti}{true}        % Anleitung für TI-89
-\newboolean{nspire}
 %\setboolean{nspire}{true}    % Anleitung für TI-Nspire CAS
-\newboolean{tiboth}
 %\setboolean{tiboth}{true}    % Anleitung für beide TR (Nur für Titelseite relevant)
 
 \title{Formelsammlung Mathematik}
@@ -39,38 +20,6 @@
 
 \author{Daniel Winz, Ervin Mazlagic, Adrian Imboden}
 \date{\today}
-
-
-\usepackage{fancyhdr}                        % http://en.wikibooks.org/wiki/LaTeX/Page_Layout#Customising_with_fancyhdr
-
-\pagestyle{fancy} %eigener Seitenstil
-\fancyhf{} %alle Kopf- und Fußzeilenfelder bereinigen
-
-\addtolength{\textheight}{3.5cm}
-\addtolength{\voffset}{-1.5cm}
-\addtolength{\textwidth}{1cm}
-\addtolength{\evensidemargin}{-5mm}
-\addtolength{\oddsidemargin}{-5mm}
-
-\addtolength{\headwidth}{1cm}
-
-%\rhead{\setlength{\unitlength}{1mm}
-%\begin{picture}(-2,7)
-%    \includegraphics[width=35mm]{hslu_logo2.PNG}
-%\end{picture}}
-
-\fancyhead[L]{} %Kopfzeile links
-\fancyhead[C]{} %zentrierte Kopfzeile
-\fancyhead[RO]{\rightmark}
-\fancyhead[LE]{\leftmark}
-%\fancyhead[R]{\includegraphics[scale=0.25]{hslu_logo2.PNG}}
-\renewcommand{\headrulewidth}{0.4pt} %obere Trennlinie
-\fancyfoot[L]{}
-\fancyfoot[C]{}
-\fancyfoot[RO]{\thepage}
-\fancyfoot[LE]{\thepage}
-\renewcommand{\footrulewidth}{0.4pt} %untere Trennlinie
-
 
 
 \begin{document}
