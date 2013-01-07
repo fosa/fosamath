@@ -62,6 +62,25 @@ $\left(\frac{\alpha \cdot x}{\xi}\right)' =
 \subsection{Ableitung von Kurven in Parameterdarstellung}\label{subsec:ableitungsregeln}
 \[ \boxed{\frac{d}{dt}\left(\begin{matrix}x(t)\\y(t)\end{matrix}\right) = \frac{\dot{y}(t)}{\dot{x}(t)}} \]
 
+
+\subsection{Implizites Ableiten}
+Implizite Gleichungen bzw. Funktionen sind Funktionen welche die Form $x^a + d x y + y^b + c= 0$ haben.
+Gegenüber der expliziten Form $f(x)=y=...$ ist $y$ selbst als Funktion von $x$ definiert.\\\\
+Bsp.: Aus einer implizit formulierten Gleichung eine Tangente an einem bestimmten Punkt legen.
+\[ x^a + d x y + y^b + c = 0, \quad T_{(x_0)} = f'(x_0)(x-x_0)+f(x_0), \quad P(x_p|y_p) \]
+Zuerst muss der Ausdruck $y$ durch $y(x)$ ersetzt werden.
+\[ x^a + d x y + y(x)^b = 0\]
+Danach kann abgeleitet und nach $y'(x)$ aufgelöst werden.
+\[ \begin{array}{lll@{\quad}}
+ax^{a-1} + d\Big(y(x) + xy'(x)\Big) + y'(x)by(x)^{b-1} =0 & |& \text{ausklammern} \\ 
+ax^{a-1} + dy(x) + axy'(x) + y'(x)by(x)^{b-1} =0          & |& -ax^{a-1} - dy(x) \\
+dxy'(x) + y'(x) by(x)^{b-1} = -ax^{a-1} - dy(x)           & |& y'(x) \text{ ausklammern } \\
+y'(x) \cdot (dx + by^{b-1}) = -ax^{a-1} - dy(x)           & |& \div (dx+by^{b-1}) \\
+y'(x) = \dfrac{-ax^{a-1} - dy(x)}{dx + by^{b-1}}          &  & \\
+\end{array} \]
+Nun kann man die Tangentengleichung bilden:
+\[ T(x) = y'(x_p) (x-x_p) + y(x_p) \]
+
 \newpage
 
 \subsection{Spezielle Regeln}
