@@ -76,7 +76,18 @@ $ a_n \xrightarrow[\rightarrow \infty]{} a $, $ b_n \xrightarrow[n \rightarrow \
 
 \ifti
 \subsubsection{Konvergenz von Folgen mit dem TI-89}
-limit($a_n$, $n$, $\infty)$
+%limit($a_n$, $n$, $\infty)$
+\verb{limit(EXP,VAR,POINT[,DIRECTION]){\\\\
+\begin{tabular}{lll}
+\verb|EXP|	& Ausdruck	& bezeichnet den Term \\
+\verb|VAR|	& Variable	& bezeichnet die Variable \\
+\verb|POINT|	& Punkt		& bezeichnet den Variablenwert \\
+\verb|DIRECTION|& Richtung 	& bezeichnet die Richtung \\
+		&		& $\nearrow$~~~~von oben: 1 \\
+		&		& $\searrow$~~~~von unten: -1 \\
+\end{tabular}\\\\
+Bsp.: \verb| limit((x^2-2)/(x-2),x,2,-1)| \\
+\indent\indent erzeugt die Ausgabe $\mathtt{ \lim\limits_{x \rightarrow 2^-} (\dfrac{x^2-2}{x-2}) \quad = \quad - \infty } $
 \fi
 \ifnspire
 \subsubsection{Konvergenz von Folgen mit dem TI-Nspire}
