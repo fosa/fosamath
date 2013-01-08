@@ -1,9 +1,9 @@
 % coding:utf-8
 \section{Taylorreihen}
 Ein Ausdruck der Form 
-\[ \boxed{f(x) = \sum_{n = 0}^{\infty} a_n x^n = a_0 + a_1 x + a_2 x^2 + a_3 x^3 \dots a_n x^n} \]
+\[ \boxed{f(x) = \sum_{K = 0}^{\infty} a_K x^K = a_0 + a_1 x + a_2 x^2 + a_3 x^3 \dots a_K x^K} \]
 \[ \boxed{a_k = \frac{f^{(K)}(x_0)}{K!}} \]
-nennt man eine Potenzreihe
+nennt man eine Potenzreihe. \\\\
 
 \subsection{Konvergenzradius}
 Der Konvergenzradius sagt aus, innerhalb von welchem Intervall (ausgehend vom Approximationspunkt)
@@ -21,16 +21,24 @@ eine Potenzreihe konvergiert. Der Begriff Radius ist dabei ein Skalar auf $\Omeg
 \end{array} } \]
 
 \[ \boxed{a_k = \frac{f^{(K)}(x_0)}{K!}} \]
-\[ \boxed{R = \frac{1}{q} = \lim_{n \rightarrow \infty} \left| \frac{a_n}{a_{n + 1}} \right|} \]
+\[ \boxed{R = \frac{1}{q} = \lim_{K \rightarrow \infty} \left| \frac{a_K}{a_{K + 1}} \right|} \]
 
 \subsection{Taylorreihe mit Entwicklungspunkt $x_0 = 0$}
 Eine Taylorreihe mit Entwicklungspunkt $x_0 = 0$ wird auch MacLaurin-Reihe genannt
-\[ \boxed{f(x) = \sum_{K=0}^{\infty}\frac{f^{(K)}(0)}{K!} x^K} \]
-\[ \boxed{f(x) = \underbrace{\sum_{K=0}^{n}\frac{f^{(K)}(0)}{K!} x^K}_{T_{(n,x_0)}(x)\text{ (Taylorreihe)}} + \underbrace{\sum_{K=n+1}^{\infty}\frac{f^{(K)}(0)}{K!} x^K}_{R_{n+1}(x)\text{ (Restgliedformel)}}} \]
+\[ \boxed{f(x) = \underbrace{\sum_{K=0}^{\infty}\frac{f^{(K)}(0)}{K!} x^K}_{\text{Taylorreihe}}} \]
+\[ \boxed{f(x) = \underbrace{\sum_{K=0}^{n}\frac{f^{(K)}(0)}{K!} x^K}_{T_{(n,x_0)}(x)} + \underbrace{\sum_{K=n+1}^{\infty}\frac{f^{(K)}(0)}{K!} x^K}_{R_{n+1}(x)}} \]
+$T_{(n,x_0)}(x)$ ist dabei das Taylorpolynom vom Grad n und $R_{n+1}(x)$ ist das Restglied. \\
+Für das Restglied gilt: Es gibt eine Zahl $\xi$ zwischen $x_0$ und $x$ so, dass gilt: 
+\[ \boxed{R_{n+1} = \frac{f^{(n + 1)}(\xi)}{(n + 1)!} \cdot (x - x_0)^{n + 1}} \]
+Dies ist eine Restgliedformel (Lagrangsche Darstellung für $R_{n + 1}$). 
 
 \subsection{Taylorreihe mit Entwicklungspunkt $x_0 \neq 0$}
 \[ \boxed{f(x) = \sum_{K=0}^{\infty}\frac{f^{(K)}(x_0)}{K!}\cdot (x-x_0)^K} \]
-\[ \boxed{f(x) = \underbrace{\sum_{K=0}^{n}\frac{f^{(K)}(0)}{K!} (x - x_0)^K}_{T_{(n,x_0)}(x)\text{ (Taylorreihe)}} + \underbrace{\sum_{K=n+1}^{\infty}\frac{f^{(K)}(0)}{K!} (x - 0)^K}_{R_{n+1}(x)\text{ (Restgliedformel)}}} \]
+\[ \boxed{f(x) = \underbrace{\sum_{K=0}^{n}\frac{f^{(K)}(x_0)}{K!} (x - x_0)^K}_{T_{(n,x_0)}(x)} + \underbrace{\sum_{K=n+1}^{\infty}\frac{f^{(K)}(x_0)}{K!} (x - x_0)^K}_{R_{n+1}(x)}} \]
+$T_{(n,x_0)}(x)$ ist dabei das Taylorpolynom vom Grad n und $R_{n+1}(x)$ ist das Restglied. \\
+Für das Restglied gilt: Es gibt eine Zahl $\xi$ zwischen $x_0$ und $x$ so, dass gilt: 
+\[ \boxed{R_{n+1} = \frac{f^{(n + 1)}(\xi)}{(n + 1)!} \cdot (x - x_0)^{n + 1}} \]
+Dies ist eine Restgliedformel (Lagrangsche Darstellung für $R_{n + 1}$). 
 
 \subsection{Einfache Funktionen als Taylorreihen}
 \[ \boxed{e^x = \sum_{K=0}^{\infty} \frac{x^K}{K!}} \]
