@@ -44,7 +44,7 @@ a_1 :& a_n = q^{n-1} a_1
 \verb{seq(EXP,VAR,LOW,HIGH[,STEP]){\\\\
 \begin{tabular}{lll}
 EXP	& Ausdruck	& bezeichnet den Term \\
-VAR 	& Variabel	& bezeichnet die inkrementierte Variabel \\
+VAR 	& Variable	& bezeichnet die inkrementierte Variabel \\
 LOW	& untere Grenze	& Anfangspunkt der Inkrementierung \\
 HIGH	& obere Grenze	& Endpunkt der Inkrementierung \\
 STEP	& n-Schritte	& Zeigt Resultate mit n-ten Schritt
@@ -53,7 +53,13 @@ Bsp.: \verb{seq(1/x,x,1,10,5){ erzeugt die Ausgabe \verb?{1   1/6}?
 \fi
 \ifnspire
 \subsubsection{Folgen mit dem TI-Nspire}
-seq($a_n$, Variable, $n_1$, $n_2$)
+seq($a_n$, Variable, $n_1$, $n_2$)\\\\
+\begin{tabular}{ll}
+$a_n$    & Formel für die Berechnung des n-ten Gliedes\\
+Variable & Variable in der Formel\\
+$n_1$    & erstes zu berechnendes Glied\\
+$n_2$    & letztes zu berechnendes Glied
+\end{tabular}
 \fi
 
 \subsection{Konvergenz von Folgen}
