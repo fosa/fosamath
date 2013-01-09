@@ -134,6 +134,34 @@ Vereinfacht man diesen Ausdruck durch elementare Algebra so erhält man: \\\\
 Der Audruck $\frac{1}{n^2}$ geht für $n \rightarrow \infty$ zu $0$. Daraus ergibt sich das folgende:\\\\\\
 \indent \indent \indent $ \alpha \cdot 1 = \alpha $
 
+\ifti
+\subsubsection{Berechnung von Grenzwerten mit dem TI-89}\label{subsubsec:limti}
+%limit($a_n$, $n$, $\infty)$
+\verb?limit(EXP,VAR,POINT[,DIRECTION])?\\\\
+\begin{tabular}{@{}lll}
+\verb|EXP|	& Ausdruck	& bezeichnet den Term \\
+\verb|VAR|	& Variable	& bezeichnet die Variable \\
+\verb|POINT|	& Punkt		& bezeichnet den Variablenwert \\
+\verb|DIRECTION|& Richtung 	& bezeichnet die Richtung \\
+		&		& $\searrow$~~~~von oben: 1 \\
+		&		& $\nearrow$~~~~von unten: -1 \\
+\end{tabular}\\\\
+Bsp.: \verb| limit((x^2-2)/(x-2),x,2,-1)| \\
+\indent\indent erzeugt die Ausgabe $\mathtt{ \lim\limits_{x \rightarrow 2^-} (\dfrac{x^2-2}{x-2}) \quad = \quad - \infty } $
+\fi
+\ifnspire
+\subsubsection{Berechnung von Grenzwerten mit dem TI-Nspire}\label{subsubsec:limnspire}
+\[ \lim\limits_{\boxed{n}\to\boxed{\infty}^{\boxed{d}}}(\boxed{a_n}) \]\\
+\begin{tabular}{@{}llp{6cm}}
+$\boxed{a_n}$    & Ausdruck & bezeichnet den Term \\
+$\boxed{n}$      & Variable & bezeichnet die Variable \\
+$\boxed{\infty}$ & Punkt    & bezeichnet den Variablenwert \\
+$\boxed{d}$      & Richtung & bezeichnet die Richtung \\
+                 &          & $\searrow$ : von oben: + \\
+                 &          & $\nearrow$ : von unten: - \\
+		 &          & Wenn keine Richtung gefordert ist, kann dieses Feld leer gelassen werden. 
+\end{tabular}
+\fi
 
 \subsubsection{L'Hopital}
 Die Regel von L'Hopital besagt, dass wenn man einen Grenzwert der Form 
