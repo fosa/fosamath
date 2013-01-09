@@ -53,12 +53,21 @@ Ist $f$ eine gerade Funktion:
   \item n-te trigonometrische Summe zu f hinschreiben
 \end{enumerate}
 
-% \ifti
-% \subsection{Fourierreihe mit dem TI-89 berechnen}
-% \begin{verbatim}
-% \integrate{}
-% \end{verbatim}
-% \fi
+\ifti
+\subsection{Fourierreihe mit dem TI-89 berechnen}
+% \verb?integrate(?$\mathtt{\pi}$\verb?/2 * sin(@n1 * x),x,0,?$\mathtt{\pi}$\verb?)?\\
+% $\mathtt{integrate\left(\frac{\pi}{2} \cdot sin(@n1 \cdot x), x, 0, \pi\right)}$\\
+% $\text{integrate}\left(\frac{\pi}{2} \cdot \sin(@n1 \cdot x), x, 0, \pi\right)$
+\verb?integrate(Ausdruck,Variable,untere Grenze, obere Grenze)? \\
+\verb?integrate(EXPR,VAR[,LOW,UP])? \\\\
+\begin{tabular}{@{}lll}
+\verb?EXP?  & Ausdruck      & bezeichnet den Term der die Fourierreihe beschreibt \\
+\verb?VAR?  & Variable      & bezeichnet die Variable, nach der integriert wird \\
+\verb?LOW?  & untere Grenze & Anfangspunkt der Integration \\
+\verb?HIGH? & obere Grenze  & Endpunkt der Integration \\
+\end{tabular}\\
+Für K wird \verb?@n1? eingegeben. 
+\fi
 % \ifnspire
 % \subsection{Fourierreihe mit dem TI-Nspire berechnen}
 
