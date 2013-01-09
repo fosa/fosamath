@@ -60,7 +60,13 @@ $\left(\frac{\alpha \cdot x}{\xi}\right)' =
 \[ \boxed{ (u(v(x)))' = v'(x) \cdot u'(v(x)) } \]
 
 \subsection{Ableitung von Kurven in Parameterdarstellung}\label{subsec:ableitungsregeln}
-\[ \boxed{\frac{d}{dt}\left(\begin{matrix}x(t)\\y(t)\end{matrix}\right) = \frac{\dot{y}(t)}{\dot{x}(t)}} \]
+\[ \boxed{\gamma(t) = \left(\begin{matrix}x(t)\\y(t)\end{matrix}\right) \qquad \Rightarrow \qquad \dot{\gamma}(t) = \left(\begin{matrix}\dot{x}(t)\\\dot{y}(t)\end{matrix}\right)} \]
+Falls $\gamma$ keine vertikalen Tangenten besitzt, so kann man die Spur von $\gamma$ (d.h. das Schaubild) lokal als Graph einer differenzierbar reellwertigen Funktion auffassen. Wir können also schreiben 
+\[ y(x(t)) = y(t) \]
+und damit gilt: 
+\[ \frac{d}{dt}y(x(t)) = \frac{d}{dt}y(t), ~\Leftrightarrow~ y'(x(t)) \dot{x}(t) = \dot{y}(t), ~\Leftrightarrow~ y'(x(t)) = \frac{\dot{y}(t)}{\dot{x}(t)} \]
+
+% \[ \boxed{\frac{d}{dt}\left(\begin{matrix}x(t)\\y(t)\end{matrix}\right) = \frac{\dot{y}(t)}{\dot{x}(t)}} \]
 
 
 \subsection{Implizites Ableiten}
