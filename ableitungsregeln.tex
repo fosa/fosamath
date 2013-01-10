@@ -70,22 +70,30 @@ und damit gilt:
 
 
 \subsection{Implizites Ableiten}
-Implizite Gleichungen bzw. Funktionen sind Funktionen welche die Form $x^a + d x y + y^b + c= 0$ haben.
-Gegenüber der expliziten Form $f(x)=y=...$ ist $y$ selbst als Funktion von $x$ definiert.\\\\
-Bsp.: Aus einer implizit formulierten Gleichung eine Tangente an einem bestimmten Punkt legen.
-\[ x^a + d x y + y^b + c = 0, \quad T_{(x_0)} = f'(x_0)(x-x_0)+f(x_0), \quad P(x_p|y_p) \]
-Zuerst muss der Ausdruck $y$ durch $y(x)$ ersetzt werden.
-\[ x^a + d x y + y(x)^b = 0\]
-Danach kann abgeleitet und nach $y'(x)$ aufgelöst werden.
-\[ \begin{array}{lll@{\quad}}
-ax^{a-1} + d\Big(y(x) + xy'(x)\Big) + y'(x)by(x)^{b-1} =0 & |& \text{ausklammern} \\ 
-ax^{a-1} + dy(x) + axy'(x) + y'(x)by(x)^{b-1} =0          & |& -ax^{a-1} - dy(x) \\
-dxy'(x) + y'(x) by(x)^{b-1} = -ax^{a-1} - dy(x)           & |& y'(x) \text{ ausklammern } \\
-y'(x) \cdot (dx + by^{b-1}) = -ax^{a-1} - dy(x)           & |& \div (dx+by^{b-1}) \\
-y'(x) = \dfrac{-ax^{a-1} - dy(x)}{dx + by^{b-1}}          &  & \\
-\end{array} \]
-Nun kann man die Tangentengleichung bilden:
-\[ T(x) = y'(x_p) (x-x_p) + y(x_p) \]
+Eine implizite Funktion F ist definiert durch das Nullstellengebilde 
+\[ F(x,y) = 0 \]
+Manchmal kann man eine Funktion $f(x) = (y(x))$ finden. 
+\[ F(x, f(x)) = 0 \]
+Soll nun eine Tangente an diese Funktion gelegt werden, kann auch hier die Tangentengleichnung (\ref{subsec:tangentengleichung}) angewendet werden. 
+\[ T(x) = f'(x_0)(x - x_0) + f(x_0) \]
+$x_0$ und $f(x_0)$ sind durch den Punkt, an welchem die Tangente angelegt werden soll vorgegeben. Um $f'(x_0)$ zu erhalten muss die Funktion nach x abgeleitet werden. Dafür ist y als $f(x)$ zu betrachten und die Kettenregel anzuwenden. Anschliessend wird die erhaltene Gleichung nach $f'(x)$ aufgelöst und kann dann in die Tangentengleichnung eingesetzt werden. 
+
+% Implizite Gleichungen bzw. Funktionen sind Funktionen welche die Form $x^a + d x y + y^b + c= 0$ haben.
+% Gegenüber der expliziten Form $f(x)=y=...$ ist $y$ selbst als Funktion von $x$ definiert.\\\\
+% Bsp.: Aus einer implizit formulierten Gleichung eine Tangente an einem bestimmten Punkt legen.
+% \[ x^a + d x y + y^b + c = 0, \quad T_{(x_0)} = f'(x_0)(x-x_0)+f(x_0), \quad P(x_p|y_p) \]
+% Zuerst muss der Ausdruck $y$ durch $y(x)$ ersetzt werden.
+% \[ x^a + d x y + y(x)^b = 0\]
+% Danach kann abgeleitet und nach $y'(x)$ aufgelöst werden.
+% \[ \begin{array}{lll@{\quad}}
+% ax^{a-1} + d\Big(y(x) + xy'(x)\Big) + y'(x)by(x)^{b-1} =0 & |& \text{ausklammern} \\ 
+% ax^{a-1} + dy(x) + axy'(x) + y'(x)by(x)^{b-1} =0          & |& -ax^{a-1} - dy(x) \\
+% dxy'(x) + y'(x) by(x)^{b-1} = -ax^{a-1} - dy(x)           & |& y'(x) \text{ ausklammern } \\
+% y'(x) \cdot (dx + by^{b-1}) = -ax^{a-1} - dy(x)           & |& \div (dx+by^{b-1}) \\
+% y'(x) = \dfrac{-ax^{a-1} - dy(x)}{dx + by^{b-1}}          &  & \\
+% \end{array} \]
+% Nun kann man die Tangentengleichung bilden:
+% \[ T(x) = y'(x_p) (x-x_p) + y(x_p) \]
 
 \newpage
 
