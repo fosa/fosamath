@@ -1,8 +1,25 @@
 % coding:utf-8
-\section{Kurven}
-\section{Polarkoordinaten}
-\section{Krümmung}
-\[ \boxed{\kappa(x) = \frac{y''(x)}{(1 + y'(x)^2)^{\frac{3}{2}}}} \]
 
+\section{Krümmung}
+
+Die Krümmung $\kappa$ misst wie stark eine Kurve $\gamma$ gekrümmt ist (vgl. Kreis hat eine konstante Krümmung).
+Die Krümmung wird unterschieden in mittlere und momentane Krümmung.
+\[ \begin{array}{ll}
+	\text{mittlere}  & \dfrac{\Delta \alpha}{\Delta s} \\
+	& \\
+	\text{momentane} & \dfrac{\delta \alpha}{\delta s} \\
+\end{array} \]
+
+\[ \boxed{r(t) = \dfrac{1}{|\kappa(t)|} \quad \quad \text{bzw.} \quad \quad r(x) = \dfrac{1}{|\kappa(x)|} } \]
+\[ \boxed{\kappa(x) = \frac{y''(x)}{(1 + y'(x)^2)^{\frac{3}{2}}} }\]
+
+\[\boxed{\begin{array}{lllll} 
+	\kappa (x) > 0 & \rightarrow & y''(x) \stackrel{!}{>} 0 & \rightarrow & y \text{ ist konvex} \\
+	\kappa (x) < 0 & \rightarrow & y''(x) \stackrel{!}{<} 0 & \rightarrow & y \text{ ist konkav} \\
+	\kappa (x) = 0 & \rightarrow & y''(x) = 0		& \xrightarrow[]{Achtung!} & \text{Wendepunkt!}
+\end{array}}\]
 \section{Scheitelpunkte}
-Punkte, wo die Krümmung maximal wird. 
+Scheitelpunkte sind Stellen an denen die Krümmung maximal ist. 
+Um diese zu berechnen muss die Krümmung $\kappa (x)$ abgeleitet und Null gesetzt werden.
+\[ \kappa '(x) \stackrel{!}{=} 0  \]
+\[ \boxed{\kappa '(x) = \dfrac{ y'''(x)(1+y'(x)^2)^{\frac{3}{2}} - y''(x) \frac{3}{2}(1+y'(x)^2)^{\frac{1}{2}} y''(x) 2y'(x) }{ (1+y'(x)^2)^3 } \stackrel{!}{=} 0 } \]
