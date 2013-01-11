@@ -16,21 +16,31 @@
 %----------------------------------------
 
 % coding:utf-8
+\section{Potenzreihe}
+Ein Ausdruck der Form 
+\[ \boxed{f(x) = \sum_{K = 0}^{\infty} a_K x^K = a_0 + a_1 x + a_2 x^2 + a_3 x^3 \dots a_K x^K} \]
+wird Potenzreihe genannt. 
+\[ \boxed{a_k = \frac{f^{(K)}(x_0)}{K!}} \]
+$f^{(K)}(x)$ ist dabei die K-te Ableitung von $f(x)$ gemeint. 
+
 \subsection{Taylorreihe mit Entwicklungspunkt $x_0 \neq 0$}
 \[ \boxed{f(x) = \sum_{K=0}^{\infty}\frac{f^{(K)}(x_0)}{K!}\cdot (x-x_0)^K} \]
+$f^{(K)}(x)$ ist dabei die K-te Ableitung von $f(x)$ gemeint. 
 \[ \boxed{f(x) = \underbrace{\sum_{K=0}^{n}\frac{f^{(K)}(x_0)}{K!} (x - x_0)^K}_{T_{(n,x_0)}(x)} + \underbrace{\sum_{K=n+1}^{\infty}\frac{f^{(K)}(x_0)}{K!} (x - x_0)^K}_{R_{n+1}(x)}} \]
 $T_{(n,x_0)}(x)$ ist dabei das Taylorpolynom vom Grad n und $R_{n+1}(x)$ ist das Restglied. \\
 Für das Restglied gilt: Es gibt eine Zahl $\xi$ zwischen $x_0$ und $x$ so, dass gilt:
 \[ \boxed{R_{n+1} = \frac{f^{(n + 1)}(\xi)}{(n + 1)!} \cdot (x - x_0)^{n + 1}} \]
 Dies ist eine Restgliedformel (Lagrangsche Darstellung für $R_{n + 1}$).
 
-
-\section{Potenzreihe}
-Ein Ausdruck der Form 
-\[ \boxed{f(x) = \sum_{K = 0}^{\infty} a_K x^K = a_0 + a_1 x + a_2 x^2 + a_3 x^3 \dots a_K x^K} \]
-\[ \boxed{a_k = \frac{f^{(K)}(x_0)}{K!}} \]
-nennt man eine Potenzreihe. \\\\
+\subsection{McLaurin-Reihe (Taylorreihe mit Entwicklungspunkt $x_0 = 0)$}
+Eine Taylorreihe mit Entwicklungspunkt $x_0 = 0$ wird MacLaurin-Reihe genannt
+\[ \boxed{f(x) = \underbrace{\sum_{K=0}^{\infty}\frac{f^{(K)}(0)}{K!} x^K}_{\text{Taylorreihe}}} \]
 $f^{(K)}(x)$ ist dabei die K-te Ableitung von $f(x)$ gemeint. 
+\[ \boxed{f(x) = \underbrace{\sum_{K=0}^{n}\frac{f^{(K)}(0)}{K!} x^K}_{T_{(n,x_0)}(x)} + \underbrace{\sum_{K=n+1}^{\infty}\frac{f^{(K)}(0)}{K!} x^K}_{R_{n+1}(x)}} \]
+$T_{(n,x_0)}(x)$ ist dabei das Taylorpolynom vom Grad n und $R_{n+1}(x)$ ist das Restglied. \\
+Für das Restglied gilt: Es gibt eine Zahl $\xi$ zwischen $x_0$ und $x$ so, dass gilt:
+\[ \boxed{R_{n+1} = \frac{f^{(n + 1)}(\xi)}{(n + 1)!} \cdot (x - x_0)^{n + 1}} \]
+Dies ist eine Restgliedformel (Lagrangsche Darstellung für $R_{n + 1}$).
 
 \subsection{Konvergenzradius}
 Der Konvergenzradius sagt aus, innerhalb von welchem Intervall (ausgehend vom Approximationspunkt)
@@ -59,16 +69,6 @@ eine Potenzreihe konvergiert. Der Begriff Radius ist dabei ein Skalar auf $\Omeg
 
 \subsection{Binomische Reihe}
 \[ \boxed{(1 + x)^\alpha = \sum_{K=0}^{\infty}\left(\begin{matrix}\alpha\\K\end{matrix}\right)x^k = \sum_{K=0}^{\infty}\frac{\alpha !}{K! \cdot (\alpha - K)!}x^k} \]
-
-\subsection{McLaurin-Reihe (Taylorreihe mit Entwicklungspunkt $x_0 = 0)$}
-Eine Taylorreihe mit Entwicklungspunkt $x_0 = 0$ wird MacLaurin-Reihe genannt
-\[ \boxed{f(x) = \underbrace{\sum_{K=0}^{\infty}\frac{f^{(K)}(0)}{K!} x^K}_{\text{Taylorreihe}}} \]
-\[ \boxed{f(x) = \underbrace{\sum_{K=0}^{n}\frac{f^{(K)}(0)}{K!} x^K}_{T_{(n,x_0)}(x)} + \underbrace{\sum_{K=n+1}^{\infty}\frac{f^{(K)}(0)}{K!} x^K}_{R_{n+1}(x)}} \]
-$T_{(n,x_0)}(x)$ ist dabei das Taylorpolynom vom Grad n und $R_{n+1}(x)$ ist das Restglied. \\
-Für das Restglied gilt: Es gibt eine Zahl $\xi$ zwischen $x_0$ und $x$ so, dass gilt:
-\[ \boxed{R_{n+1} = \frac{f^{(n + 1)}(\xi)}{(n + 1)!} \cdot (x - x_0)^{n + 1}} \]
-Dies ist eine Restgliedformel (Lagrangsche Darstellung für $R_{n + 1}$).
-
 
 \subsection{Kochrezept Taylorreihen}
 \begin{enumerate}
