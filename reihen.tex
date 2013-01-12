@@ -21,18 +21,25 @@ $S_n$ ist die Summe aller Glieder von $a_1$ bis $a_n$.
 \[ \boxed{S_n = \sum_{k=1}^{n} a_k = a_1 + a_2 + a_3 \cdots + a_n} \]
 
 \subsection{arithmetische Reihe}
-\[ \boxed{S_n = \left(n + 1\right)\left(a_0 + d \frac{n}{2}\right) = \left(n + 1\right) \frac{a_0 + a_n}{2}} \]
+\[ \boxed{\begin{matrix}
+a_0 :&S_n = \left(n + 1\right)\left(a_0 + d \dfrac{n}{2}\right) = \left(n + 1\right) \dfrac{a_0 + a_n}{2}\\\\
+a_1 :&S_n = n \cdot \left(a_1 + d \cdot \dfrac{n - 1}{2}\right) = n \cdot \dfrac{a_1 + a_n}{2}
+\end{matrix}} \]
 
 \subsection{geometrische Reihe}
-\[ \boxed{\text{Für } q \neq 1: \quad S_n = a_1 \left(  \frac{q^n - 1}{q - 1} \right) = a_1 \left(  \frac{1 - q^n}{1 - q} \right)} \]
-
 \[ \boxed{\begin{array}{ll}
+\multicolumn{2}{l}{\text{Für } q \neq 1: }\\\\
 a_0 :& S_n = a_0 \cdot \dfrac{1-q^{n+1}}{1-q} \\ 
 & \\
 a_1 :& S_n = a_1 \cdot \dfrac{1-q^n}{1-q}
 \end{array}} \]
 
-\[ \boxed{\text{Für } q = 1: \quad S_n = a_1 \left(1+1^1 + 1^2 + \ldots + 1^{n-1}\right) = a_1 n} \]
+\[ \boxed{\begin{array}{ll}
+\multicolumn{2}{l}{\text{Für } q = 1: }\\\\
+a_0 :& S_n = a_0 \cdot (n + 1)\\\\
+a_1 :& S_n = a_1 \left(1+1^1 + 1^2 + \ldots + 1^{n-1}\right) = a_1 \cdot n
+\end{array}} \]
+
 Unendliche geometrische Reihe
 \[ \boxed{\text{Für } |q| < 1: S = \lim_{n \rightarrow \infty} S_n = \frac{a_1}{1 - q}} \] 
 %Um das $n$-te Glied einer geometrischen Reihen zu berechnen gilt:\\
