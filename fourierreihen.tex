@@ -22,13 +22,13 @@
 
 \subsubsection{Gerade Funktion: }
 \[ \boxed{f(-x) = f(x)} \]
-Die Funktion ist an der y-Achse gespiegelt. 
+Geometrisch gesehen, ist eine gerade Funktion an der y-Achse gespiegelt.
 \subsubsection{Ungerade Funktion: }
 \[ \boxed{f(-x) = -f(x)} \]
-Die Funktion wird am Koordinatenursprung um 180° gedreht. 
+Geometrisch gesehen, ist eine ungerade Funktion am Ursprung gespiegelt.
 \subsubsection{Achtung: }
 Wichtig ist dabei, dass die Funktion erst nach der Erweiterung auf ganz $\mathbb{R}$ darauf geprüft wird, ob sie gerade oder ungerade ist. \\
-So ist $\sin(x)$ eine ungerade Funktion. Wird jedoch nur die Periode $[0, \pi]$ betrachtet, so ist dies eine gerade Funktion. 
+So ist $\sin(x)$ eine ungerade Funktion. Wird jedoch nur die Periode $[0, \pi]$ betrachtet, so ist dies eine gerade Funktion.
 
 \begin{figure}[h!]
 \centering
@@ -39,18 +39,19 @@ So ist $\sin(x)$ eine ungerade Funktion. Wird jedoch nur die Periode $[0, \pi]$ 
 \[ \boxed{f_n(x) = \frac{a_0}{2} + \sum_{K=1}^n \left(a_k \cdot \cos \left(\frac{2 \pi}{T} K x\right) + b_k \cdot \sin\left(\frac{2 \pi}{T} K x\right)\right)} \]
 
 \subsection{Koeffizienten für die Periode T}
-\[ \boxed{a_n = \frac{2}{T} \int_T f(x) \cos(\frac{2 \pi}{T} K x) dx} \]
-\[ \boxed{b_n = \frac{2}{T} \int_T f(x) \sin(\frac{2 \pi}{T} K x) dx} \]
+\[ \boxed{a_k = \frac{2}{T} \int_T f(x) \cos(\frac{2 \pi}{T} K x) dx} \]
+\[ \boxed{b_k = \frac{2}{T} \int_T f(x) \sin(\frac{2 \pi}{T} K x) dx} \]
 \[ \boxed{a_0 = \frac{2}{T} \int_T f(x) dx
 } \]
 
-\subsection{n-te Partialsumme einer Fourierreihe für die Periode $2\pi$}
-Die folgende Fourierreihe besitzt eine Periode von 2 $\pi$. 
+\subsection{n-te Partialsumme einer Fourierreihe für die Periode 0 bis $2\pi$}
+Die folgende Fourierreihe besitzt eine Periode von 0 bis 2 $\pi$.
+Sie ist ein Spezialfall der oben beschriebenen Variante.
 \[ \boxed{f_n(x) = \frac{a_0}{2} + \sum_{K=1}^n \left(a_k \cdot \cos(kx) + b_k \cdot \sin(Kx)\right)} \]
 
 \subsection{Koeffizienten für die Periode $2\pi$}
-\[ \boxed{a_n = \frac{1}{\pi} \int_0^{2 \pi} f(x) \cos(nx) dx} \]
-\[ \boxed{b_n = \frac{1}{\pi} \int_0^{2 \pi} f(x) \sin(nx) dx} \]
+\[ \boxed{a_k = \frac{1}{\pi} \int_0^{2 \pi} f(x) \cos(nx) dx} \]
+\[ \boxed{b_k = \frac{1}{\pi} \int_0^{2 \pi} f(x) \sin(nx) dx} \]
 \[ \boxed{a_0 = \frac{1}{\pi} \int_0^{2 \pi} f(x) dx
 } \]
 Ist $f$ eine ungerade Funktion d.h. $f(-x) = -f(x)$, so gilt, da der $\cos(x)$ eine gerade Funktion ist: 
