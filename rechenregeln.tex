@@ -91,10 +91,10 @@ Beispiel:
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.9\textwidth]{einheitskreis.pdf}
+\includegraphics[width=0.8\textwidth]{einheitskreis.pdf}
 \end{figure}
 
-\newpage
+% \newpage
 \noindent
 $H$: Hypotenuse\\
 $A$: Ankathete\\
@@ -179,7 +179,7 @@ $G$: Gegenkathete
 \rowcolor{white} 360^\circ&=&2 \pi            &                      0&                      1&                      0&          \text{n. def}\\
 \end{array}} \]
 
-
+\newpage
 \subsection{Quadratische Gleichung}
 \[ \boxed{f(x) = a \cdot x^2 + b \cdot x + c} \]
 \[ \boxed{x_{1,2}=\frac{-b\pm\sqrt{b^2-4ac}}{2a}} \]
@@ -223,7 +223,6 @@ Vereinfacht man diesen Ausdruck durch elementare Algebra so erhält man: \\\\
 \smash{\underbrace{\frac{1}{n^2}}_0 } \vphantom{\dfrac{1}{n^2}} } \right) $\\\\\\
 Der Audruck $\frac{1}{n^2}$ geht für $n \rightarrow \infty$ zu $0$. Daraus ergibt sich das folgende:\\\\\\
 \indent \indent \indent $ \alpha \cdot 1 = \alpha $
-
 \ifti
 \subsubsection{Berechnung von Grenzwerten mit dem TI-89}\label{subsubsec:limti}
 %limit($a_n$, $n$, $\infty)$
@@ -238,6 +237,9 @@ Der Audruck $\frac{1}{n^2}$ geht für $n \rightarrow \infty$ zu $0$. Daraus ergi
 \end{tabular}\\\\
 Bsp.: \verb| limit((x^2-2)/(x-2),x,2,-1)| \\
 \indent\indent erzeugt die Ausgabe $\mathtt{ \lim\limits_{x \rightarrow 2^-} (\dfrac{x^2-2}{x-2}) \quad = \quad - \infty } $
+\fi
+\iftiboth
+\newpage
 \fi
 \ifnspire
 \subsubsection{Berechnung von Grenzwerten mit dem TI-Nspire}\label{subsubsec:limnspire}
