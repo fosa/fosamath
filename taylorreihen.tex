@@ -68,8 +68,17 @@ eine Potenzreihe konvergiert. Der Begriff Radius ist dabei ein Skalar auf $\Omeg
 \[ \boxed{\sinh(x) = \sum_{K=0}^{\infty} \frac{x^{2K+1}}{(2K+1)!}} \]
 
 \subsection{Binomische Reihe}
+\[ \boxed{(1 + x)^\alpha = \sum_{K=0}^{\infty}\left(\begin{matrix}\alpha\\K\end{matrix}\right)x^k } \]
+Den Ausdruck \( \left(\begin{matrix}N\\K\end{matrix}\right) \) nennt man Binomialkoeffizient. Man kann ihn folgendermassen berechnen:
+\[ \boxed{\left(\begin{matrix}N\\K\end{matrix}\right) = \frac{N !}{K! \cdot (N - K)!}, N \in \mathbf{N}^{{}^{\ensuremath{\!+\!}}}_{}, K \in \mathbf{N}^{{}^{\ensuremath{\!+\!}}}_{} } \]
+
+\iftiboth
+Berechnung mit dem Taschenrechner:
+\begin{verbatim} ncr(N,K) \end{verbatim}
+\fi
+
+Da für ganzzahlige positive Zahlen \( \frac{N !}{K! \cdot (N - K)!} \) gilt, gilt für ganzzahlige positive N auch folgendes:
 \[ \boxed{(1 + x)^\alpha = \sum_{K=0}^{\infty}\left(\begin{matrix}\alpha\\K\end{matrix}\right)x^k = \sum_{K=0}^{\infty}\frac{\alpha !}{K! \cdot (\alpha - K)!}x^k} \]
-\[ \boxed{\left(\begin{matrix}\alpha\\K\end{matrix}\right) = \frac{\alpha !}{K! \cdot (\alpha - K)!}, \alpha \in \mathbf{N}^{{}^{\ensuremath{\!+\!}}}_{} } \]
 
 \subsection{Kochrezept Taylorreihen}
 \begin{enumerate}
