@@ -3,6 +3,11 @@
 *.toc
 *.out
 *.tmp
+IMG*
+fosa_main.pdf
+fosa_main_ti89.pdf
+fosa_main_tiboth.pdf
+fosa_main_tinspire.pdf
 autobuild/build/*
 autobuild/tmp/*
 autobuild/latestversion
