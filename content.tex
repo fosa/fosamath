@@ -16,30 +16,36 @@
 %----------------------------------------
 
 % coding:utf-8
-\documentclass[a5paper,10pt,fleqn]{book}
+\maketitle
 
-\usepackage{fosa_layout}
+\include{about}
 
-\setboolean{ti}{true}        % Anleitung für TI-89
-%\setboolean{nspire}{true}    % Anleitung für TI-Nspire CAS
-%\setboolean{tiboth}{true}    % Anleitung für beide TR (Nur für Titelseite relevant)
+\tableofcontents
 
-\title{Formelsammlung Mathematik}
-\ifti
-\title{Formelsammlung Mathematik \\ Mit Anleitung zu TI-89}
-\fi
-\ifnspire
-\title{Formelsammlung Mathematik \\ Mit Anleitung zu TI-Nspire}
-\fi
-\iftiboth
-\title{Formelsammlung Mathematik \\ Mit Anleitung zu TI-89 und TI-Nspire CAS}
-\fi
+\chapter{Rechenregeln}
+\include{rechenregeln}
+\include{darstellung}
 
-\author{Daniel Winz\\Ervin Mazlagic\\Adrian Imboden\\Philipp Langer}
-\date{\today~\dtc}
+\chapter{Vektorgeometrie}
+\include{vektorgeometrie}
 
+\chapter{Folgen und Reihen}
+\include{folgen}
+\include{reihen}
 
-\begin{document}
-\input{content}
-\end{document}
+\chapter{Differenzieren}
+\include{ableitungsregeln}
+\include{kurvendiskussion}
+\include{kurven}
+
+\chapter{Integral}
+\include{integral}
+\include{integrationsregeln}
+\include{abl_int_spez_funk}
+
+\chapter{Taylorreihen}
+\include{taylorreihen}
+
+\chapter{Fourierreihen}
+\include{fourierreihen}
 
