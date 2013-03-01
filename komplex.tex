@@ -18,14 +18,35 @@
 % coding:utf-8
 \section{Definition komplexe Zahlen}
 Eine komplexe Zahl ist ein Vektor mit einer Komponente im realen Teil und 
-einer Komponente im imagin�ren Teil. 
+einer Komponente im imaginären Teil. 
 
 \section{Darstellung von komplexen Zahlen}
-
 \subsection{Gausssche Zahlenebene}
+Komplexe Zahlen können nicht auf dem Zahlenstrahl abgebilder werden. Daher wird 
+dafür die gausssche Zahlenebene eingeführt. Das ist ein Koordinatensystem. Auf 
+der x-Achse liegt der normale Zahlenstrahl. Auf der y-Achse wird die imaginäre 
+Achse gelegt. 
+\\
+\begin{tikzpicture}[domain=-4:4]
+  % Raster
+  \draw[very thin,color=gray] (-3.9,-2.9) grid (3.9,2.9);
+  % x-Achse
+  \draw[->] (-4.2,0) -- (4.2,0) node[right] {$Re$};
+  % y-Achse
+  \draw[->] (0,-3.2) -- (0,3.2) node[above] {$Im$};
+  % Linien, Pfeile
+  \draw[-latex] (0,0) -- (3,2) node[right] {$3+2j$};
+  % Funktionen
+%   \draw[color=red] plot (\x,0.5*\x) node[right] {$f(x) =0.5x$};
+%   \draw[color=blue] plot (\x,{sin(\x r)}) node[right] {$f(x) = \sin x$};
+%   \draw[color=orange] plot (\x,{0.05*exp(\x)}) node[right] {$f(x) = \frac{1}{20} \mathrm e^x$};
+\end{tikzpicture}
 
 \subsection{Polardarstellung}
 
+
 \subsection{Exponentialform}
 
+
 \section{Rechenregeln}
+
