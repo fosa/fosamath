@@ -35,15 +35,43 @@ Achse gelegt.
   % y-Achse
   \draw[->] (0,-3.2) -- (0,3.2) node[above] {$Im$};
   % Linien, Pfeile
-  \draw[-latex] (0,0) -- (3,2) node[right] {$3+2j$};
+  \draw[-latex] (0,0) -- (3,2) node[right] {$a+bj$};
+  \draw[-latex] (3,0) -- (3,2);
+  \draw[-latex] (0,2) -- (3,2);
+  % unabhängige Beschriftungen
+  \node at (1.5,2.2) {a};
+  \node at (3.2,1) {b};
   % Funktionen
 %   \draw[color=red] plot (\x,0.5*\x) node[right] {$f(x) =0.5x$};
 %   \draw[color=blue] plot (\x,{sin(\x r)}) node[right] {$f(x) = \sin x$};
 %   \draw[color=orange] plot (\x,{0.05*exp(\x)}) node[right] {$f(x) = \frac{1}{20} \mathrm e^x$};
-\end{tikzpicture}
+\end{tikzpicture}\\
+Eine Komplexe Zahl wird dabei in der Form $a+bj$ dargestellt, wobei $a, b \in \mathbb{R}$. 
 
 \subsection{Polardarstellung}
-
+Bei der Polardarstellung wird eine Komplexe Zahl nicht mehr mittels der realen 
+und imaginären Komponenten dargestellt. Stattdessen wird die Position der Zahl 
+in der gaussschen Zahlenebene durch den Abstand vom Nullpunkt und den Winkel 
+gegenüber der Horizontalen definiert. 
+\\
+\begin{tikzpicture}[domain=-4:4]
+  % Raster
+  \draw[very thin,color=gray] (-3.9,-2.9) grid (3.9,2.9);
+  % x-Achse
+  \draw[->] (-4.2,0) -- (4.2,0) node[right] {$Re$};
+  % y-Achse
+  \draw[->] (0,-3.2) -- (0,3.2) node[above] {$Im$};
+  % Linien, Pfeile
+  \draw[-latex] (0,0) -- (3,2) node[right] {$r \cdot \cis(\varphi)$};
+  \draw[-latex] (1,0) arc (0:33.7:1);
+  % unabhängige Beschriftungen
+  \node at (1.2,0.3) {$\varphi$};
+  \node at (1.5,1.3) {$r$};
+  % Funktionen
+%   \draw[color=red] plot (\x,0.5*\x) node[right] {$f(x) =0.5x$};
+%   \draw[color=blue] plot (\x,{sin(\x r)}) node[right] {$f(x) = \sin x$};
+%   \draw[color=orange] plot (\x,{0.05*exp(\x)}) node[right] {$f(x) = \frac{1}{20} \mathrm e^x$};
+\end{tikzpicture}\\
 
 \subsection{Exponentialform}
 
