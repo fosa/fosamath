@@ -73,6 +73,14 @@ gegenüber der Horizontalen definiert.
 %   \draw[color=orange] plot (\x,{0.05*exp(\x)}) node[right] {$f(x) = \frac{1}{20} \mathrm e^x$};
 \end{tikzpicture}\\
 
+\subsubsection{Umrechnung Kartesisch $\rightarrow$ Polar}
+\[ \boxed{r = \sqrt{x^2 + y^2}} \]
+\[ \boxed{\varphi = \arctan{\left(\frac{y}{x}\right)}} \]
+
+\subsubsection{Umrechnung Polar $\rightarrow$ Kartesisch}
+\[ \boxed{x = r \cdot \cos(\varphi)} \]
+\[ \boxed{y = r \cdot \sin(\varphi)} \]
+
 \subsection{Exponentialform}
 
 
@@ -92,3 +100,23 @@ umgeformt werden.
 
 \subsubsection{Spezialfall}
 \[ \boxed{\frac{1}{z} = \frac{1}{r} \cdot \cis(-\varphi)} \]
+
+% \subsubsection{Geometrisch}
+% \begin{tikzpicture}[domain=-4:4]
+%   % Raster
+%   \draw[very thin,color=gray] (-3.9,-2.9) grid (3.9,2.9);
+%   % x-Achse
+%   \draw[->] (-4.2,0) -- (4.2,0) node[right] {$Re$};
+%   % y-Achse
+%   \draw[->] (0,-3.2) -- (0,3.2) node[above] {$Im$};
+%   % Linien, Pfeile
+%   \draw[-latex] (0,0) -- (3,2) node[right] {$r \cdot \cis(\varphi)$};
+%   \draw[-latex] (1,0) arc (0:33.7:1);
+%   % unabhängige Beschriftungen
+%   \node at (1.2,0.3) {$\varphi$};
+%   \node at (1.5,1.3) {$r$};
+%   % Funktionen
+%    %\draw[color=red] plot (\x,0.5*\x) node[right] {$f(x) =0.5x$};
+%    %\draw[color=blue] plot (\x,{sin(\x r)}) node[right] {$f(x) = \sin x$};
+%    %\draw[color=orange] plot (\x,{0.05*exp(\x)}) node[right] {$f(x) = \frac{1}{20} \mathrm e^x$};
+% \end{tikzpicture}\\
