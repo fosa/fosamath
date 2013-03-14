@@ -102,16 +102,16 @@ Für die Multiplikation / Division von komplexen Zahlen ist es am einfachsten,
 wenn diese in der polaren Darstellung vorliegen. Wenn nicht, müssen sie 
 umgeformt werden. 
 \[ \boxed{z_1 \cdot z_2 = r_1 \cdot r_2 \cdot \cis(\varphi_1 + \varphi_2)} \]
-\[ \boxed{e^{z_1} \cdot e^{z_2} = e^{z_1 + z_2} 
-\qquad \text{für alle }z_1, z_2 \in \mathbb{C}} \]
+\[ \boxed{z_1 \cdot z_2 = r_1 \cdot r_2 \cdot e^{j (\varphi_1 + \varphi_2)}} \]
 
 \subsection{Division}
 \[ \boxed{\frac{z_1}{z_2} = \frac{z_1}{z_2} \cdot \cis(\varphi_1 - \varphi_2)} \]
-\[ \boxed{\frac{e^{z_1}}{e^{z_2}} = e^{z_1 - z_2} 
-\qquad \text{für alle }z_1, z_2 \in \mathbb{C}} \]
+\[ \boxed{\frac{z_1}{z_2} = \frac{r_1}{r_2} \cdot e^{j (\varphi_1 - \varphi_2)}} \]
 
 \subsubsection{Spezialfall}
 \[ \boxed{\frac{1}{z} = \frac{1}{r} \cdot \cis(-\varphi)} \]
+\[ \boxed{\frac{1}{e^{j \varphi}} = e^{-j\varphi}} \]
+\[ \boxed{\overline{r e^{j\varphi}} = r e^{-j\varphi}} \]
 
 % \subsubsection{Geometrisch}
 % \begin{tikzpicture}[domain=-4:4]
@@ -136,6 +136,8 @@ umgeformt werden.
 \subsection{Potenzieren}
 \[ \boxed{z^n = r^n \cdot \cis(n \cdot \varphi)} 
 \qquad \text{Formel von Moivre} \]
+\[ \boxed{\left( r e^{j \varphi} \right)^n = r^n \cdot e^{j n \varphi} 
+\qquad , n \in \mathbb{Z}} \]
 
 \subsubsection{Potenzgesetze}
 \[ \boxed{\begin{array}{l}
@@ -156,3 +158,7 @@ z^{-n} = \dfrac{1}{z^n}\\\\
 \[ \boxed{\sqrt[n]{z} 
 = \sqrt[n]{r}\cis\left(\frac{\varphi}{n} + k \cdot \frac{2 \pi}{n}\right) 
 \qquad , k = 0, 1, \ldots, n-1} \]
+\[ \boxed{\sqrt[n]{r e^{j \varphi}} 
+= \left( r e^{j \varphi} \right)^{\frac{1}{n}} 
+= r^{\frac{1}{n}} \cdot e^{\frac{j \varphi}{n} + j \frac{2 \pi}{n}k} 
+\qquad , k = 0,\ldots, n - 1} \]
