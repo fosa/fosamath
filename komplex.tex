@@ -44,7 +44,7 @@ Achse gelegt.
   % Funktionen
 %   \draw[color=red] plot (\x,0.5*\x) node[right] {$f(x) =0.5x$};
 %   \draw[color=blue] plot (\x,{sin(\x r)}) node[right] {$f(x) = \sin x$};
-%   \draw[color=orange] 7t plot (\x,{0.05*exp(\x)}) node[right] {$f(x) = \frac{1}{20} \mathrm e^x$};
+%   \draw[color=orange] plot (\x,{0.05*exp(\x)}) node[right] {$f(x) = \frac{1}{20} \mathrm e^x$};
 \end{tikzpicture}
 \end{center}
 Eine komplexe Zahl wird dabei in der Form $a+bj$ dargestellt, wobei 
@@ -138,8 +138,10 @@ umgeformt werden.
 \[ \boxed{z_1 \cdot z_2 = r_1 \cdot r_2 \cdot e^{j (\varphi_1 + \varphi_2)}} \]
 
 \subsection{Division}
-\[ \boxed{\frac{z_1}{z_2} = \frac{z_1}{z_2} \cdot \cis(\varphi_1 - \varphi_2)} \]
-\[ \boxed{\frac{z_1}{z_2} = \frac{r_1}{r_2} \cdot e^{j (\varphi_1 - \varphi_2)}} \]
+\[ \boxed{\frac{z_1}{z_2} 
+= \frac{z_1}{z_2} \cdot \cis(\varphi_1 - \varphi_2)} \]
+\[ \boxed{\frac{z_1}{z_2} 
+= \frac{r_1}{r_2} \cdot e^{j (\varphi_1 - \varphi_2)}} \]
 
 \subsubsection{Spezialfall}
 \[ \boxed{\frac{1}{z} = \frac{1}{r} \cdot \cis(-\varphi)} \]
