@@ -22,8 +22,10 @@ $S_n$ ist die Summe aller Glieder von $a_1$ bis $a_n$.
 
 \subsection{arithmetische Reihe}
 \[ \boxed{\begin{matrix}
-a_0 :&S_n = \left(n + 1\right)\left(a_0 + d \dfrac{n}{2}\right) = \left(n + 1\right) \dfrac{a_0 + a_n}{2}\\\\
-a_1 :&S_n = n \cdot \left(a_1 + d \cdot \dfrac{n - 1}{2}\right) = n \cdot \dfrac{a_1 + a_n}{2}
+a_0 :&S_n = \left(n + 1\right)\left(a_0 + d \dfrac{n}{2}\right) 
+= \left(n + 1\right) \dfrac{a_0 + a_n}{2}\\\\
+a_1 :&S_n = n \cdot \left(a_1 + d \cdot \dfrac{n - 1}{2}\right) 
+= n \cdot \dfrac{a_1 + a_n}{2}
 \end{matrix}} \]
 
 \subsection{geometrische Reihe}
@@ -41,10 +43,12 @@ a_1 :& S_n = a_1 \left(1+1^1 + 1^2 + \ldots + 1^{n-1}\right) = a_1 \cdot n
 \end{array}} \]
 
 Unendliche geometrische Reihe
-\[ \boxed{\text{Für } |q| < 1: S = \lim_{n \rightarrow \infty} S_n = \frac{a_1}{1 - q}} \] 
+\[ \boxed{\text{Für } |q| < 1: S = \lim_{n \rightarrow \infty} S_n 
+= \frac{a_1}{1 - q}} \] 
 %Um das $n$-te Glied einer geometrischen Reihen zu berechnen gilt:\\
 %$ q = \frac{a_n}{a_{n-1}} = \frac{a_{n-1}}{a_{n-2}} $ \\
-%$ \Rightarrow  a_n = a_{(n-1)} \cdot q = a_{(n-2)} \cdot q^2 = a_{(n - (n-1))} \cdot q^{(n-1)} = a_1 \cdot q^{(n-1)} $
+%$ \Rightarrow  a_n = a_{(n-1)} \cdot q = a_{(n-2)} \cdot q^2 
+% = a_{(n - (n-1))} \cdot q^{(n-1)} = a_1 \cdot q^{(n-1)} $
 %\[ \boxed{ a_n = a_1 \cdot q^{n-1} } \]
 %\[ \boxed{ a_{n+1} = a_1 \cdot q^n } \]
 $a_1$ ist hier das erste Element der geometrischen Folge!
@@ -53,7 +57,8 @@ $a_1$ ist hier das erste Element der geometrischen Folge!
 
 \subsubsection*{Quotientenkriterium}
 Um die Konvergenzfrage einer geometrischen Reihe zu klären betrachtet man
-\[\boxed{ \lim\limits_{n \rightarrow \infty} \left| \frac{a_{n+1}}{a_n} \right| = \lim\limits_{n \rightarrow \infty} \left| q \right|} \]
+\[\boxed{ \lim\limits_{n \rightarrow \infty} \left| \frac{a_{n+1}}{a_n} \right| 
+= \lim\limits_{n \rightarrow \infty} \left| q \right|} \]
 Hierbei können drei verschiedene Ergebnisse entstehen:
 \[ \boxed{\begin{array}{ll}
 |q| < 1 & \text{die Reihe konvergiert} \\
@@ -63,8 +68,10 @@ Hierbei können drei verschiedene Ergebnisse entstehen:
 Dies wird als Quotientenkriterium bezeichnet.
 
 \subsubsection*{Wurlzelkrierium}
-Eine weitere Methode zur Klärung der Konvergenzfrage liefert das so genannte Wurzelkriterium.
-\[\boxed{ \lim\limits_{n \rightarrow \infty} \left( |a_k| \right)^{\frac{1}{n}} = q }\]
+Eine weitere Methode zur Klärung der Konvergenzfrage liefert das so genannte 
+Wurzelkriterium.
+\[\boxed{ \lim\limits_{n \rightarrow \infty} \left( |a_k| \right)^{\frac{1}{n}} 
+= q }\]
 Daraus können wie beim Quotientenkriterium drei Fälle eintreten:
 \[ \boxed{\begin{array}{ll}
 |q| < 1 & \text{die Reihe konvergiert} \\
@@ -93,5 +100,6 @@ $\boxed{K}$     & Variable      & bezeichnet die inkrementierte Variable \\
 $\boxed{0}$    & untere Grenze & Anfangspunkt der Inkrementierung \\
 $\boxed{n}$ & obere Grenze  & Endpunkt der Inkrementierung \\
 \end{tabular}\\\\
-Dieses Symbol findet man nach Druck auf die Taste $\boxed{\boxed{|\boxed{}|\left\{\frac{\boxed{}}{\boxed{}}\right.}}$
+Dieses Symbol findet man nach Druck auf die Taste 
+$\boxed{\boxed{|\boxed{}|\left\{\frac{\boxed{}}{\boxed{}}\right.}}$
 \fi
