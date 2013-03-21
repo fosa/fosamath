@@ -23,8 +23,9 @@
 
 \subsection{Stetigkeit}
 Eine Funktion wird als stetig bezeichnet, wenn die Funktion keine 
-Sprungstellen\footnote{Salopp gesagt heisst dies, dass die Funktion ohne Absetzten des Stiftes gezeichnet werden kann.}
-hat (für das MATH-Modul ist diese Definition ausreichend).
+Sprungstellen\footnote{Salopp gesagt heisst dies, dass die Funktion ohne 
+Absetzten des Stiftes gezeichnet werden kann.} hat 
+(für das MATH-Modul ist diese Definition ausreichend).
 
 \subsection{Differenzierbarkeit}
 Der Begriff Differenzierbarkeit sagt aus, dass wenn eine Funktion
@@ -62,28 +63,41 @@ $\left(\frac{\alpha \cdot x}{\xi}\right)' =
 \subsubsection{Faktorregel}
 % \[ \boxed{ (c \cdot f(x))' = c \cdot f'(x) } \]
 \[ \boxed{ (c \cdot u(x))' = c \cdot u'(x) } \]
-\[ \text{Ein konstanter Faktor bleibt beim Differenzieren (Ableiten) erhalten!} \]
+\[ \text{Ein konstanter Faktor bleibt beim Differenzieren (Ableiten) 
+erhalten!} \]
 
 \subsubsection{Produkteregel}
 % \[ \boxed{ (f(x) \cdot g(x))' = f'(x) \cdot g(x) + f(x) \cdot g'(x) } \]
 \[ \boxed{ (u(x) \cdot v(x))' = u'(x) \cdot v(x) + u(x) \cdot v'(x) } \]
 
 \subsubsection{Quotientenregel}
-% \[ \boxed{ \left( \frac{f(x)}{g(x)} \right)' = \frac{ f'(x) \cdot g(x) - f(x) \cdot g'(x) }{ g^2(x) } } \\ \text{ gilt falls }g(x) \neq 0 \text{ !} \]
-\[ \boxed{ \left( \frac{u(x)}{v(x)} \right)' = \frac{ u'(x) \cdot v(x) - u(x) \cdot v'(x) }{ v^2(x) } } \\ \text{ gilt falls }v(x) \neq 0 \text{ !} \]
+% \[ \boxed{ \left( \frac{f(x)}{g(x)} \right)' 
+% = \frac{ f'(x) \cdot g(x) - f(x) \cdot g'(x) }{ g^2(x) } } \\ 
+% \text{ gilt falls }g(x) \neq 0 \text{ !} \]
+\[ \boxed{ \left( \frac{u(x)}{v(x)} \right)' 
+= \frac{ u'(x) \cdot v(x) - u(x) \cdot v'(x) }{ v^2(x) } } \\
+\text{ gilt falls }v(x) \neq 0 \text{ !} \]
 
 \subsubsection{Kettenregel}
 % \[ \boxed{ (f(g(x)))' = g'(x) \cdot f'(g(x)) } \]
 \[ \boxed{ (u(v(x)))' = v'(x) \cdot u'(v(x)) } \]
 
-\subsection{Ableitung von Kurven in Parameterdarstellung}\label{subsec:ableitungsregeln}
-\[ \boxed{\gamma(t) = \left(\begin{matrix}x(t)\\y(t)\end{matrix}\right) \qquad \Rightarrow \qquad \dot{\gamma}(t) = \left(\begin{matrix}\dot{x}(t)\\\dot{y}(t)\end{matrix}\right)} \]
-Falls $\gamma$ keine vertikalen Tangenten besitzt, so kann man die Spur von $\gamma$ (d.h. das Schaubild) lokal als Graph einer differenzierbar reellwertigen Funktion auffassen. Wir können also schreiben 
+\subsection{Ableitung von Kurven in Parameterdarstellung}
+\label{subsec:ableitungsregeln}
+\[ \boxed{\gamma(t) = \left(\begin{matrix}x(t)\\y(t)\end{matrix}\right) 
+\qquad \Rightarrow \qquad \dot{\gamma}(t) = \left(\begin{matrix}\dot{x}(t)\\
+\dot{y}(t)\end{matrix}\right)} \]
+Falls $\gamma$ keine vertikalen Tangenten besitzt, so kann man die Spur von 
+$\gamma$ (d.h. das Schaubild) lokal als Graph einer differenzierbar 
+reellwertigen Funktion auffassen. Wir können also schreiben 
 \[ y(x(t)) = y(t) \]
 und damit gilt: 
-\[ \frac{d}{dt}y(x(t)) = \frac{d}{dt}y(t), ~\Leftrightarrow~ y'(x(t)) \dot{x}(t) = \dot{y}(t), ~\Leftrightarrow~ y'(x(t)) = \frac{\dot{y}(t)}{\dot{x}(t)} \]
+\[ \frac{d}{dt}y(x(t)) = \frac{d}{dt}y(t), ~\Leftrightarrow~ y'(x(t)) 
+\dot{x}(t) = \dot{y}(t), ~\Leftrightarrow~ y'(x(t)) 
+= \frac{\dot{y}(t)}{\dot{x}(t)} \]
 
-% \[ \boxed{\frac{d}{dt}\left(\begin{matrix}x(t)\\y(t)\end{matrix}\right) = \frac{\dot{y}(t)}{\dot{x}(t)}} \]
+% \[ \boxed{\frac{d}{dt}\left(\begin{matrix}x(t)\\y(t)\end{matrix}\right) 
+% = \frac{\dot{y}(t)}{\dot{x}(t)}} \]
 
 
 \subsection{Implizites Ableiten}
@@ -91,22 +105,35 @@ Eine implizite Funktion F ist definiert durch das Nullstellengebilde
 \[ F(x,y) = 0 \]
 Manchmal\footnote{für uns immer} kann man eine Funktion $f(x) = (y(x))$ finden. 
 \[ F(x, f(x)) = 0 \]
-Soll nun eine Tangente an diese Funktion gelegt werden, kann auch hier die Tangentengleichnung (\ref{subsec:tangentengleichung}) angewendet werden. 
+Soll nun eine Tangente an diese Funktion gelegt werden, kann auch hier die 
+Tangentengleichnung (\ref{subsec:tangentengleichung}) angewendet werden. 
 \[ T(x) = f'(x_0)(x - x_0) + f(x_0) \]
-$x_0$ und $f(x_0)$ sind durch den Punkt, an welchem die Tangente angelegt werden soll vorgegeben. Um $f'(x_0)$ zu erhalten muss die Funktion nach x abgeleitet werden. Dafür ist y als $f(x)$ zu betrachten und die Kettenregel anzuwenden. Anschliessend wird die erhaltene Gleichung nach $f'(x)$ aufgelöst und kann dann in die Tangentengleichnung eingesetzt werden. 
+$x_0$ und $f(x_0)$ sind durch den Punkt, an welchem die Tangente angelegt 
+werden soll vorgegeben. Um $f'(x_0)$ zu erhalten muss die Funktion nach x 
+abgeleitet werden. Dafür ist y als $f(x)$ zu betrachten und die Kettenregel 
+anzuwenden. Anschliessend wird die erhaltene Gleichung nach $f'(x)$ aufgelöst 
+und kann dann in die Tangentengleichnung eingesetzt werden. 
 
-% Implizite Gleichungen bzw. Funktionen sind Funktionen welche die Form $x^a + d x y + y^b + c= 0$ haben.
-% Gegenüber der expliziten Form $f(x)=y=...$ ist $y$ selbst als Funktion von $x$ definiert.\\\\
-% Bsp.: Aus einer implizit formulierten Gleichung eine Tangente an einem bestimmten Punkt legen.
-% \[ x^a + d x y + y^b + c = 0, \quad T_{(x_0)} = f'(x_0)(x-x_0)+f(x_0), \quad P(x_p|y_p) \]
+% Implizite Gleichungen bzw. Funktionen sind Funktionen welche die Form 
+% $x^a + d x y + y^b + c= 0$ haben.
+% Gegenüber der expliziten Form $f(x)=y=...$ ist $y$ selbst als Funktion von 
+% $x$ definiert.\\\\
+% Bsp.: Aus einer implizit formulierten Gleichung eine Tangente an einem 
+% bestimmten Punkt legen.
+% \[ x^a + d x y + y^b + c = 0, \quad T_{(x_0)} = f'(x_0)(x-x_0)+f(x_0), 
+% \quad P(x_p|y_p) \]
 % Zuerst muss der Ausdruck $y$ durch $y(x)$ ersetzt werden.
 % \[ x^a + d x y + y(x)^b = 0\]
 % Danach kann abgeleitet und nach $y'(x)$ aufgelöst werden.
 % \[ \begin{array}{lll@{\quad}}
-% ax^{a-1} + d\Big(y(x) + xy'(x)\Big) + y'(x)by(x)^{b-1} =0 & |& \text{ausklammern} \\ 
-% ax^{a-1} + dy(x) + axy'(x) + y'(x)by(x)^{b-1} =0          & |& -ax^{a-1} - dy(x) \\
-% dxy'(x) + y'(x) by(x)^{b-1} = -ax^{a-1} - dy(x)           & |& y'(x) \text{ ausklammern } \\
-% y'(x) \cdot (dx + by^{b-1}) = -ax^{a-1} - dy(x)           & |& \div (dx+by^{b-1}) \\
+% ax^{a-1} + d\Big(y(x) + xy'(x)\Big) + y'(x)by(x)^{b-1} =0 & |
+% & \text{ausklammern} \\ 
+% ax^{a-1} + dy(x) + axy'(x) + y'(x)by(x)^{b-1} =0          & |
+% & -ax^{a-1} - dy(x) \\
+% dxy'(x) + y'(x) by(x)^{b-1} = -ax^{a-1} - dy(x)           & |
+% & y'(x) \text{ ausklammern } \\
+% y'(x) \cdot (dx + by^{b-1}) = -ax^{a-1} - dy(x)           & |
+% & \div (dx+by^{b-1}) \\
 % y'(x) = \dfrac{-ax^{a-1} - dy(x)}{dx + by^{b-1}}          &  & \\
 % \end{array} \]
 % Nun kann man die Tangentengleichung bilden:
@@ -121,7 +148,11 @@ $d$\verb?(EXPR,VAR[,ORDER])?\\\\
 \verb?VAR?	& Variable	& bezeichnet die Variable nach der abgeleitet wird \\
 \verb?ORDER?	& Ordnung	& bezeichnet den Grad der Ableitung \\
 \end{tabular}\\\\
-Bsp.: Man will die erste Ableitung von $(2x^2 + 1)$. Über die Taste \verb?CATALOG? gelangt man in die Auswahl, tippt \verb?d? an für \textit{differentiate} und wählt es per \verb?ENTER? aus. Danach gibt man die verlangten Angaben an: $d$\verb?(2x^2+1)? erzeugt die Ausgabe \verb?4?$\cdot$\verb?x?
+Bsp.: Man will die erste Ableitung von $(2x^2 + 1)$. Über die Taste 
+\verb?CATALOG? gelangt man in die Auswahl, tippt \verb?d? an für 
+\textit{differentiate} und wählt es per \verb?ENTER? aus. Danach gibt man die 
+verlangten Angaben an: $d$\verb?(2x^2+1)? erzeugt die Ausgabe 
+\verb?4?$\cdot$\verb?x?
 \fi
 \ifnspire
 \subsection{Ableiten mit dem TI-Nspire}
@@ -131,7 +162,8 @@ $f(x)$	& Ausdruck	& bezeichnet den Term der abgeleitet werden soll \\
 $x$	& Variable	& bezeichnet die Variable nach der abgeleitet wird \\
 $n$	& Ordnung	& bezeichnet den Grad der Ableitung (Optional) \\
 \end{tabular}\\\\
-Dieses Symbol findet man nach Druck auf die Taste $\boxed{\boxed{|\boxed{}|\left\{\frac{\boxed{}}{\boxed{}}\right.}}$
+Dieses Symbol findet man nach Druck auf die Taste 
+$\boxed{\boxed{|\boxed{}|\left\{\frac{\boxed{}}{\boxed{}}\right.}}$
 \fi
 
 \subsection{Spezielle Regeln}
@@ -153,10 +185,14 @@ Dieses Symbol findet man nach Druck auf die Taste $\boxed{\boxed{|\boxed{}|\left
 % \[ \boxed{ (\cot(x))' = -\frac{1}{\sin^2(x)} } \]
 
 \[ \boxed{ \begin{array}{ l @{}l @{\quad\quad\quad}l @{}l }
-(\sin(x))' =   &\cos(x)             & \quad (\arcsin(x))' =   & \dfrac{1}{\sqrt{1 - x^2}} \\\\
-(\cos(x))' = - &\sin(x)             & \quad (\arccos(x))' = - & \dfrac{1}{\sqrt{1 - x^2}} \\\\
-(\tan(x))' =   &\dfrac{1}{\cos^2(x)} & \quad (\arctan(x))' =   & \dfrac{1}{1 + x^2} \\\\
-(\cot(x))' = - &\dfrac{1}{\sin^2(x)} & \quad (\arccot(x))' = - & \dfrac{1}{1 + x^2} 
+(\sin(x))' =   &\cos(x)             & \quad (\arcsin(x))' =   
+& \dfrac{1}{\sqrt{1 - x^2}} \\\\
+(\cos(x))' = - &\sin(x)             & \quad (\arccos(x))' = - 
+& \dfrac{1}{\sqrt{1 - x^2}} \\\\
+(\tan(x))' =   &\dfrac{1}{\cos^2(x)} & \quad (\arctan(x))' =   
+& \dfrac{1}{1 + x^2} \\\\
+(\cot(x))' = - &\dfrac{1}{\sin^2(x)} & \quad (\arccot(x))' = - 
+& \dfrac{1}{1 + x^2} 
 \end{array}} \]
 
 \subsubsection{Hyperbolicus}
