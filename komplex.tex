@@ -44,10 +44,12 @@ Achse gelegt.
   % Funktionen
 %   \draw[color=red] plot (\x,0.5*\x) node[right] {$f(x) =0.5x$};
 %   \draw[color=blue] plot (\x,{sin(\x r)}) node[right] {$f(x) = \sin x$};
-%   \draw[color=orange] plot (\x,{0.05*exp(\x)}) node[right] {$f(x) = \frac{1}{20} \mathrm e^x$};
+%   \draw[color=orange] 7t plot (\x,{0.05*exp(\x)}) node[right] {$f(x) = \frac{1}{20} \mathrm e^x$};
 \end{tikzpicture}
 \end{center}
-Eine Komplexe Zahl wird dabei in der Form $a+bj$ dargestellt, wobei $a, b \in \mathbb{R}$. 
+Eine komplexe Zahl wird dabei in der Form $a+bj$ dargestellt, wobei 
+$a, b \in \mathbb{R}$. 
+\[ z = \text{Re} + j \cdot \text{Im} \]
 
 \subsection{Polardarstellung}
 Bei der Polardarstellung wird eine Komplexe Zahl nicht mehr mittels der realen 
@@ -90,6 +92,32 @@ gegenüber der Horizontalen definiert.
 \subsubsection{Eulersche Formel}
 \[ \boxed{e^{j \varphi} = \cos(\varphi) + j \cdot \sin(\varphi)} \]
 \[ \boxed{e^{j \varphi} + 1 = 0} \]
+
+\subsection{Konjugiert komplex}
+Der konjugiert komplexe Wert einer komplexen Zahl wird durch das Spiegeln an 
+der x-Achse erreicht. 
+\[ \boxed{\overline{a + b j} = a - b j} \]
+\[ \boxed{\overline{r \cdot \cis(\varphi)} = r \cdot \cis(-\varphi)} \]
+\[ \boxed{\overline{r \cdot e^{j \varphi}} = r \cdot e^{-j \varphi}} \]
+\begin{center}
+\begin{tikzpicture}[domain=-4:4]
+  % Raster
+  \draw[very thin,color=gray] (-1.9,-2.9) grid (3.9,2.9);
+  % x-Achse
+  \draw[->] (-2.2,0) -- (4.2,0) node[right] {$Re$};
+  % y-Achse
+  \draw[->] (0,-3.2) -- (0,3.2) node[above] {$Im$};
+  % Linien, Pfeile
+  \draw[-latex] (0,0) -- (3,2) node[right] {$a+bj$};
+  \draw[-latex] (0,0) -- (3,-2) node[right] {$\overline{a+bj}$};
+%   \draw[-latex] (0,2) -- (3,2);
+  % unabhängige Beschriftungen
+  % Funktionen
+%   \draw[color=red] plot (\x,0.5*\x) node[right] {$f(x) =0.5x$};
+%   \draw[color=blue] plot (\x,{sin(\x r)}) node[right] {$f(x) = \sin x$};
+%   \draw[color=orange] 7t plot (\x,{0.05*exp(\x)}) node[right] {$f(x) = \frac{1}{20} \mathrm e^x$};
+\end{tikzpicture}
+\end{center}
 
 \section{Rechenregeln}
 
