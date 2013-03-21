@@ -18,20 +18,27 @@
 % coding:utf-8
 \section{Integrationsregeln}
 \subsection{Partielles Integrieren}
-\[ \boxed{\left. \int_a^b f'(x) \cdot g(x) dx = f(x) \cdot g(x) \right|_a^b - \int_a^b f(x) \cdot g'(x) dx} \]
-Hier muss für $g(x)$ jener Ausdruck eingesetzt werden, welcher sich durch wiederholtes Ableiten eliminieren lässt.\\
+\[ \boxed{\left. \int_a^b f'(x) \cdot g(x) dx = f(x) \cdot g(x) \right|_a^b - 
+\int_a^b f(x) \cdot g'(x) dx} \]
+Hier muss für $g(x)$ jener Ausdruck eingesetzt werden, welcher sich durch 
+wiederholtes Ableiten eliminieren lässt.\\
 Hinweis: Partielles integrieren verwendet man um einen Ausdruck zu eliminieren.
-Dieser Vorgang kann so oft wie nötig wiederholt werden um etwas zu eliminieren (um $x^2$ zu eliminieren muss zwei mal hintereinander partiell integriert werden).
+Dieser Vorgang kann so oft wie nötig wiederholt werden um etwas zu eliminieren 
+(um $x^2$ zu eliminieren muss zwei mal hintereinander partiell integriert 
+werden).
 \subsection{Substitutionsregel}
 \[ \boxed{\int_{g(a)}^{g(b)} f(x) dx = \int_{a}^{b} g'(x) \cdot f(g(x)) dx} \]
 
 \subsection{Summen integrieren}
-\[ \boxed{ \int \left( \sum_{K=a}^{b} (x)^K \right) dx= \sum_{K=a}^b \frac{(x)^{K+1}}{K+1} } \]
+\[ \boxed{ \int \left( \sum_{K=a}^{b} (x)^K \right) dx= \sum_{K=a}^b 
+\frac{(x)^{K+1}}{K+1} } \]
 
 \section{Volumen}
 \subsection{Rotationsvolumen}
-\[ \boxed{V_x = \pi \int_{x_1}^{x_2} f(x)^2 dx} \quad \text{Rotation um die x-Achse}\]
-\[ \boxed{V_y = \pi \int_{y_1}^{y_2} f^{-1}(y)^2 dy} \quad \text{Rotation um die y-Achse}\]
+\[ \boxed{V_x = \pi \int_{x_1}^{x_2} f(x)^2 dx} \quad 
+\text{Rotation um die x-Achse}\]
+\[ \boxed{V_y = \pi \int_{y_1}^{y_2} f^{-1}(y)^2 dy} \quad 
+\text{Rotation um die y-Achse}\]
 
 \section{Mittelwertsatz der Integralrechnung}
 \[ \boxed{\int_{a}^{b} f(x) dx = f(\xi)(b-a)} \]
@@ -40,19 +47,29 @@ Dieser Vorgang kann so oft wie nötig wiederholt werden um etwas zu eliminieren 
 \[ \boxed{S = \int_{a}^{b} \sqrt{1 + y'(x)^2} dx} \]
 
 \section{Bogenlänge für Kurven}
-\[ \boxed{S = \int_{t_1}^{t_2}\sqrt{\dot{x}^2 + \dot{y}^2} dt \quad ,\gamma(t) = \left(\begin{matrix}x(t)\\y(t)\end{matrix}\right), t_1, t_2 \in I} \]
+\[ \boxed{S = \int_{t_1}^{t_2}\sqrt{\dot{x}^2 + \dot{y}^2} dt \quad ,\gamma(t) 
+= \left(\begin{matrix}x(t)\\y(t)\end{matrix}\right), t_1, t_2 \in I} \]
 
 \section{Bogenlängen mit Polarkoordinaten}
-\[ \boxed{S = \int_{\varphi_1}^{\varphi_2}\sqrt{\dot{r}^2(\varphi) + r^2(\varphi)}d\varphi} \]
+\[ \boxed{S = \int_{\varphi_1}^{\varphi_2}\sqrt{\dot{r}^2(\varphi) + 
+¨r^2(\varphi)}d\varphi} \]
 
 \section{Mantelfläche}
-\[ \boxed{A_{M_x} = 2 \pi \int_{x_1}^{x_2}f(x) \sqrt{1 + f'(x)^2} dx} \quad \text{Rotation um die x-Achse} \]
-\[ \boxed{A_{M_y} = 2 \pi \int_{y_1}^{y_2}f^{-1}(y) \sqrt{1 + \frac{d}{dy}f^{-1}(y)^2} dy} \quad \text{Rotation um die y-Achse} \]
+\[ \boxed{A_{M_x} = 2 \pi \int_{x_1}^{x_2}f(x) \sqrt{1 + f'(x)^2} dx} \quad 
+\text{Rotation um die x-Achse} \]
+\[ \boxed{A_{M_y} = 2 \pi \int_{y_1}^{y_2}f^{-1}(y) \sqrt{1 + 
+\frac{d}{dy}f^{-1}(y)^2} dy} \quad \text{Rotation um die y-Achse} \]
 
 \section{Mantelfläche einer Kurve}
-\[ \boxed{A_{M_x} = 2 \pi \int_{t_1}^{t_2} y(t) \sqrt{\dot{x}^2 + \dot{y}^2}dt} \quad \text{Bei Rotation um die x-Achse} \]
-\[ \boxed{A_{M_y} = 2 \pi \int_{t_1}^{t_2} x(t) \sqrt{\dot{x}^2 + \dot{y}^2}dt} \quad \text{Bei Rotation um die y-Achse} \]
+\[ \boxed{A_{M_x} = 2 \pi \int_{t_1}^{t_2} y(t) \sqrt{\dot{x}^2 + \dot{y}^2}dt} 
+\quad \text{Bei Rotation um die x-Achse} \]
+\[ \boxed{A_{M_y} = 2 \pi \int_{t_1}^{t_2} x(t) \sqrt{\dot{x}^2 + \dot{y}^2}dt} 
+\quad \text{Bei Rotation um die y-Achse} \]
 
 \section{Mantelfläche im polaren Koordinatensystem}
-\[ \boxed{A_{M_x} = 2 \pi \int_{\varphi_1}^{\varphi_2}r(\varphi) \sin(\varphi)\sqrt{\dot{r}^2(\varphi) + r^2(\varphi)}} \quad \text{Bei Rotation um die x-Achse} \]
-\[ \boxed{A_{M_y} = 2 \pi \int_{\varphi_1}^{\varphi_2}r(\varphi) \cos(\varphi)\sqrt{\dot{r}^2(\varphi) + r^2(\varphi)}} \quad \text{Bei Rotation um die y-Achse} \]
+\[ \boxed{A_{M_x} = 2 \pi \int_{\varphi_1}^{\varphi_2}r(\varphi) \sin(\varphi)
+\sqrt{\dot{r}^2(\varphi) + r^2(\varphi)}} \quad 
+\text{Bei Rotation um die x-Achse} \]
+\[ \boxed{A_{M_y} = 2 \pi \int_{\varphi_1}^{\varphi_2}r(\varphi) \cos(\varphi)
+\sqrt{\dot{r}^2(\varphi) + r^2(\varphi)}} \quad 
+\text{Bei Rotation um die y-Achse} \]
