@@ -18,7 +18,8 @@
 % coding:utf-8
 \section{Potenzreihe}
 Ein Ausdruck der Form 
-\[ \boxed{f(x) = \sum_{K = 0}^{\infty} a_K x^K = a_0 + a_1 x + a_2 x^2 + a_3 x^3 \dots a_K x^K} \]
+\[ \boxed{f(x) = \sum_{K = 0}^{\infty} a_K x^K 
+= a_0 + a_1 x + a_2 x^2 + a_3 x^3 \dots a_K x^K} \]
 wird Potenzreihe genannt. 
 \[ \boxed{a_k = \frac{f^{(K)}(x_0)}{K!}} \]
 $f^{(K)}(x)$ ist dabei die K-te Ableitung von $f(x)$ gemeint. 
@@ -26,25 +27,36 @@ $f^{(K)}(x)$ ist dabei die K-te Ableitung von $f(x)$ gemeint.
 \subsection{Taylorreihe mit Entwicklungspunkt $x_0 \neq 0$}
 \[ \boxed{f(x) = \sum_{K=0}^{\infty}\frac{f^{(K)}(x_0)}{K!}\cdot (x-x_0)^K} \]
 $f^{(K)}(x)$ ist dabei die K-te Ableitung von $f(x)$ gemeint. 
-\[ \boxed{f(x) = \underbrace{\sum_{K=0}^{n}\frac{f^{(K)}(x_0)}{K!} (x - x_0)^K}_{T_{(n,x_0)}(x)} + \underbrace{\sum_{K=n+1}^{\infty}\frac{f^{(K)}(x_0)}{K!} (x - x_0)^K}_{R_{n+1}(x)}} \]
-$T_{(n,x_0)}(x)$ ist dabei das Taylorpolynom vom Grad n und $R_{n+1}(x)$ ist das Restglied. \\
-Für das Restglied gilt: Es gibt eine Zahl $\xi$ zwischen $x_0$ und $x$ so, dass gilt:
-\[ \boxed{R_{n+1} = \frac{f^{(n + 1)}(\xi)}{(n + 1)!} \cdot (x - x_0)^{n + 1}} \]
+\[ \boxed{f(x) = \underbrace{\sum_{K=0}^{n}\frac{f^{(K)}(x_0)}
+{K!} (x - x_0)^K}_{T_{(n,x_0)}(x)} + \underbrace{\sum_{K=n+1}^{\infty}
+\frac{f^{(K)}(x_0)}{K!} (x - x_0)^K}_{R_{n+1}(x)}} \]
+$T_{(n,x_0)}(x)$ ist dabei das Taylorpolynom vom Grad n und $R_{n+1}(x)$ ist 
+das Restglied. \\
+Für das Restglied gilt: Es gibt eine Zahl $\xi$ zwischen $x_0$ und $x$ so, dass 
+gilt:
+\[ \boxed{R_{n+1} = \frac{f^{(n + 1)}(\xi)}{(n + 1)!} \cdot (x - x_0)^{n + 1}}\]
 Dies ist eine Restgliedformel (Lagrangsche Darstellung für $R_{n + 1}$).
 
 \subsection{McLaurin-Reihe (Taylorreihe mit Entwicklungspunkt $x_0 = 0)$}
 Eine Taylorreihe mit Entwicklungspunkt $x_0 = 0$ wird MacLaurin-Reihe genannt
-\[ \boxed{f(x) = \underbrace{\sum_{K=0}^{\infty}\frac{f^{(K)}(0)}{K!} x^K}_{\text{Taylorreihe}}} \]
+\[ \boxed{f(x) = \underbrace{\sum_{K=0}^{\infty}
+\frac{f^{(K)}(0)}{K!} x^K}_{\text{Taylorreihe}}} \]
 $f^{(K)}(x)$ ist dabei die K-te Ableitung von $f(x)$ gemeint. 
-\[ \boxed{f(x) = \underbrace{\sum_{K=0}^{n}\frac{f^{(K)}(0)}{K!} x^K}_{T_{(n,x_0)}(x)} + \underbrace{\sum_{K=n+1}^{\infty}\frac{f^{(K)}(0)}{K!} x^K}_{R_{n+1}(x)}} \]
-$T_{(n,x_0)}(x)$ ist dabei das Taylorpolynom vom Grad n und $R_{n+1}(x)$ ist das Restglied. \\
-Für das Restglied gilt: Es gibt eine Zahl $\xi$ zwischen $x_0$ und $x$ so, dass gilt:
-\[ \boxed{R_{n+1} = \frac{f^{(n + 1)}(\xi)}{(n + 1)!} \cdot (x - x_0)^{n + 1}} \]
+\[ \boxed{f(x) = \underbrace{\sum_{K=0}^{n}
+\frac{f^{(K)}(0)}{K!} x^K}_{T_{(n,x_0)}(x)} + 
+\underbrace{\sum_{K=n+1}^{\infty}\frac{f^{(K)}(0)}{K!} x^K}_{R_{n+1}(x)}} \]
+$T_{(n,x_0)}(x)$ ist dabei das Taylorpolynom vom Grad n und $R_{n+1}(x)$ ist 
+das Restglied. \\
+Für das Restglied gilt: Es gibt eine Zahl $\xi$ zwischen $x_0$ und $x$ so, dass 
+gilt:
+\[ \boxed{R_{n+1} = \frac{f^{(n + 1)}(\xi)}{(n + 1)!} \cdot (x - x_0)^{n + 1}}\]
 Dies ist eine Restgliedformel (Lagrangsche Darstellung für $R_{n + 1}$).
 
 \subsection{Konvergenzradius}
-Der Konvergenzradius sagt aus, innerhalb von welchem Intervall (ausgehend vom Approximationspunkt)
-eine Potenzreihe konvergiert. Der Begriff Radius ist dabei ein Skalar auf $\Omega$ und nicht im $\mathbb{R}^2$.
+Der Konvergenzradius sagt aus, innerhalb von welchem Intervall (ausgehend vom 
+Approximationspunkt)
+eine Potenzreihe konvergiert. Der Begriff Radius ist dabei ein Skalar auf 
+$\Omega$ und nicht im $\mathbb{R}^2$.
 
 \begin{figure}[h!]
 \centering
@@ -57,7 +69,8 @@ eine Potenzreihe konvergiert. Der Begriff Radius ist dabei ein Skalar auf $\Omeg
     |x| = R & \Rightarrow & \text{überprüfen was für $x=R$ und $-x=R$ gilt}
 \end{array} } \]
 
-\[ \boxed{R = \frac{1}{q} = \lim_{K \rightarrow \infty} \left| \frac{a_K}{a_{K + 1}} \right|} \]
+\[ \boxed{R = \frac{1}{q} = \lim_{K \rightarrow \infty} \left| 
+\frac{a_K}{a_{K + 1}} \right|} \]
 % \quad \quad \text{wobei} \quad \quad a_k = \frac{f^{(K)}(x_0)}{K!} } \]
 
 \subsection{Einfache Funktionen als Taylorreihen}
@@ -68,9 +81,13 @@ eine Potenzreihe konvergiert. Der Begriff Radius ist dabei ein Skalar auf $\Omeg
 \[ \boxed{\sinh(x) = \sum_{K=0}^{\infty} \frac{x^{2K+1}}{(2K+1)!}} \]
 
 \subsection{Binomische Reihe}
-\[ \boxed{(1 + x)^\alpha = \sum_{K=0}^{\infty}\left(\begin{matrix}\alpha\\K\end{matrix}\right)x^k } \]
-Den Ausdruck \( \left(\begin{matrix}N\\K\end{matrix}\right) \) nennt man Binomialkoeffizient. Man kann ihn folgendermassen berechnen:
-\[ \boxed{\left(\begin{matrix}N\\K\end{matrix}\right) = \frac{N !}{K! \cdot (N - K)!}, N \in \mathbb{N}^{{}^{\ensuremath{\!+\!}}}_{}, K \in \mathbb{N}^{{}^{\ensuremath{\!+\!}}}_{} } \]
+\[ \boxed{(1 + x)^\alpha = \sum_{K=0}^{\infty}
+\left(\begin{matrix}\alpha\\K\end{matrix}\right)x^k } \]
+Den Ausdruck \( \left(\begin{matrix}N\\K\end{matrix}\right) \) nennt man 
+Binomialkoeffizient. Man kann ihn folgendermassen berechnen:
+\[ \boxed{\left(\begin{matrix}N\\K\end{matrix}\right) 
+= \frac{N !}{K! \cdot (N - K)!}, N \in \mathbb{N}^{{}^{\ensuremath{\!+\!}}}_{}, 
+K \in \mathbb{N}^{{}^{\ensuremath{\!+\!}}}_{} } \]
 
 \iftiboth
 Berechnung mit dem Taschenrechner:
@@ -78,14 +95,19 @@ Berechnung mit dem Taschenrechner:
 \fi
 
 \noindent
-Da für ganzzahlige positive Zahlen \( \frac{N !}{K! \cdot (N - K)!} \) gilt, gilt für ganzzahlige positive N auch folgendes:
-\[ \boxed{(1 + x)^\alpha = \sum_{K=0}^{\infty}\left(\begin{matrix}\alpha\\K\end{matrix}\right)x^k = \sum_{K=0}^{\infty}\frac{\alpha !}{K! \cdot (\alpha - K)!}x^k} \]
+Da für ganzzahlige positive Zahlen \( \frac{N !}{K! \cdot (N - K)!} \) gilt, 
+gilt für ganzzahlige positive N auch folgendes:
+\[ \boxed{(1 + x)^\alpha = \sum_{K=0}^{\infty}
+\left(\begin{matrix}\alpha\\K\end{matrix}\right)x^k 
+= \sum_{K=0}^{\infty}\frac{\alpha !}{K! \cdot (\alpha - K)!}x^k} \]
 
 \subsection{Kochrezept Taylorreihen}
 \begin{enumerate}
   \item Stelle finden, an welcher die Funktion approximiert werden soll. 
-  \item Bereich und Genauigkeit bzw. Fehler definieren oder den Grad der Potenzreihe fix wählen. 
-  \item $a_0$, $a_1$, \dots $a_n$ berechnen. $n$ ist dabei der Grad der Potenzreihe
+  \item Bereich und Genauigkeit bzw. Fehler definieren oder den Grad der 
+  Potenzreihe fix wählen. 
+  \item $a_0$, $a_1$, \dots $a_n$ berechnen. $n$ ist dabei der Grad der 
+  Potenzreihe
   \item Potenzreihe zusammensetzten
 \end{enumerate}
 
