@@ -15,4 +15,4 @@ end
 
 quiver(t, x, dt, dx, '-r');  % Vektoren zeichnen
 	 
-print('field.eps', '-deps')  % Plot als svg-Datei exportieren
+# print('field.eps', '-deps')  % Plot als svg-Datei exportieren
