@@ -57,7 +57,7 @@ zugewiesen. Im folgenden ein Beispiel eines solchen Richtungsfeldes.
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.8\textwidth]{field.eps}
+	\includegraphics[width=0.8\textwidth]{field.pdf}
 	\caption{Richtungsfeld der Differentialgleichung $y'=3+2y$}
 \end{figure}
 
@@ -86,16 +86,29 @@ vorgegangen werden.
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.48\textwidth]{trajektorien1.eps}
-	\includegraphics[width=0.48\textwidth]{trajektorien2.eps}
+	\includegraphics[width=0.48\textwidth]{trajektorien1.pdf}
+	\includegraphics[width=0.48\textwidth]{trajektorien2.pdf}
 	\caption{Normale Kurvenschar (links, $y'=y$) 
 	und orthogonale Trajektorie (rechts, $y'=-\frac{1}{y}$)}
 \end{figure}
 
 \section{Lösungsverfahren}
 
-<<<<<<< HEAD
 \subsection{Übersicht}
+\begin{tikzpicture}
+  \node (1) at (5,2) {Lineare DGL};
+  \node (2) at (3,1) {};
+  \node (3) at (7,1) {};
+  \node (4) at (2,0) {Trenung der Variabeln};
+  \node (5) at (4,0) {Charakteristische Gleichung};
+  \node (6) at (6,0) {};
+  \node (7) at (8,0) {Variation der Konstanten};
+  
+  \draw [-latex] (1) to node {homogen} (4) ;
+  \draw [-latex] (1) to (7) ;
+  \draw [-latex] (2) to (5) ;
+  \draw [-latex] (3) to (6) ;
+\end{tikzpicture}
 
 \subsection{Variabelntrennung}
 \begin{enumerate}
@@ -105,19 +118,12 @@ vorgegangen werden.
   \item nach $y$ auflösen
 \end{enumerate}
 
-\subsection{Ansatz}
-
-=======
 \subsection{Ansatzverfahren}
-
-\begin{comment}
 \begin{figure}
   \centering
   \includegraphics[width=0.95\textwidth]{ansatztabelle.pdf}
   \caption{Ansatztabelle (P. Scheiblechner, 2013)}
 \end{figure}
-\end{comment}
->>>>>>> prototype
 
 \subsection{Variation der Konstanten \\(Lineare Gleichung 1. Ordnung)}
 \begin{enumerate}
