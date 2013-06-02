@@ -1,0 +1,111 @@
+%\documentclass[a4paper,landscape]{article}
+\documentclass[a4paper]{article}
+
+\usepackage[a4paper]{geometry}
+
+\pagestyle{empty}
+\usepackage[pdftex]{graphicx}
+%\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[german]{babel}
+\usepackage{amsfonts}
+\usepackage[intlimits]{amsmath}
+%\usepackage{theorem}
+
+\include{macros}
+
+\begin{document}
+
+\noindent \textbf{HSLU MA+PHY1\_T \hspace{\stretch{1}} Peter Scheiblechner}
+
+\begin{center}
+\huge \textbf{Mathematik/Physik I} \\
+\vspace{.1cm}
+\LARGE \textbf{Tabelle von Ans\"atzen} \\
+\Large \textbf{Lineare Differentialgleichungen erster Ordnung mit konstanten Koeffizienten} \\
+\end{center}
+
+Wir betrachten eine inhomogene lineare Differentialgleichung erster Ordnung mit konstanten Koeffizienten
+$$
+a_1y'+a_0y=s(x),
+$$
+wobei $a_0,a_1$ Konstanten und $s(x)$ die St\"orfunktion sind. Es geht hier um die Bestimmung einer partikul\"aren L\"osung $y_p(x)$
+mit dem Ansatzverfahren. 
+%Bei der Wahl des Ansatzes orientiert man sich am Funktionstypus der St\"orfunktion.
+Wir geben eine Tabelle an, die f\"ur wichtige St\"orfunktionen den richtigen Ansatz angibt.
+
+\paragraph{Notationen}
+Ein Polynom $n$-ten Grades ist eine Funktion der Form
+$$
+P_n(x)=\a_n x^n+\a_{n-1} x^{n-1}+\cdots+\a_1 x+\a_0,
+$$
+wobei $\a_0,\ldots,\a_n$ beliebige Konstanten sind. In der St\"orfunktion sind diese Konstanten bekannt, d.h.
+vorgegeben. Im Ansatz sind es unbekannte Variablen, deren Werte man bestimmt, indem man den Ansatz mitsamt seinen
+Ableitungen in die Differentialgleichung einsetzt und Koeffizienten vergleicht.
+
+Wir verwenden f\"ur alle Konstanten in der St\"orfunktion griechische Buchstaben, also z.B. $\a_0,\ldots,\a_n,\la,\om$.
+F\"ur die unbekannten Variablen im Ansatz verwenden wir lateinische Grossbuchstaben.
+
+\paragraph{Bemerkungen}
+\begin{enumerate}
+	\item Die Tabelle ist teilweise redundant. Zum Beispiel ist f\"ur $\lambda=0$ und $n=0$ die
+	St\"orfunktion in der letzten Zeile
+	$$
+	P_n(x)e^{\lambda x}\cos \omega x=A_0\cos \omega x.
+	$$
+	\item Wenn in der St\"orfunktion mehrere Terme aus der Tabelle vorkommen, summiert man die Ans\"atze f\"ur jeden Term auf
+	{\bf und streicht Terme mit gleichem Funktionstyp!} Wenn die St\"orfunktion z.B.~$s(x)=2x\sin 3x-5\cos 3x$ ist, so lautet der Ansatz
+	$$
+	y_p(x)=(A_1x+A_0)\sin 3x+(B_1x+B_0)\cos 3x.
+	$$
+	Dies ist der gleiche Ansatz, den man nur f\"ur den Term $2x\sin 3x$ bekommt. Der Ansatz f\"ur den Term $-5\cos 3x$ w\"are $A\sin 3x+B\cos 3x$,
+	und diese Funktionstypen kommen im Ansatz bereits vor.
+%	Oder wenn die St\"orfunktion $s(x)=x\sin 2x+x^2\cos 2x$ ist, so lautet der Ansatz
+%	$$
+%	y_p(x)=(A_2x^2+A_1x+A_0)\sin 2x+(B_2x^2+B_1x+B_0)\cos 2x.
+%	$$
+\end{enumerate}
+
+\bigskip
+
+\def\arraystretch{1.5}
+\begin{tabular}{p{0.2\textwidth}|p{0.7\textwidth}}
+%\begin{tabular}{ll}
+\hline
+St\"orfunktion $s(x)$ & Ansatz $y_p$ \\
+\hline
+$e^{\lambda x}$ & 
+$
+\left\{
+\begin{array}{rl}
+Ae^{\lambda x}, & \text{falls } s(x) \text{ keine L\"osung der homogenen Differentialgl.} \\
+Axe^{\lambda x}, & \text{falls } s(x) \text{ L\"osung der homogenen Differentialgleichung}
+\end{array} \right.
+$ \\
+$\sin \omega x$ & $A\sin \omega x+B\cos\omega x$ \\
+$\cos \omega x$ & $A\sin \omega x+B\cos\omega x$ \\
+$e^{\lambda x}\sin \omega x$ & $Ae^{\lambda x}\sin \omega x+Be^{\lambda x}\cos\omega x$ \\
+$e^{\lambda x}\cos \omega x$ & $Ae^{\lambda x}\sin \omega x+Be^{\lambda x}\cos\omega x$ \\
+$P_n(x)$ & $A_n x^n+A_{n-1} x^{n-1}+\cdots+A_1 x+A_0$ \\
+$P_n(x)e^{\lambda x}$ & 
+$
+\left\{
+\begin{array}{rl}
+(A_n x^n+A_{n-1} x^{n-1}+\cdots+A_1 x+A_0)e^{\lambda x}, & \text{falls } e^{\lambda x} \text{ keine L\"osung} \\
+ & \text{der homogenen DGL} \\
+x(A_n x^n+A_{n-1} x^{n-1}+\cdots+A_1 x+A_0)e^{\lambda x}, & \text{falls } e^{\lambda x} \text{ L\"osung der} \\
+ & \text{homogenen DGL} \\
+\end{array} \right.
+$ \\
+$P_n(x)\sin \omega x$ & $(A_n x^n+A_{n-1} x^{n-1}+\cdots+A_1 x+A_0)\sin \omega x$ \\
+ & \qquad$+(B_n x^n+B_{n-1} x^{n-1}+\cdots+B_1 x+B_0)\cos\omega x$ \\
+$P_n(x)\cos \omega x$ & $(A_n x^n+A_{n-1} x^{n-1}+\cdots+A_1 x+A_0)\sin \omega x$ \\
+ & \qquad$+(B_n x^n+B_{n-1} x^{n-1}+\cdots+B_1 x+B_0)\cos\omega x$ \\
+$P_n(x)e^{\lambda x}\sin \omega x$ & $(A_n x^n+A_{n-1} x^{n-1}+\cdots+A_1 x+A_0)e^{\lambda x}\sin \omega x$ \\
+ & \qquad$+(B_n x^n+B_{n-1} x^{n-1}+\cdots+B_1 x+B_0)e^{\lambda x}\cos\omega x$ \\
+$P_n(x)e^{\lambda x}\cos \omega x$, & $(A_n x^n+A_{n-1} x^{n-1}+\cdots+A_1 x+A_0)e^{\lambda x}\sin \omega x$ \\
+$\om\ne 0$ & \qquad$+(B_n x^n+B_{n-1} x^{n-1}+\cdots+B_1 x+B_0)e^{\lambda x}\cos\omega x$ \\
+\end{tabular}
+
+
+\end{document}
