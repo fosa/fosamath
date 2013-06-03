@@ -1,4 +1,4 @@
-% coding:utf-8
+%n coding:utf-8
 
 %----------------------------------------
 %FOSAMATH, a LaTeX-Code for a mathematical summary for basic analysis
@@ -103,8 +103,10 @@ der x-Achse erreicht.
 \[ \boxed{\overline{a + b j} = a - b j} \]
 \[ \boxed{\overline{r \cdot \cis(\varphi)} = r \cdot \cis(-\varphi)} \]
 \[ \boxed{\overline{r \cdot e^{j \varphi}} = r \cdot e^{-j \varphi}} \]
-\begin{center}
-\begin{tikzpicture}[domain=-4:4]
+\[ \boxed{\overline{\frac{a}{b-jc}} = \frac{a(b+jc)}{(b-jc)(b+jc)} = \frac{ab+jac}{b^2+jbc-jbc-j^2c^2} = \frac{ab+jac}{b^2+c^2} } \]
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}[scale=0.71, domain=-4:4]
   % Raster
   \draw[very thin,color=gray] (-1.9,-2.9) grid (3.9,2.9);
   % x-Achse
@@ -121,7 +123,57 @@ der x-Achse erreicht.
 %   \draw[color=blue] plot (\x,{sin(\x r)}) node[right] {$f(x) = \sin x$};
 %   \draw[color=orange] 7t plot (\x,{0.05*exp(\x)}) node[right] {$f(x) = \frac{1}{20} \mathrm e^x$};
 \end{tikzpicture}
-\end{center}
+\end{figure}
+\newpage
+
+\subsection{Randprobleme}
+Möchte man eine komplexe Zahl ermitteln, welche zusammengesetzt mit einer 
+anderen Zahl ein bestimmtes Ergebnis ergibt, kann es als sog. 
+Randproblem verstanden werden. Diese Randprobleme können graphisch als 
+auch analytisch gelöst werden.
+\subsubsection{Graphisch}
+Grundsätzich geht man von der Form 
+\[ ||z-(a+jb)||=r \qquad \Leftrightarrow \qquad||z-a-jb||=r \] 
+aus, wobei es statt $\ldots=r$ auch $\ldots\neq r, \ldots>r$
+usw. sein kann. Für den graphischen Lösungsweg setzt man das Ergebnis 
+nicht als $r$ sondern als $0$ an. So erhält man die komplexe Zahl $z$,
+denn dann gilt 
+\[ ||z-a-jb||=0 \qquad \Rightarrow \qquad z=a+jb\]
+Danach kann $r$ ausgehend von $z$ angewendet werden. Ein $\ldots=r$ beudeutet,
+dass alle Lösungen auf einem Kreis liegen mit Mittelpunkt $z$ und Radius $r$. 
+Ein $\ldots\leq r$ bedeutet, dass alle Lösungen auf einer Kreisfläche mit
+Mittelpunkt $z$ und Radius $r$ liegen usw.
+\begin{figure}[h!]
+	\centering
+	\begin{tikzpicture}[scale=0.71, domain=-4:4]
+		\draw[very thin, color=gray] (-1.9, -2.9) grid (3.9, 2.9);
+		\draw[->] (-2.0,0) -- (4.2,0) node[right] {$Re$};
+		\draw[->] (0,-3.2) -- (0,3.2) node[above] {$Im$};
+		\draw[->] (3,2) node[above] {$z$} -- (3.71,2.71) node[above] {$r$};
+		\draw[dotted] (3,0) node[below] {$+a$} -- (3,2);
+		\draw[dotted] (0,2) node[left] {$+jb$} -- (3,2); 
+		\filldraw (3,2) circle (0.05);
+		\draw (3,2) circle(1);
+	\end{tikzpicture}
+	\caption{Randproblem für $||z-(a+jb)||=r$}
+\end{figure}
+
+\subsubsection{Analytisch}
+Um ein Randproblem analytisch zu lösen kann wie folgt vorgegangen werden.
+\begin{itemize}
+	\item Gleichung aufstellen \[ ||(a+jb)-(c+jd)||=r \]
+	\item Gleichung in die Form $Re+Im=r$ umformen bzw. $j$ isolieren als Faktor
+		\[ ||e+j(f+g)||=r \]
+	\item Auflösen mit Hilfe der Regel, dass $||e+j(f+g)||$ die Norm,
+		also die Länge des Ortsvektors ist und somit gleich 
+		$\sqrt{Re^2+Im^2}$ ist.
+		\[ \sqrt{e^2+(j(f+g))^2}=r \]
+		Durch das Quadrieren fällt der Imaginärteil $j$ weg, denn 
+		$j^2=(\sqrt{-1})^2=(-1)$. Somit ergibt sich
+		\[ e^2+((-1)(f^2+2fg+g^2))=r \]
+\end{itemize}
+
+
 
 \section{Rechenregeln}
 
