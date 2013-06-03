@@ -372,3 +372,19 @@ L'Hopital angewendet werden (dies kann man so oft wie nötig wiederholen).
 % @\rowcolor{lgray}& &@!&@=& \\
 % @\rowcolor{white}& &@!&@=& \\
 % \end{spreadtab}}\]
+
+\newpage
+\subsection{Pascal'sches Dreieck}
+
+\begin{figure}[h!]
+	\centering
+\begin{tikzpicture}
+    \foreach \n in {0,...,4} {
+        \foreach \k in {0,...,\n} {
+	    \node at (\k-\n/2,-\n) {${\n \choose \k}$};
+	}
+    }
+\end{tikzpicture}
+\caption{Pascal'sches Dreieck bis zum Grad 4}
+\end{figure}
+
