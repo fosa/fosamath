@@ -378,13 +378,17 @@ L'Hopital angewendet werden (dies kann man so oft wie nötig wiederholen).
 
 \begin{figure}[h!]
 	\centering
-\begin{tikzpicture}
-    \foreach \n in {0,...,4} {
-        \foreach \k in {0,...,\n} {
-	    \node at (\k-\n/2,-\n) {${\n \choose \k}$};
-	}
-    }
-\end{tikzpicture}
-\caption{Pascal'sches Dreieck bis zum Grad 4}
+	\begin{tikzpicture}
+	\foreach \n in {0,...,6} {
+		  \foreach \k in {0,...,\n} {
+		      \node at (\k-\n/2,-\n) {$\binomialCoefficient{\n}{\k}$};
+		        }
+		}
+	\end{tikzpicture}	
+\caption{Pascal'sches Dreieck bis zum Grad 6}
 \end{figure}
+
+\subsubsection*{Formel}
+\[ (x+y)^n = ax^ny^0 + bx^{n-1}y^1 + cx^{n-2}y^2 + dx^{n-3}y^3 + \ldots + ux^{1}y^{n-1} + vx^0y^n \]
+
 
