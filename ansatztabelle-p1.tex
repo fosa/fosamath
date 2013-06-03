@@ -1,0 +1,40 @@
+% Dieser Quelltext stammt von Peter Scheiblechner (C) 
+
+\def\arraystretch{1.5}
+\begin{tabular}{p{0.2\textwidth}|p{0.7\textwidth}}
+%\begin{tabular}{ll}
+\hline
+St\"orfunktion $s(x)$ & Ansatz $y_p$ \\
+\hline
+$e^{\lambda x}$ & 
+$
+\left\{
+\begin{array}{rl}
+Ae^{\lambda x}, & \text{falls } s(x) \text{ keine L\"osung der homogenen Differentialgl.} \\
+Axe^{\lambda x}, & \text{falls } s(x) \text{ L\"osung der homogenen Differentialgleichung}
+\end{array} \right.
+$ \\
+$\sin \omega x$ & $A\sin \omega x+B\cos\omega x$ \\
+$\cos \omega x$ & $A\sin \omega x+B\cos\omega x$ \\
+$e^{\lambda x}\sin \omega x$ & $Ae^{\lambda x}\sin \omega x+Be^{\lambda x}\cos\omega x$ \\
+$e^{\lambda x}\cos \omega x$ & $Ae^{\lambda x}\sin \omega x+Be^{\lambda x}\cos\omega x$ \\
+$P_n(x)$ & $A_n x^n+A_{n-1} x^{n-1}+\cdots+A_1 x+A_0$ \\
+$P_n(x)e^{\lambda x}$ & 
+$
+\left\{
+\begin{array}{rl}
+(A_n x^n+A_{n-1} x^{n-1}+\cdots+A_1 x+A_0)e^{\lambda x}, & \text{falls } e^{\lambda x} \text{ keine L\"osung} \\
+ & \text{der homogenen DGL} \\
+x(A_n x^n+A_{n-1} x^{n-1}+\cdots+A_1 x+A_0)e^{\lambda x}, & \text{falls } e^{\lambda x} \text{ L\"osung der} \\
+ & \text{homogenen DGL} \\
+\end{array} \right.
+$ \\
+$P_n(x)\sin \omega x$ & $(A_n x^n+A_{n-1} x^{n-1}+\cdots+A_1 x+A_0)\sin \omega x$ \\
+ & \qquad$+(B_n x^n+B_{n-1} x^{n-1}+\cdots+B_1 x+B_0)\cos\omega x$ \\
+$P_n(x)\cos \omega x$ & $(A_n x^n+A_{n-1} x^{n-1}+\cdots+A_1 x+A_0)\sin \omega x$ \\
+ & \qquad$+(B_n x^n+B_{n-1} x^{n-1}+\cdots+B_1 x+B_0)\cos\omega x$ \\
+$P_n(x)e^{\lambda x}\sin \omega x$ & $(A_n x^n+A_{n-1} x^{n-1}+\cdots+A_1 x+A_0)e^{\lambda x}\sin \omega x$ \\
+ & \qquad$+(B_n x^n+B_{n-1} x^{n-1}+\cdots+B_1 x+B_0)e^{\lambda x}\cos\omega x$ \\
+$P_n(x)e^{\lambda x}\cos \omega x$, & $(A_n x^n+A_{n-1} x^{n-1}+\cdots+A_1 x+A_0)e^{\lambda x}\sin \omega x$ \\
+ $\omega\neq 0$ & \qquad$+(B_n x^n+B_{n-1} x^{n-1}+\cdots+B_1 x+B_0)e^{\lambda x}\cos\omega x$ \\
+\end{tabular}
