@@ -98,7 +98,7 @@ vorgegangen werden.
 \subsection{Übersicht}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.8\textwidth]{diffgl_loes.pdf}
+	\includegraphics[width=1\textwidth]{diffgl_loes.pdf}
 	\caption{Übersicht der Lösungsverfahren für Differentialgleichungen 
 	erster Ordnung}
 \end{figure}
@@ -121,11 +121,19 @@ Funktionstypen entstehen. Alternativ kann auch eine Tabelle benutzt werden.
 \begin{enumerate}
 	\item Inhomogene Gleichung aufstellen (I)
 	\item Homogene Gleichung aufstellen (H)
-	\item Charakteristische Gleichung aufstellen \\
+	\item Charakteristische Gleichung aufstellen und nach k auflösen\\
 		  $\Rightarrow$ allgemeine Lösung der homogenen Gleichung 
 		  $y_h = c\cdot e^{k\cdot x}$
-	\item Ansatz für die Störfuktion ermitteln \\
+	\item Ansatz für die Störfunktion ermitteln \\
 		  $\Rightarrow$ Partikuläre Lösung $y_p$ 
+          \begin{itemize}
+              \item Um den Ansatz zu ermitteln, wird die Störfunktion 
+                    abgeleitet. 
+              \item Die dabei auftretenden Funktionstypen werden dabei mit 
+                    jeweils neuen Koeffizienten notiert. 
+              \item Die Störfunktion wird so lange abgeleitet, bis keine neuen 
+                    Funktionstypen mehr auftreten. 
+          \end{itemize}
 	\item $y_p$ ableiten $\Rightarrow y_p'$
 	\item $y_p$ und $y_p'$ in die inhomogene Gleichung einsetzen
 		  und mit der Störfunktion gleichsetzen.
