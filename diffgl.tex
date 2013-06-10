@@ -95,25 +95,32 @@ vorgegangen werden.
 \section{Lösungsverfahren}
 
 \subsection{Übersicht}
-\begin{footnotesize}
-\begin{tikzpicture}
-  \node (1) at (5,4) {Lineare DGL};
-  \node (2) at (3,2) {};
-  \node (3) at (7,2) {};
-  \node (4) at (1,0) {Trenung};
-  \node (4l) at (1,-0.3) {der Variabeln};
-  \node (5) at (4,0) {Charakteristische};
-  \node (5l) at (4,-0.3) {Gleichung};
-  \node (6) at (6,0) {};
-  \node (7) at (9,0) {Variation der};
-  \node (7l) at (9,-0.3) {Konstanten};
-  
-  \draw [-latex] (1) to node[left] {homogen} (4) ;
-  \draw [-latex] (1) to node[right] {inhomogen} (7) ;
-  \draw [-latex] (2) to node[right] {konst. Koeff.} (5) ;
-  \draw [-latex] (3) to node[left] {konst. Koeff.} (6) ;
-\end{tikzpicture}
-\end{footnotesize}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1\textwidth]{diffgl_loes.pdf}
+	\caption{Übersicht der Lösungsverfahren für Differentialgleichungen 
+	erster Ordnung}
+\end{figure}
+
+%\begin{footnotesize}
+%\begin{tikzpicture}
+%  \node (1) at (5,4) {Lineare DGL};
+%  \node (2) at (3,2) {};
+%  \node (3) at (7,2) {};
+%  \node (4) at (1,0) {Trenung};
+%  \node (4l) at (1,-0.3) {der Variabeln};
+%  \node (5) at (4,0) {Charakteristische};
+%  \node (5l) at (4,-0.3) {Gleichung};
+%  \node (6) at (6,0) {};
+%  \node (7) at (9,0) {Variation der};
+%  \node (7l) at (9,-0.3) {Konstanten};
+%  
+%  \draw [-latex] (1) to node[left] {homogen} (4) ;
+%  \draw [-latex] (1) to node[right] {inhomogen} (7) ;
+%  \draw [-latex] (2) to node[right] {konst. Koeff.} (5) ;
+%  \draw [-latex] (3) to node[left] {konst. Koeff.} (6) ;
+%\end{tikzpicture}
+%\end{footnotesize}
 
 \subsection{Variabelntrennung}
 \begin{enumerate}
