@@ -92,35 +92,16 @@ vorgegangen werden.
 	und orthogonale Trajektorie (rechts, $y'=-\frac{1}{y}$)}
 \end{figure}
 
+\newpage
 \section{Lösungsverfahren}
 
 \subsection{Übersicht}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=1\textwidth]{diffgl_loes.pdf}
+	\includegraphics[width=0.8\textwidth]{diffgl_loes.pdf}
 	\caption{Übersicht der Lösungsverfahren für Differentialgleichungen 
 	erster Ordnung}
 \end{figure}
-
-%\begin{footnotesize}
-%\begin{tikzpicture}
-%  \node (1) at (5,4) {Lineare DGL};
-%  \node (2) at (3,2) {};
-%  \node (3) at (7,2) {};
-%  \node (4) at (1,0) {Trenung};
-%  \node (4l) at (1,-0.3) {der Variabeln};
-%  \node (5) at (4,0) {Charakteristische};
-%  \node (5l) at (4,-0.3) {Gleichung};
-%  \node (6) at (6,0) {};
-%  \node (7) at (9,0) {Variation der};
-%  \node (7l) at (9,-0.3) {Konstanten};
-%  
-%  \draw [-latex] (1) to node[left] {homogen} (4) ;
-%  \draw [-latex] (1) to node[right] {inhomogen} (7) ;
-%  \draw [-latex] (2) to node[right] {konst. Koeff.} (5) ;
-%  \draw [-latex] (3) to node[left] {konst. Koeff.} (6) ;
-%\end{tikzpicture}
-%\end{footnotesize}
 
 \subsection{Variabelntrennung}
 \begin{enumerate}
@@ -136,15 +117,28 @@ Störfunktion auf Funktionstypen analysiert. D.h. man versucht alle in der
 Störfunktion enthaltenen Funktionstypen zu erkennen. Dies wird grundsätzlich
 dadurch erreich, indem man die Störfunktion ableitet bis keine neuen 
 Funktionstypen entstehen. Alternativ kann auch eine Tabelle benutzt werden.
-\footnotesize
+
+\begin{enumerate}
+	\item Inhomogene Gleichung aufstellen (I)
+	\item Homogene Gleichung aufstellen (H)
+	\item Charakteristische Gleichung aufstellen \\
+		  $\Rightarrow$ allgemeine Lösung der homogenen Gleichung 
+		  $y_h = c\cdot e^{k\cdot x}$
+	\item Ansatz für die Störfuktion ermitteln \\
+		  $\Rightarrow$ Partikuläre Lösung $y_p$ 
+	\item $y_p$ ableiten $\Rightarrow y_p'$
+	\item $y_p$ und $y_p'$ in die inhomogene Gleichung einsetzen
+		  und mit der Störfunktion gleichsetzen.
+	\item Koeffizientenvergleich durchführen, Koeffizienten bestimmen.
+	\item Koeffizienten einsetzen in die allgemeine Lösung $y=y_h + y_p$
+	\item Fall gegeben, die Anfangsbedingungen einsetzen und restliche 
+		  Koeffizienten ermitteln.
+\end{enumerate}
+
+\scriptsize
 \input{ansatztabelle-p1}
 \normalsize
 
-% \begin{figure}
-%  \centering
-%  \includegraphics[width=0.95\textwidth]{ansatztabelle.pdf}
-%  \caption{Ansatztabelle (P. Scheiblechner, 2013)}
-% \end{figure}
 
 \newpage
 \subsection{Variation der Konstanten \\(Lineare Gleichung 1. Ordnung)}
