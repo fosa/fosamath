@@ -83,6 +83,24 @@ gegenüber der Horizontalen definiert.
 \subsubsection{Umrechnung Kartesisch $\rightarrow$ Polar}
 \[ \boxed{r = \sqrt{x^2 + y^2}} \]
 \[ \boxed{\varphi = \arctan{\left(\frac{y}{x}\right)}} \]
+\subsection{Kochrezept karthesisch zu polar}
+\begin{enumerate}
+	\item Die Komplexe Zahl in die Normalform stellen 
+		\[ Re + j\cdot Im = z \qquad a + j*b = z \]
+	\item Die Norm berechnen (Länge des Vektors)
+		\[ r=||z||=\sqrt{Re^2+Im^2} \]
+	\item Den Winkel berechnen
+		\[ tan(\varphi)=\frac{Im}{Re} \]
+		Achtung: Hier entstehen immer zwei Lösungen, von denen jedoch
+		immer nur eine korrekt ist.
+		Faustregel: Siehe in der Tabelle \ref{tab:spez-winkel} nach. 
+		Ist der Imaginärteil $Im$ negativ, so muss auch der entsprechende
+		Winkel in der Tabelle negativ sein.
+	\item Einsetzen in die gewünschte Form
+		\[ r \cdot e^{j\cdot\varphi} \]
+		\[ r \cdot cis(\varphi) \]
+		\[ r \cdot (cos(\varphi) + j \cdot sin(\varphi)) \]
+\end{enumerate}
 
 \subsubsection{Umrechnung Polar $\rightarrow$ Kartesisch}
 \[ \boxed{x = r \cdot \cos(\varphi)} \]
@@ -172,8 +190,6 @@ Um ein Randproblem analytisch zu lösen kann wie folgt vorgegangen werden.
 		$j^2=(\sqrt{-1})^2=(-1)$. Somit ergibt sich
 		\[ \sqrt{e^2+((-1)(f^2+2fg+g^2))}=r \]
 \end{itemize}
-
-
 
 \section{Rechenregeln}
 
