@@ -11,3 +11,4 @@ fosa_main_tinspire.pdf
 autobuild/build/*
 autobuild/tmp/*
 autobuild/latestversion
+issue*.txt
