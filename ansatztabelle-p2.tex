@@ -1,0 +1,43 @@
+% coding:utf-8
+
+% Dieser Quelltext stammt von Peter Scheiblechner (C)
+
+\def\arraystretch{1.5}
+\noindent
+\begin{longtable}{@{}p{0.2\textwidth}|p{0.7\textwidth}}
+%\begin{tabular}{ll}
+\hline
+Störfunktion $s(x)$ & Ansatz $y_p$ \\
+\hline
+$e^{\lambda x}$ & 
+$Ax^me^{\lambda x}$, falls $\la$ $m$-fache Lösung der charakteristischen 
+Gleichung \\
+$\sin \omega x$ & $Ax^m\sin \omega x+Bx^m\cos\omega x$, falls $j\om$ $m$-fache 
+Lösung der charakteristischen Gleichung \\
+$\cos \omega x$ & $Ax^m\sin \omega x+Bx^m\cos\omega x$, falls $j\om$ $m$-fache 
+Lösung der charakteristischen Gleichung \\
+$e^{\lambda x}\sin \omega x$ & $Ax^me^{\lambda x}\sin \omega 
+x+Bx^me^{\lambda x}\cos\omega x$, falls $\la+j\om$ $m$-fache Lösung der 
+charakteristischen Gleichung \\
+$e^{\lambda x}\cos \omega x$ & $Ax^me^{\lambda x}\sin \omega 
+x+Bx^me^{\lambda x}\cos\omega x$, falls $\la+j\om$ $m$-fache Lösung der 
+charakteristischen Gleichung \\
+$P_n(x)$ & $x^m(A_n x^{n}+A_{n-1} x^{n-1}+\cdots+A_1 x+A_0)$, 
+falls $0$ $m$-fache Lösung der charakteristischen Gleichung \\
+$P_n(x)\sin \omega x$ 
+& $x^m(A_n x^n+A_{n-1} x^{n-1}+\cdots+A_1 x+A_0)\sin \omega x$ \\
+ & \qquad$+x^m(B_n x^n+B_{n-1} x^{n-1}+\cdots+B_1 x+B_0)\cos\omega x$, 
+ falls $j\om$ $m$-fache Lösung der charakteristischen Gleichung \\
+$P_n(x)\cos \omega x$ 
+& $x^m(A_n x^n+A_{n-1} x^{n-1}+\cdots+A_1 x+A_0)\sin \omega x$ \\
+ & \qquad$+x^m(B_n x^n+B_{n-1} x^{n-1}+\cdots+B_1 x+B_0)\cos\omega x$, 
+ falls $j\om$ $m$-fache Lösung der charakteristischen Gleichung \\
+$P_n(x)e^{\lambda x}\sin \omega x$ 
+& $x^m(A_n x^n+A_{n-1} x^{n-1}+\cdots+A_1 x+A_0)e^{\lambda x}\sin \omega x$ \\
+ & \qquad$+x^m(B_n x^n+B_{n-1} x^{n-1}+\cdots+B_1 x+B_0)e^{\lambda x}\cos\omega 
+ x$, falls $\la+j\om$ $m$-fache Lösung der charakteristischen Gleichung \\
+$P_n(x)e^{\lambda x}\cos \omega x$ & $x^m(A_n x^n+A_{n-1} 
+x^{n-1}+\cdots+A_1 x+A_0)e^{\lambda x}\sin \omega x$ \\
+ & \qquad$+x^m(B_n x^n+B_{n-1} x^{n-1}+\cdots+B_1 x+B_0)e^{\lambda x}\cos\omega 
+ x$, falls $\la+j\om$ $m$-fache Lösung der charakteristischen Gleichung \\
+\end{longtable}
