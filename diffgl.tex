@@ -131,11 +131,30 @@ vorgegangen werden.
   \item Einsetzen in die allgemeine Lösung der homogenen Gleichung ($y_h$)
 \end{enumerate}
 
+\subsection{Charakteristische Gleichung}
+Beim diesem Verfahren wird die Differentialgleichung in eine charakteristische 
+Gleichung überführt. Dabei wird die abhängige Variable zu $k^{n}$ überführt. 
+Der Exponent ($n$) von k entspricht dabei der Ordnung der Ableitung der 
+unabhängigen Variable. 
+\begin{enumerate}
+  \item Homogene Gleichung aufstellen
+  \item charakteristische Gleichung aufstellen
+    \begin{itemize}
+      \item $y \rightarrow k^0 = 1$
+      \item $y' \rightarrow k^1 = k$
+      \item $y'' \rightarrow k^2$
+      \item $\cdots$
+    \end{itemize}
+  \item nach $k$ auflösen
+  \item $k$ in die allgemeine Lösung der homogenen Gleichung einsetzen\\\\
+        $\rightarrow y = c \cdot e^{k \cdot x}$
+\end{enumerate}
+
 \subsection{Ansatzverfahren}
 Zur Bestimmung einer partikulären Lösung mit dem Ansatzverfahren wird die 
 Störfunktion auf Funktionstypen analysiert. D.h. man versucht alle in der
 Störfunktion enthaltenen Funktionstypen zu erkennen. Dies wird grundsätzlich
-dadurch erreich, indem man die Störfunktion ableitet bis keine neuen 
+dadurch erreicht, indem man die Störfunktion ableitet, bis keine neuen 
 Funktionstypen entstehen. Alternativ kann auch eine Tabelle benutzt werden.
 
 \begin{enumerate}
@@ -231,3 +250,56 @@ lösen, kann wie folgt vorgegangen werden.
 	\end{itemize}
 \end{enumerate}
 
+\subsection{Inhomogene Gleichung}
+
+\subsubsection{Lösungsverfahren}
+Bei einer inhomogenen Gleichung mit konstanten Koeffizienten kann das 
+Ansatzverfahren angewendet werden. 
+\begin{enumerate}
+  \item Inhomogene Gleichung aufstellen
+  \item Normalform bilden
+  \item Homogene Gleichung sinngemäss notieren
+	\[ y'' + a_1y' + a_0y = 0 \]
+  \item Charakteristische Gleichung aufstellen.\\
+	Der Ansatz hierzu: $y=e^{kx}$ somit ist $y'=k\cdot e^{kx}$
+	und $y''=k^2 \cdot e^{kx}$.
+	\[ k^2 + a_1k + a_0 = 0 \]
+  \item Gleichung nach $k$ auflösen mit der Formel
+	\[ k_{1,2} = \frac{1}{2}\left( -a_1 \pm \sqrt{a_1^2 - 4a_0} \right)  \]
+  \item Diskriminante betrachten und entsprechend einsetzten
+	\begin{itemize}
+	  \item $D > 0$ zeigt zwei reelle Lösungen an\\
+		\[ y_h=c_1e^{k_1x} + c_2e^{k_2x} \]
+          \item $D = 0$ zeigt zwei gleiche reelle Lösungen an\\
+		\[ y_h=c_1e^{kx} + c_2xe^{kx} \]
+          \item $D < 0$ zeigt zwei komplexe Lösungen an\\
+		\[ k=\mu \pm j \omega \]
+		\[ y_h=c_1e^{\mu x} cos(\omega x) + c_2e^{\mu x} sin(\omega x) \]
+		Wie es zu einer komplexen Lösung kommt: 
+		Wenn die Diskriminate $D < 0$ ist, so kann der Wurzelausdruck
+		statt z.B. $\sqrt{-25}$ als 
+		$\sqrt{(-1)25}=\sqrt{-1}\sqrt{25}=\pm j5$ geschrieben werden.
+		Dies wäre dann das $j\omega$ aus obiger Formel.
+	\end{itemize}
+  \item Ansatz für die Störfunktion ermitteln \\
+    $\Rightarrow$ Partikuläre Lösung $y_p$ 
+    \begin{itemize}
+      \item Um den Ansatz zu ermitteln, wird die Störfunktion 
+            abgeleitet. 
+      \item Die dabei auftretenden Funktionstypen werden dabei mit 
+            jeweils neuen Koeffizienten notiert. 
+      \item Die Störfunktion wird so lange abgeleitet, bis keine neuen 
+            Funktionstypen mehr auftreten. 
+      \item \textbf{Achtung!} Wenn ein Term dabei die homogene 
+            Gleichung löst, so muss dieser mit der unabhängigen 
+            Variable multipliziert werden. 
+    \end{itemize}
+  \item $y_p$ so oft ableiten wie die Ordnung der Gleichung 
+        $\Rightarrow y_p', y_p'', \ldots$
+  \item $y_p$, $y_p'$, $\ldots$ in die inhomogene Gleichung einsetzen
+        und mit der Störfunktion gleichsetzen.
+  \item Koeffizientenvergleich durchführen, Koeffizienten bestimmen.
+  \item Koeffizienten einsetzen in die allgemeine Lösung $y=y_h + y_p$
+  \item Fall gegeben, die Anfangsbedingungen einsetzen und restliche 
+        Koeffizienten ermitteln. 
+\end{enumerate}
