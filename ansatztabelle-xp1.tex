@@ -2,10 +2,66 @@
 
 % Quelle: Supersaxo Mario
 
+\subsubsection*{Ansatztabelle nach Supersaxo}
 \def\arraystretch{1.5}
 \noindent
-\begin{longtable}{@{}p{0.2\textwidth}|p{0.2\textwidth}|p{0.3\textwidth}}
+\begin{longtable}{@{}l|l|l}
 \hline
-Störfunktion $s(x)$ & komplexer Exponent $\gamma$ & Standardansatz \\
-$x$ & $0$ & $ax+b$ \\
+Störfunktion $s(x)$ & $\gamma$ & Standardansatz \\
+\hline
+$x$ 
+	& $0$ 
+	& $ax+b$ \\
+$\xi x$ 
+	& $0$ 
+	& $ax+b$ \\
+$x^2$ 
+	& $0$ 
+	& $ax^2+bx+c$ \\
+$\xi x^2$ 
+	& $0$ 
+	& $ax^2+bx+c$ \\
+\vdots & \vdots & \vdots \\
+$sin(\omega x)$
+	& $\omega j$
+	& $asin(\omega x)+bcos(\omega x) $ \\
+$x sin(\omega x)$ 
+	& $\omega j$ 
+	& $(ax+b)sin(\omega x)+(cx+d)cos(\omega x)$ \\
+$x^2 sin(\omega x)$ 
+	& $\omega j$ 
+	& $(ax^2+bx+c)sin(\omega x)+(dx^2ex+f)cos(\omega x)$ \\
+\vdots & \vdots & \vdots \\
+$x^{\xi}sin(\omega x)+x^{\psi}cos(\omega x)$, $\xi>\psi$
+	& $\omega$ 
+	& $P_{\xi}(x)sin(\omega x) + P_{\xi}cos(\omega x)$ \\
+$x^{\xi}sin(\omega x)+x^{\psi}cos(\omega x)$, $\xi<\psi$
+	& $\omega$ 
+	& $P_{\psi}(x)sin(\omega x) + P_{\psi}cos(\omega x)$ \\
+\vdots & \vdots & \vdots \\
+$e^{\omega x}$ 
+	& $\omega$ 
+	& $ae^{\omega x}$ \\ 
+$\xi e^{\omega x}$ 
+	& $\omega$ 
+	& $ae^{\omega x}$ \\ 
+$x+e^{\omega x}$ $\rightarrow s_1(x),s_2(x)$ 
+	& $0,\omega$ 
+	& $s_1\rightarrow ax+b$, $s_2\rightarrow ce^{\omega x}$ \\
+\vdots & \vdots & \vdots \\
+$x e^{\omega x}$ 
+	& $\omega$ 
+	& $(ax+b)e^{\omega x}$ \\
+$(\xi+x)e^{\omega x}$ 
+	& $\omega$ 
+	& $(ax+b)e^{\omega x}$ \\
+$xe^{\omega x}+\xi e^{\psi x} \rightarrow s_1(x), s_2(x)$ 
+	& $\omega,\xi$ 
+	& $s_1\rightarrow (ax+b)e^{\omega}, s_2\rightarrow ae^{\psi x}$ \\
 \end{longtable}
+
+\noindent
+Vorsicht: Bei $e$-Funktionen muss überprüft werden ob der gewählte Ansatz 
+eine Lösung der homogenen Gleichung darstellt. Falls dies zutrifft, muss der
+Ansatz mit der unabängigen Variable erweitert werden. Dies wiederholt 
+man so lange, bis es nicht mehr eine Lösung der homogenen Gleichung darstellt.
