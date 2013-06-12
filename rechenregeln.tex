@@ -260,6 +260,38 @@ eingegeben werden. \verb!x(...)! wird vom Taschenrechner als Funktion
 interpretiert. 
 \fi
 
+\subsection{Faktorisieren}
+In einigen Fällan ist es einfacher, ein Polynom zu faktorisieren. Das ist 
+im Besonderen der Fall, wenn die binomischen Formeln angewendet werden können. 
+Dabei wird der Term in ein Produkt aus Elementen der Form $(x+a)$ aufgeteilt. 
+Jeder dieser Terme kann mit 0 gleichgesetzt werden und liefert somit jeweils 
+eine der Lösungen. \\
+Beispiel: \\
+$x^2 + (a + b) \cdot x + a \cdot b = 0 $ \\
+$\Rightarrow (x + a) \cdot (x + b) = 0$ \\
+$\Rightarrow (x + a) =0, \quad (x + b) = 0$ \\
+$\rightarrow x_1 = -a, \quad x_2 = -b$
+
+\ifti
+\subsubsection{Faktorisieren mit dem TI-89}
+Soll ein Term der Form $x^3 - ax$ faktorisiert werden, kann es vorkommen, dass 
+man ein Ergebnis der Form $x(x^2 - a)$ erhält. Damit der Taschenrechner nach 
+$x(x-\sqrt{a})(x+\sqrt(a))$ faktorisiert, kann beim Befehl \verb!factor! als 
+zweites Argument die Variable, nach der faktorisiert werden soll, übergeben 
+werden. \\
+$\rightarrow$ \verb!factor(x^3-a,x)!
+\fi
+
+\ifnspire
+\subsubsection{Faktorisieren mit dem TI-Nspire}
+Soll ein Term der Form $x^3 - ax$ faktorisiert werden, kann es vorkommen, dass 
+man ein Ergebnis der Form $x(x^2 - a)$ erhält. Damit der Taschenrechner nach 
+$x(x-\sqrt{a})(x+\sqrt(a))$ faktorisiert, kann beim Befehl \verb!factor! als 
+zweites Argument die Variable, nach der faktorisiert werden soll, übergeben 
+werden. \\
+$\rightarrow$ \verb!factor(x^3-a,x)!
+\fi
+
 \subsection{Binomische Formeln}
 Erste Binomische Formel: 
 \[ \boxed{(a + b)^2 = a^2 + 2 \cdot a \cdot b + b^2} \]Zweite Binomische Formel: 
