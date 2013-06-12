@@ -235,6 +235,63 @@ $G$: Gegenkathete
 \[ \boxed{f(x) = a \cdot x^2 + b \cdot x + c} \]
 \[ \boxed{x_{1,2}=\frac{-b\pm\sqrt{b^2-4ac}}{2a}} \]
 
+\subsection{Kubische Gleichung}
+Für kubische Gleichungen gibt es keine Lösungsformel. \\
+Wenn der konstante Teil 0 ist, kann x ausgeklammert werden. 
+\[ \boxed{\begin{array}{l}
+ax^3 + bx^2 + cx = 0 \\
+x(ax^2 + bx + c) = 0 \\
+\rightarrow x_1 = 0 \\
+ax^2 + bx + c = 0 \\
+\rightarrow x_{2,3} = \frac{-b\pm\sqrt{b^2-4ac}}{2a}
+\end{array}} \]
+
+\ifti
+\subsubsection{Vorsicht beim TI-89}
+Wird beim TI-89 $y = x \cdot (\ldots)$ eingegeben, muss \verb!y=x*(...)! 
+eingegeben werden. \verb!x(...)! wird vom Taschenrechner als Funktion 
+interpretiert. 
+\fi
+
+\ifnspire
+\subsubsection{Vorsicht beim TI-Nspire}
+Wird beim TI-Nspire $y = x \cdot (\ldots)$ eingegeben, muss \verb!y=x*(...)! 
+eingegeben werden. \verb!x(...)! wird vom Taschenrechner als Funktion 
+interpretiert. 
+\fi
+
+\subsection{Faktorisieren}
+In einigen Fällen ist es einfacher, ein Polynom zu faktorisieren. Das ist 
+im Besonderen der Fall, wenn die binomischen Formeln angewendet werden können. 
+Dabei wird der Term in ein Produkt aus Elementen der Form $(x+a)$ aufgeteilt. 
+Jeder dieser Terme kann mit 0 gleichgesetzt werden und liefert somit jeweils 
+eine der Lösungen. \\
+Beispiel: \\
+$x^2 + (a + b) \cdot x + a \cdot b = 0 $ \\
+$\Rightarrow (x + a) \cdot (x + b) = 0$ \\
+$\Rightarrow (x + a) =0, \quad (x + b) = 0$ \\
+$\rightarrow x_1 = -a, \quad x_2 = -b$
+
+\ifti
+\subsubsection{Faktorisieren mit dem TI-89}
+Soll ein Term der Form $x^3 - ax$ faktorisiert werden, kann es vorkommen, dass 
+man ein Ergebnis der Form $x(x^2 - a)$ erhält. Damit der Taschenrechner nach 
+$x(x-\sqrt{a})(x+\sqrt(a))$ faktorisiert, kann beim Befehl \verb!factor! als 
+zweites Argument die Variable, nach der faktorisiert werden soll, übergeben 
+werden. \\
+$\rightarrow$ \verb!factor(x^3-a,x)!
+\fi
+
+\ifnspire
+\subsubsection{Faktorisieren mit dem TI-Nspire}
+Soll ein Term der Form $x^3 - ax$ faktorisiert werden, kann es vorkommen, dass 
+man ein Ergebnis der Form $x(x^2 - a)$ erhält. Damit der Taschenrechner nach 
+$x(x-\sqrt{a})(x+\sqrt(a))$ faktorisiert, kann beim Befehl \verb!factor! als 
+zweites Argument die Variable, nach der faktorisiert werden soll, übergeben 
+werden. \\
+$\rightarrow$ \verb!factor(x^3-a,x)!
+\fi
+
 \subsection{Binomische Formeln}
 Erste Binomische Formel: 
 \[ \boxed{(a + b)^2 = a^2 + 2 \cdot a \cdot b + b^2} \]Zweite Binomische Formel: 
@@ -402,7 +459,11 @@ L'Hopital angewendet werden (dies kann man so oft wie nötig wiederholen).
 
 \newpage
 \subsection{Pascal'sches Dreieck}
-
+Um ein Pascal'sches Dreieck zu zeichnen beginnt man mit einer "'1"'. Diagonal 
+rechts und links unterhalb werden wieder zwei Zahlen gezeichnet. So wird das 
+Dreieck Reihe für Reihe aufgebaut. Jede Zahl wird dabei aus der Summe der 
+beiden Zahlen links und rechts oberhalb berechnet. Stellen an denen keine Zahl 
+steht werden als Null gezählt. 
 \begin{figure}[h!]
 	\centering
 	\begin{tikzpicture}
