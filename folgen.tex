@@ -42,8 +42,10 @@ Bei der rekursiven Darstellung wird eine Folge durch einen Startwert und eine
 Abbildungsvorschrift dargestellt. \\
 \[ \boxed{ \begin{matrix}
 \text{Startwert} & f(1) = a_1 \\
-\text{Vorschrift} & F(f(1), f(2), \ldots, f(n)) := f(n + 1) = a_{n + 1}
+\text{Vorschrift} & F(a_n, \ldots, a_{n-k}) := f(n + 1) = a_{n + 1} 
+\quad \forall ~ k=konst
 \end{matrix}} \]
+Ist $k > 1$, so müssen mehrere Startwerte festgelegt werden. 
 
 \subsection{arithmetische Folgen}
 $d$ ist die Differenz zwischen zwei benachbarten Gliedern\\
