@@ -16,17 +16,16 @@
 %----------------------------------------
 
 % coding:utf-8
-\documentclass[a5paper,10pt,fleqn]{book}
+\title{Formelsammlung Mathematik}
+\ifti
+\title{Formelsammlung Mathematik \\ Mit Anleitung zu TI-89}
+\fi
+\ifnspire
+\title{Formelsammlung Mathematik \\ Mit Anleitung zu TI-Nspire}
+\fi
+\iftiboth
+\title{Formelsammlung Mathematik \\ Mit Anleitung zu TI-89 und TI-Nspire CAS}
+\fi
 
-\usepackage{fosa_layout}
-
-\setboolean{ti}{true}        % Anleitung für TI-89
-\setboolean{nspire}{true}    % Anleitung für TI-Nspire CAS
-\setboolean{tiboth}{true}    % Anleitung für beide TR (Nur für Titelseite relevant)
-
-\input{title}
-
-\begin{document}
-\input{content}
-\end{document}
-
+\author{Daniel Winz\\Ervin Mazlagic\\Adrian Imboden\\Philipp Langer\\Josef Häfliger}
+\date{\today~\dtc}
