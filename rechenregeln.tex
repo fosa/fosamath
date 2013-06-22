@@ -473,7 +473,7 @@ beiden Zahlen links und rechts oberhalb berechnet. Stellen an denen keine Zahl
 steht werden als Null gezählt. 
 \begin{figure}[h!]
 	\centering
-	\begin{tikzpicture}
+	\begin{tikzpicture}[scale=0.8]
 	\foreach \n in {0,...,6} {
 		  \foreach \k in {0,...,\n} {
 		      \node at (\k-\n/2,-\n) {$\binomialCoefficient{\n}{\k}$};
@@ -490,5 +490,5 @@ der Grad. Bei einen Binom vierten Grades $(x+y)^4$ wären dies
 \[ n=4 \] und \[ a=1, b=4, c=6, d=4, e=1 \]
 und somit 
 \[ (x+y)^4 = 1x^4y^0 + 4x^3y^1 + 6x^2y^2 + 4x^1y^3 + 1x^0y^4 \]
-
+\textbf{Achtung!} Bei einem Binom der Form $(x-y)^n$ alterniert das Vorzeichen. 
 
