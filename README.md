@@ -6,4 +6,4 @@ Aktueller Build: http://fosa.adinox.ch/
 
 Achtung! 
 --------
-Das Repository ist umgezogenn nach http://github.com/fosa/fosamath
+Das Repository ist umgezogen nach http://github.com/fosa/fosamath
