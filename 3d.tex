@@ -47,6 +47,18 @@ f_{yxx} = f_{xyx} = f_{xxy}
 \end{array}} \]
 
 \section{Fehlerrechnung}
+\[ \boxed{\Delta f(x,y) = \frac{\partial f(x,y)}{\partial x} \cdot \Delta x 
++ \frac{\partial f(x,y)}{\partial y} \cdot \Delta y 
+= \underbrace{f_x \cdot \Delta x}_{a \cdot \Delta f} 
++ \underbrace{f_y \cdot \Delta y}_{(1 - a) \cdot \Delta f}} \]
+$a$ ist dabei der Anteil, mit dem $x$ zum Gesamtfehler beiträgt. 
+\[ \boxed{\begin{array}{rll}
+a \cdot \Delta f        &= \frac{\partial f}{\partial x} \cdot \Delta x 
+&= f_x \cdot \Delta x \\
+(1 - a) \cdot \Delta f  &= \frac{\partial f}{\partial y} \cdot \Delta y 
+&= f_y \cdot \Delta y \\
+\end{array}} \]
+
 \section{Doppelintegral}
 \section{Dreifachintegral}
 \section{Anwendungen}
