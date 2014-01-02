@@ -61,7 +61,9 @@ f_{yxx} = f_{xyx} = f_{xxy}
 \[ \boxed{d f 
 = \frac{\partial f}{\partial x} dx + \frac{\partial f}{\partial y} dy 
 = f_x dx + f_y dy} \]
-\[ \boxed{d f = \frac{\partial f}{\partial x} dx + \frac{\partial f}{\partial y} dy + \frac{\partial f}{\partial z} dz = f_x dx + f_y dy + f_z dz} \]
+\[ \boxed{d f = \frac{\partial f}{\partial x} dx 
++ \frac{\partial f}{\partial y} dy + \frac{\partial f}{\partial z} dz 
+= f_x dx + f_y dy + f_z dz} \]
 
 \section{Fehlerrechnung}
 \[ \boxed{\Delta f(x,y) = \frac{\partial f(x,y)}{\partial x} \cdot \Delta x 
@@ -76,6 +78,20 @@ a \cdot \Delta f        &= \frac{\partial f}{\partial x} \cdot \Delta x
 &= f_y \cdot \Delta y \\
 \end{array}} \]
 
+\section{Kurvendiskussion im dreidimensionalen Raum}
+
+\subsection{Extremwert ohne Nebenbedingungen}
+\[ \boxed{f_x = 0 \land f_y = 0} \]
+\[ \boxed{\begin{array}{@{}l}
+\Delta = f_{xx}(x_0, y_0) \cdot f_{yy}(x_0, y_0) - {f_{xy}}^2(x_0, y_0) \\
+\begin{array}{ll}
+\Delta < 0 \quad                    & \rightarrow \text{Sattelpunkt} \\
+\Delta > 0 \land f_{xx} < 0 \quad   & \rightarrow \text{Relatives Maximum} \\
+\Delta > 0 \land f_{xx} > 0 \quad   & \rightarrow \text{Relatives Minimum} \\
+\Delta = 0                  \quad   & \rightarrow \text{kein Entscheid möglich}
+\end{array}\end{array}} \]
+
+
 \section{Doppelintegral}
 \section{Dreifachintegral}
 \section{Anwendungen}
@@ -87,6 +103,5 @@ a \cdot \Delta f        &= \frac{\partial f}{\partial x} \cdot \Delta x
 \section{Rotation}
 \section{Divergenz}
 \section{Langrangescher Multiplikator}
-\section{Kurvendiskussion im dreidimensionalen Raum}
 \section{Linienintegral}
 \section{Flussintegral}
