@@ -80,7 +80,7 @@ a \cdot \Delta f        &= \frac{\partial f}{\partial x} \cdot \Delta x
 
 \section{Kurvendiskussion im dreidimensionalen Raum}
 
-\subsection{Extremwert ohne Nebenbedingungen}
+\subsection{Extremwert ohne Nebenbedingung}
 \[ \boxed{f_x = 0 \land f_y = 0} \]
 \[ \boxed{\begin{array}{@{}l}
 \Delta = f_{xx}(x_0, y_0) \cdot f_{yy}(x_0, y_0) - {f_{xy}}^2(x_0, y_0) \\
@@ -91,6 +91,38 @@ a \cdot \Delta f        &= \frac{\partial f}{\partial x} \cdot \Delta x
 \Delta = 0                  \quad   & \rightarrow \text{kein Entscheid möglich}
 \end{array}\end{array}} \]
 
+\subsection{Extremwert mit Nebenbedingung}
+\[ \boxed{\begin{array}{@{}ll}
+f(x,y) & \text{Optimierungsfunktion} \\
+g(x,y) = 0 & \text{Nebenbedingung in impliziter Form} \\
+\end{array}} \]
+\[ \boxed{\Lagr(x,y,\lambda) = f(x,y) + \lambda \cdot g(x,y)} \]
+\[ \boxed{\begin{array}{l}
+\Lagr_x = f_x(x,y) + \lambda \cdot g_x(x,y) = 0 \\
+\Lagr_y = f_y(x,y) + \lambda \cdot g_y(x,y) = 0 \\
+\Lagr_\lambda = g(x,y) = 0 \\
+\end{array}} \]
+$\lambda$ ist der Lagrangesche Multiplikator. 
+
+\subsection{Extremwert mit zwei Nebenbedingungen}
+\[ \boxed{\begin{array}{@{}ll}
+f(x,y) & \text{Optimierungsfunktion} \\
+g_1(x,y) = 0 & \text{Nebenbedingung 1 in impliziter Form} \\
+g_2(x,y) = 0 & \text{Nebenbedingung 2 in impliziter Form} \\
+\end{array}} \]
+\[ \boxed{\Lagr(x,y,\lambda) = f(x,y) + \lambda \cdot g_1(x,y) + \mu \cdot g_2(x,y)} \]
+\[ \boxed{\begin{array}{l}
+\Lagr_x = f_x(x,y) + \lambda \cdot g_{1_x}(x,y) + \mu \cdot g_{2_x}(x,y) = 0 \\
+\Lagr_y = f_y(x,y) + \lambda \cdot g_{1_y}(x,y) + \mu \cdot g_{2_x}(x,y) = 0 \\
+\Lagr_\lambda = g_1(x,y) = 0 \\
+\Lagr_\mu = g_2(x,y) = 0 \\
+\end{array}} \]
+$\lambda$ und $\mu$ sind die Lagrangeschen Multiplikatoren. 
+
+\subsection{Extremwert mit mehreren Nebenbedingungen}
+\[ \boxed{\Lagr(x_1, \dots, x_n, \lambda_1, \dots, \lambda_m) 
+= f(x_1, \dots, x_n) 
++ \sum_{i=1}^{m} \lambda_i \cdot g_i(x_1, \dots, x_n)} \]
 
 \section{Doppelintegral}
 \section{Dreifachintegral}
