@@ -17,6 +17,35 @@
 
 % coding:utf-8
 \section{Partielle Ableitung}
+Die partielle Ableitung ist die Ableitung einer Funktion mit mehreren 
+Variablen nach einer bestimmten Variable. Die anderen Variablen können dabei 
+als konstant angesehen werden. 
+\[ \boxed{\frac{\partial f(x,y)}{\partial x} = f_x(x,y) 
+= \lim_{\Delta x \to 0} \frac{f(x + \Delta x, y) - f(x, y)}{\Delta x}} \]
+\[ \boxed{\frac{\partial f(x,y)}{\partial y} = f_y(x,y) 
+= \lim_{\Delta y \to 0} \frac{f(x, y + \Delta y) - f(x, y)}{\Delta y}} \]
+
+\subsection{Mehrfache partielle Ableitung}
+Wird eine Funktion mehrfach partiell abgeleitet, wird das wie folgt 
+dargestellt: 
+\newline
+\begin{tabular}{@{}ll}
+Doppelte partielle Ableitung nach $x$:          &$f_{xx}$ \\
+Doppelte partielle Ableitung nach $y$:          &$f_{yy}$ \\
+Partielle Ableitung erst nach $x$ und dann nach $y$: &$f_{xy}$ \\
+Partielle Ableitung erst nach $y$ und dann nach $x$: &$f_{yx}$ \\
+$\vdots$ & $\vdots$ 
+\end{tabular} \\
+
+\subsubsection{Satz von Schwarz}
+Wenn die partiellen Ableitungen stetig sind, kann die Reihenfolge der 
+Ableitungen beliebig vertauscht werden. 
+\[ \boxed{\begin{array}{l}
+f_{xy} = f_{yx} \\
+f_{xyy} = f_{yxy} = f_{yyx} \\
+f_{yxx} = f_{xyx} = f_{xxy} 
+\end{array}} \]
+
 \section{Fehlerrechnung}
 \section{Doppelintegral}
 \section{Dreifachintegral}
