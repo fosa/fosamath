@@ -123,8 +123,19 @@ $\lambda$ und $\mu$ sind die Lagrangeschen Multiplikatoren.
 \[ \boxed{\Lagr(x_1, \dots, x_n, \lambda_1, \dots, \lambda_m) 
 = f(x_1, \dots, x_n) 
 + \sum_{i=1}^{m} \lambda_i \cdot g_i(x_1, \dots, x_n)} \]
+$\lambda_i$ sind die Lagrangeschen Multiplikatoren. 
 
 \section{Doppelintegral}
+\[ \boxed{\iint\limits_{(A)} f(x,y) ~ dA 
+= \underbrace{\int_{x=a}^{b} \underbrace{\int_{y=f_u(x)}^{f_o(x)} f(x,y) ~ dy}
+_{\text{Inneres Integral}} ~ dx}_{\text{Äusseres Integral}}} \]
+\subsection{Doppelintegral in Polarkoordinaten}
+\[ \boxed{\iint\limits_{(A)} f(x,y) ~ dA 
+= \underbrace{\int_{\varphi=\varphi_1}^{\varphi_2} 
+\underbrace{\int_{r=r_i(\varphi)}^{r_a(\varphi)} f(r \cdot \cos(\varphi), 
+r \cdot \sin(\varphi)) \cdot r ~ dr}
+_{\text{Inneres Integral}} ~ d\varphi}_{\text{Äusseres Integral}}} \]
+
 \section{Dreifachintegral}
 \section{Anwendungen}
 \subsection{Massenträgheitsmoment}
@@ -134,6 +145,5 @@ $\lambda$ und $\mu$ sind die Lagrangeschen Multiplikatoren.
 \section{Gradient}
 \section{Rotation}
 \section{Divergenz}
-\section{Langrangescher Multiplikator}
 \section{Linienintegral}
 \section{Flussintegral}
