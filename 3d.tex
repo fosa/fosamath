@@ -169,9 +169,59 @@ r \cdot \cos(\vartheta)\end{array}\right)
 \cdot r^2 \cdot \sin(\vartheta) ~ dr ~ d\vartheta ~ d\varphi} \]
 
 \section{Anwendungen}
-\subsection{Massenträgheitsmoment}
+
+\subsection{Volumen}
+\[ \boxed{V = \iiint\limits_{(V)} 1 ~ dV} \]
+
+\subsection{Masse}
+\[ \boxed{m = \iiint\limits_{(V)} \rho(x,y,z) ~ dV} \]
+Ist $\rho$ konstant, kann $\rho$ vor das Integral verschoben werden. 
+
 \subsection{Flächenträgheitsmoment}
+Kartesische Koordinaten
+\[ \boxed{\begin{array}{@{}l}
+\displaystyle I_x = \iint\limits_{(A)} y^2 ~ dA \\
+\displaystyle I_y = \iint\limits_{(A)} x^2 ~ dA \\
+\displaystyle I_p = \iint\limits_{(A)} (x^2 + y^2) ~ dA \\
+\end{array}} \]
+Polarkoordinaten
+\[ \boxed{\begin{array}{@{}l}
+\displaystyle I_x = \iint\limits_{(A)} r^3 \cdot \sin^2(\varphi) ~ dA \\
+\displaystyle I_y = \iint\limits_{(A)} r^3 \cdot \cos^2(\varphi) ~ dA \\
+\displaystyle I_p = \iint\limits_{(A)} r^3 ~ dA \\
+\end{array}} \]
+
+\subsection{Massenträgheitsmoment}
+\[ \boxed{I = \rho \cdot \iiint\limits_{(V)} r^2 ~ dV 
+= \rho \cdot \iiint\limits_{(V)} (x^2 + y^2) ~ dV} \]
+Rotationskörper
+\[ \boxed{I_z = \iiint\limits_{(V)} r^3 ~ dz ~ dr ~ d\varphi} \]
+
 \subsection{Schwerpunkt}
+Kartesische Koordinaten
+\[ \boxed{\begin{array}{@{}l}
+\displaystyle x_s = \frac{1}{A} \iint\limits_{(A)} x ~ dA \\
+\displaystyle y_s = \frac{1}{A} \iint\limits_{(A)} y ~ dA \\
+\end{array}} \]
+\[ \boxed{\begin{array}{@{}l}
+\displaystyle x_s = \frac{1}{V} \iiint\limits_{(V)} x ~ dV \\
+\displaystyle y_s = \frac{1}{V} \iiint\limits_{(V)} y ~ dV \\
+\displaystyle z_s = \frac{1}{V} \iiint\limits_{(V)} z ~ dV \\
+\end{array}} \]
+Polarkoordinaten
+\[ \boxed{\begin{array}{@{}l}
+\displaystyle x_s 
+= \frac{1}{A} \iint\limits_{(A)} r^2 \cdot \cos(\varphi) ~ dA \\
+\displaystyle y_s 
+= \frac{1}{A} \iint\limits_{(A)} r^2 \cdot \sin(\varphi) ~ dA \\
+\end{array}} \]
+Rotationskörper
+\[ \boxed{\begin{array}{@{}l}
+\displaystyle x_s = 0 \\
+\displaystyle y_s = 0 \\
+\displaystyle z_s = \frac{1}{V} \iiint\limits_{(V)} z \cdot r ~ dV \\
+\end{array}} \]
+
 \section{Potentialfeld}
 \section{Gradient}
 \section{Rotation}
