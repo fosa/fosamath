@@ -127,16 +127,47 @@ $\lambda_i$ sind die Lagrangeschen Multiplikatoren.
 
 \section{Doppelintegral}
 \[ \boxed{\iint\limits_{(A)} f(x,y) ~ dA 
-= \underbrace{\int_{x=a}^{b} \underbrace{\int_{y=f_u(x)}^{f_o(x)} f(x,y) ~ dy}
-_{\text{Inneres Integral}} ~ dx}_{\text{Äusseres Integral}}} \]
+= \underbrace{\int_{x=a}^{b} 
+\underbrace{\int_{y=f_u(x)}^{f_o(x)} f(x,y) ~ dy}
+_{\text{Inneres Integral}} ~ dx}
+_{\text{Äusseres Integral}}} \]
+
 \subsection{Doppelintegral in Polarkoordinaten}
 \[ \boxed{\iint\limits_{(A)} f(x,y) ~ dA 
 = \underbrace{\int_{\varphi=\varphi_1}^{\varphi_2} 
 \underbrace{\int_{r=r_i(\varphi)}^{r_a(\varphi)} f(r \cdot \cos(\varphi), 
 r \cdot \sin(\varphi)) \cdot r ~ dr}
-_{\text{Inneres Integral}} ~ d\varphi}_{\text{Äusseres Integral}}} \]
+_{\text{Inneres Integral}} ~ d\varphi}
+_{\text{Äusseres Integral}}} \]
 
 \section{Dreifachintegral}
+\[ \boxed{\iiint\limits_{(V)} f(x,y,z) ~ dV 
+= \underbrace{\int_{x=a}^{b} 
+\underbrace{\int_{y=f_u(x)}^{f_o(x)} 
+\underbrace{\int_{z=z_u(x,y)}^{z_o(x,y)} f(x,y,z) ~ dz}
+_{\text{1. Integration}} ~ dy}
+_{\text{2. Integration}} ~ dx}
+_{\text{3. Integration}}} \]
+
+\subsection{Dreifachintegral in Zylinderkoordinaten}
+\[ \boxed{\iiint\limits_{(V)} f(x,y,z) ~ dV 
+= \iiint\limits_{(V)} f(r \cdot \cos(\varphi),r \cdot \sin(\varphi), z) 
+\cdot r ~ dz ~ dr ~ d\varphi} \]
+
+\subsection{Dreifachintegral in Kugelkoordinaten}
+\[ \boxed{\begin{array}{@{}l@{}l@{}l}
+\displaystyle\iiint\limits_{(V)} f(x,y,z) ~ dV 
+&=& \displaystyle\iiint\limits_{(V)} f\left(r \cdot \sin(\vartheta) \cdot \cos(\varphi), 
+r \cdot \sin(\vartheta) \cdot \sin(\varphi), r \cdot \cos(\vartheta)\right) \\
+&&\cdot r^2 \cdot \sin(\vartheta) ~ dr ~ d\vartheta ~ d\varphi
+\end{array}} \]
+
+\[ \boxed{\iiint\limits_{(V)} f(x,y,z) ~ dV = \iiint\limits_{(V)} 
+f\left(\begin{array}{@{}l@{}}r \cdot \sin(\vartheta) \cdot \cos(\varphi) \\
+r \cdot \sin(\vartheta) \cdot \sin(\varphi) \\ 
+r \cdot \cos(\vartheta)\end{array}\right) 
+\cdot r^2 \cdot \sin(\vartheta) ~ dr ~ d\vartheta ~ d\varphi} \]
+
 \section{Anwendungen}
 \subsection{Massenträgheitsmoment}
 \subsection{Flächenträgheitsmoment}
