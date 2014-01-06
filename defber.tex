@@ -16,22 +16,126 @@
 %----------------------------------------
 
 % coding:utf-8
-\section{Definitionsbereich verschiedener Funktionen}
-\[ \boxed{\begin{array}{@{}lll}
-\frac{1}{x} & x \neq 0 \\\\
-\sqrt{x}    & x \geq 0 \\\\
-\sqrt[n]{x} & x \geq 0 & \vert \frac{n}{2} \in \mathbb{Z} \\\\
-\sqrt[n]{x} & x \in \mathbb{R} & \vert \frac{n}{2} + 1 \in \mathbb{Z} \\\\
-\ln(x)      & x > 0 \\\\
-\sin(x)     & x \in \mathbb{R} \\\\
-\cos(x)     & x \in \mathbb{R} \\\\
-\tan{x}     & x \neq \frac{\pi}{2} + k \cdot \pi & \vert k \in \mathbb{Z} \\\\
-\cot{x}     & x \neq k \cdot \pi & \vert k \in \mathbb{Z} \\\\
-\arcsin{x}  & -1 \leq x \leq 1 \\\\
-\arccos{x}  & -1 \leq x \leq 1 \\\\
-\arctan(x)  & x \in \mathbb{R} \\\\
-\arccot(x)  & x \in \mathbb{R} \\\\
-\arcsinh(x) & x \in \mathbb{R} \\\\
-\arccosh(x) & x \geq 1 \\\\
-x!          & x \in \mathbb{N}
+\section{Definitions- und Wertebereich}
+\[ \boxed{\begin{array}{ccccl}
+\rowcolor{white} f(x)
+  & \mathbb{D}
+  & 
+  & \mathbb{W}
+  & 
+  \\\\
+\rowcolor{lgray} \frac{1}{x} 
+  & x \neq 0 
+  & \rightarrow
+  & f(x) \in \mathbb{R}
+  & 
+  \\
+\rowcolor{white} \sqrt{x}    
+  & x \geq 0 
+  & \rightarrow
+  & f(x) \geq 0
+  & 
+  \\
+\rowcolor{lgray} \sqrt[n]{x} 
+  & x \geq 0 
+  & \rightarrow
+  & f(x) \geq 0
+  & \vert \frac{n}{2} \in \mathbb{Z} 
+  \\
+\rowcolor{white} \sqrt[n]{x} 
+  & x \in \mathbb{R} 
+  & \rightarrow
+  & f(x) \in \mathbb{R}
+  & \vert \frac{n}{2} + 1 \in \mathbb{Z} 
+  \\
+\rowcolor{lgray} a^x
+  & x \in \mathbb{R}
+  & \rightarrow
+  & f(x) > 0
+  & 
+  \\
+\rowcolor{white} \log_{a}(x)      
+  & x > 0 
+  & \rightarrow
+  & f(x) \in \mathbb{R}
+  & 
+  \\
+\rowcolor{lgray} \sin(x)     
+  & x \in \mathbb{R} 
+  & \rightarrow
+  & -1 \leq f(x) \leq 1
+  & 
+  \\
+\rowcolor{white} \cos(x)     
+  & x \in \mathbb{R} 
+  & \rightarrow
+  & -1 \leq f(x) \leq 1
+  & 
+  \\
+\rowcolor{lgray} \tan(x) 
+  & x \neq \frac{\pi}{2} + k \cdot \pi 
+  & \rightarrow
+  & f(x) \in \mathbb{R}
+  & \vert k \in \mathbb{Z} 
+  \\
+\rowcolor{white} \cot(x) 
+  & x \neq k \cdot \pi 
+  & \rightarrow
+  & f(x) \in \mathbb{R}
+  & \vert k \in \mathbb{Z} 
+  \\
+\rowcolor{lgray} \arcsin(x) 
+  & -1 \leq x \leq 1 
+  & \rightarrow
+  & f(x) \in \mathbb{R}
+  & 
+  \\
+\rowcolor{white} \arccos(x) 
+  & -1 \leq x \leq 1 
+  & \rightarrow
+  & f(x) \in \mathbb{R}
+  & 
+  \\
+\rowcolor{lgray} \arctan(x)  
+  & x \in \mathbb{R} 
+  & \rightarrow
+  & f(x) \neq \frac{\pi}{2} + k \cdot \pi
+  & | k \in \mathbb{Z} 
+  \\
+\rowcolor{white} \arccot(x)  
+  & x \in \mathbb{R} 
+  & \rightarrow
+  & f(x) \neq k \cdot \pi
+  & | k \in \mathbb{Z} 
+  \\
+\rowcolor{lgray} \sinh(x)
+  & x \in \mathbb{R}
+  & \rightarrow
+  & f(x) \in \mathbb{R}
+  & 
+  \\
+\rowcolor{white} \cosh(x)
+  & x \in \mathbb{R}
+  & \rightarrow
+  & f(x) \geq 1
+  & 
+  \\
+\rowcolor{lgray} \arcsinh(x) 
+  & x \in \mathbb{R} 
+  & \rightarrow
+  & f(x) \in \mathbb{R}
+  & 
+  \\
+\rowcolor{white} \arccosh(x) 
+  & x \geq 1 
+  & \rightarrow
+  & f(x) \in \mathbb{R}
+  & 
+  \\
+\rowcolor{lgray} x!          
+  & x \in \mathbb{N} 
+  & \rightarrow
+  & f(x) \in \mathbb{N}
+  & 
+  \\
 \end{array}} \]
