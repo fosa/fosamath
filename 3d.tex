@@ -223,6 +223,8 @@ Rotationskörper
 \end{array}\right) \qquad \text{$\phi$ ist das Potentialfeld}} \]
 
 \section{Gradient}
+Der Gradient zeigt in die Richtung des steilsten Anstieges. Seine Länge 
+entspricht der Steigung. 
 \[ \boxed{\grad \phi = \frac{\partial \phi}{\partial x} \cdot \vec{e}_x 
 + \frac{\partial \phi}{\partial y} \cdot \vec{e}_y 
 + \frac{\partial \phi}{\partial z} \cdot \vec{e}_z 
@@ -233,6 +235,7 @@ Rotationskörper
 \end{array}\right)} \]
 
 \subsection{Richtungsableitung}
+Die Richtungsableitung ist die Steigung in Richtung von $\vec{a}$. 
 \[ \boxed{\frac{\partial \phi}{\partial \vec{a}} 
 = (\grad \phi) \cdot \vec{e}_a 
 = (\grad \phi) \cdot \frac{\vec{a}}{||\vec{a}||}} \]
@@ -254,19 +257,24 @@ $F_x, F_y, F_z$: Skalare Komponenten des Vektorfeldes $\vec{F}(x,y,z)$
 \section{Linienintegral}
 \[ \boxed{\int\limits_{C} \vec{F} \cdot d\vec{r} 
 = \int\limits_{t_1}^{t_2} \left(\vec{F}(t) \cdot \dot{\vec{r}}\right) ~ dt} \]
+Existiert zum Vektorfeld $\vec{F}$ ein Potentialfeld $\phi$, so kann das 
+Linienintegral mittels Anfangs- und Endpunkt des Weges berechnet werden. 
+\[ \boxed{\int\limits_{C} \vec{F} \cdot d \vec{r} = \phi(B) - \phi(A)} 
+\qquad \vec{r} = \overrightarrow{AB} \]
 
 \section{Flussintegral}
 \[ \boxed{\iint\limits_{(A)} \vec{F} \cdot d\vec{A} 
 = \iint\limits_{(A)} (\vec{F} \cdot \vec{N}) ~ dA} \]
 
 \subsection{Normalenvektor}
+Der Normalenvektor steht senkrecht auf einer Fläche und hat die Länge $0$. 
 Plane Fläche: 
 \[ \boxed{\vec{N} 
 = \frac{\overrightarrow{AB} \times \overrightarrow{AC}}
 {||\overrightarrow{AB} \times \overrightarrow{AC}||}} 
 \qquad \text{$A, B, C$: Punkte auf der Fläche} \]
 Beliebige Fläche: 
-\[ \text{Achtung! Muss erst geprüft werden! } \qquad \boxed{\vec{N} 
+\[ \boxed{\vec{N} 
 = \frac{\frac{\partial \phi}{\partial \vec{x}} 
 \times \frac{\partial \phi}{\partial \vec{y}}}
 {||\frac{\partial \phi}{\partial \vec{x}} 
