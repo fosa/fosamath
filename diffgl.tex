@@ -107,6 +107,42 @@ vorgegangen werden.
 \end{figure}
 
 \newpage
+
+\ifti
+\subsection{Richtungsfeld plotten mit dem TI-89}
+Um das Richtungsfeld mit dem TI-89 zu plotten, muss zuerst der Modus 
+für Graphen auf Differentialgleichungen gesetzt werden. Danach kann die
+gewünschte Differentialgleichung wie gewohnt definiert werden für das
+Plotten.
+
+\begin{enumerate}
+	\item Modus für Graphen auf Differentialgleichungen setzen: \\
+		\verb?HOME? 
+		$\rightarrow$ \verb?Graph? 
+		$\rightarrow$ \verb?DIFF EQUATIONS?
+	\item Differentialgleichung Definieren: \\
+		\verb?HOME?
+		$\rightarrow$ $\diamond$
+		$\rightarrow$ \verb?Y=?
+		$\rightarrow$ DGL eingeben in \verb?y1'=? \\
+		$\rightarrow$ falls gegeben den Anfangswert 
+			$y'(0)=$ eingeben in \verb?yi1? 
+	\item Graph plotten: \\
+		\verb?HOME?
+		$\rightarrow$ $\diamond$
+		$\rightarrow$ \verb?GRAPH?
+\end{enumerate}
+
+\begin{figure}[h!]
+	\centering
+	% http://www.prenhall.com/esm/app/calc_v2/calculator/medialib/Technology/Documents/TI-89/desc_pages/slope_f.html
+	\includegraphics[scale=0.7]{ti89-plot-dgl.pdf}
+	\caption{TI-89 Plot einer DGL ohne und mit Anfangswert.}
+\end{figure}
+
+\fi
+
+\newpage
 \section{Lösungsverfahren}
 
 \subsection{Übersicht}
@@ -324,3 +360,35 @@ Ansatzverfahren angewendet werden.
   \item Fall gegeben, die Anfangsbedingungen einsetzen und restliche 
         Koeffizienten ermitteln. 
 \end{enumerate}
+
+\ifti
+\section{Diffentialgleichungen mit TI-89 lösen}
+\verb?deSolve(EQUATION, INDEP-VAR, DEPEND-VAR)? \\\\
+\begin{tabular}{@{}ll}
+	\verb?EQUATION?
+		& Differentialgleichung (und Bedingungen) \\
+	\verb?INDEP-VAR?
+		& unabhängige Variable \\
+	\verb?DEPEND-VAR?
+		& abhängige Variable \\
+\end{tabular}\\\\
+Bsp.: Man möchte die Differentialgleichung $y'(x)=-y(x)-x$ lösen.
+Über die Taste \verb?CATALOG? gelangt man in die Auswahl, tippt \verb?d?
+an für \textit{deSolve} und wählt es per \verb?ENTER? aus.
+Danach gibt man die verlangten Angaben an:\\\\
+\indent
+\verb?deSolve(y'=-y+2*x,x,y)?\\\\ 
+erzeugt die Ausgabe \\\\
+\indent
+\verb?y=@47*e^(-x)+2*(x-1)? \\\\
+Der Faktor, welcher mit \verb?@? angezeigt wird, stellt die 
+Integrationskonstante dar, d.h. das vorherige \verb?@47? ist einfach $c$.
+Man kann aber auch gleich die Bedingung zur Differentialgleichung 
+hinzufügen (z.B. $y(0)=0$ oder $y(1)=3$) mittels eines \verb?and?.
+Somit liefert die Eingabe \\\\
+\indent
+\verb?deSolve(y'=-y+2*x and y(0)=0,x,y)? \\\\
+das Ergebnis \\\\
+\indent
+\verb?y=2*((x-1)*e^(x)+1)*e^(-x)?\\\\
+\fi
