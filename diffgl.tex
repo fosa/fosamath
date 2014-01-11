@@ -360,3 +360,35 @@ Ansatzverfahren angewendet werden.
   \item Fall gegeben, die Anfangsbedingungen einsetzen und restliche 
         Koeffizienten ermitteln. 
 \end{enumerate}
+
+\ifti
+\section{Diffentialgleichungen mit TI-89 lösen}
+\verb?deSolve(EQUATION, INDEP-VAR, DEPEND-VAR)? \\\\
+\begin{tabular}{@{}ll}
+	\verb?EQUATION?
+		& Differentialgleichung (und Bedingungen) \\
+	\verb?INDEP-VAR?
+		& unabhängige Variable \\
+	\verb?DEPEND-VAR?
+		& abhängige Variable \\
+\end{tabular}\\\\
+Bsp.: Man möchte die Differentialgleichung $y'(x)=-y(x)-x$ lösen.
+Über die Taste \verb?CATALOG? gelangt man in die Auswahl, tippt \verb?d?
+an für \textit{deSolve} und wählt es per \verb?ENTER? aus.
+Danach gibt man die verlangten Angaben an:\\\\
+\indent
+\verb?deSolve(y'=-y+2*x,x,y)?\\\\ 
+erzeugt die Ausgabe \\\\
+\indent
+\verb?y=@47*e^(-x)+2*(x-1)? \\\\
+Der Faktor, welcher mit \verb?@? angezeigt wird, stellt die 
+Integrationskonstante dar, d.h. das vorherige \verb?@47? ist einfach $c$.
+Man kann aber auch gleich die Bedingung zur Differentialgleichung 
+hinzufügen (z.B. $y(0)=0$ oder $y(1)=3$) mittels eines \verb?and?.
+Somit liefert die Eingabe \\\\
+\indent
+\verb?deSolve(y'=-y+2*x and y(0)=0,x,y)? \\\\
+das Ergebnis \\\\
+\indent
+\verb?y=2*((x-1)*e^(x)+1)*e^(-x)?\\\\
+\fi
