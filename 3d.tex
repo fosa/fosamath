@@ -78,10 +78,12 @@ a \cdot \Delta f        &= \frac{\partial f}{\partial x} \cdot \Delta x
 &= f_y \cdot \Delta y \\
 \end{array}} \]
 
+\newpage
+
 \section{Kurvendiskussion im dreidimensionalen Raum}
 
 \subsection{Extremwert ohne Nebenbedingung}
-\[ \boxed{f_x = 0 \land f_y = 0} \]
+\[ \boxed{f_x \stackrel{!}{=} 0 \land f_y \stackrel{!}{=} 0} \]
 \[ \boxed{\begin{array}{@{}l}
 \Delta = f_{xx}(x_0, y_0) \cdot f_{yy}(x_0, y_0) - {f_{xy}}^2(x_0, y_0) \\
 \begin{array}{ll}
@@ -98,9 +100,9 @@ g(x,y) = 0 & \text{Nebenbedingung in impliziter Form} \\
 \end{array}} \]
 \[ \boxed{\Lagr(x,y,\lambda) = f(x,y) + \lambda \cdot g(x,y)} \]
 \[ \boxed{\begin{array}{l}
-\Lagr_x = f_x(x,y) + \lambda \cdot g_x(x,y) = 0 \\
-\Lagr_y = f_y(x,y) + \lambda \cdot g_y(x,y) = 0 \\
-\Lagr_\lambda = g(x,y) = 0 \\
+\Lagr_x = f_x(x,y) + \lambda \cdot g_x(x,y) \stackrel{!}{=} 0 \\
+\Lagr_y = f_y(x,y) + \lambda \cdot g_y(x,y) \stackrel{!}{=} 0 \\
+\Lagr_\lambda = g(x,y) \stackrel{!}{=} 0 \\
 \end{array}} \]
 $\lambda$ ist der Lagrangesche Multiplikator. 
 
@@ -112,10 +114,12 @@ g_2(x,y) = 0 & \text{Nebenbedingung 2 in impliziter Form} \\
 \end{array}} \]
 \[ \boxed{\Lagr(x,y,\lambda) = f(x,y) + \lambda \cdot g_1(x,y) + \mu \cdot g_2(x,y)} \]
 \[ \boxed{\begin{array}{l}
-\Lagr_x = f_x(x,y) + \lambda \cdot g_{1_x}(x,y) + \mu \cdot g_{2_x}(x,y) = 0 \\
-\Lagr_y = f_y(x,y) + \lambda \cdot g_{1_y}(x,y) + \mu \cdot g_{2_x}(x,y) = 0 \\
-\Lagr_\lambda = g_1(x,y) = 0 \\
-\Lagr_\mu = g_2(x,y) = 0 \\
+\Lagr_x = f_x(x,y) + \lambda \cdot g_{1_x}(x,y) + \mu \cdot g_{2_x}(x,y) 
+\stackrel{!}{=} 0 \\
+\Lagr_y = f_y(x,y) + \lambda \cdot g_{1_y}(x,y) + \mu \cdot g_{2_x}(x,y) 
+\stackrel{!}{=} 0 \\
+\Lagr_\lambda = g_1(x,y) \stackrel{!}{=} 0 \\
+\Lagr_\mu = g_2(x,y) \stackrel{!}{=} 0 \\
 \end{array}} \]
 $\lambda$ und $\mu$ sind die Lagrangeschen Multiplikatoren. 
 
@@ -221,10 +225,22 @@ Rotationskörper
 \frac{\partial \phi}{\partial x} \\
 \frac{\partial \phi}{\partial y} \\
 \end{array}\right) \qquad \text{$\phi$ ist das Potentialfeld}} \]
+\[ \boxed{\vec{v} = \grad \phi =
+\left(\begin{array}{@{}l@{}} 
+\frac{\partial \phi}{\partial x} \\
+\frac{\partial \phi}{\partial y} \\
+\frac{\partial \phi}{\partial z} \\
+\end{array}\right) \qquad \text{$\phi$ ist das Potentialfeld}} \]
 
 \section{Gradient}
 Der Gradient zeigt in die Richtung des steilsten Anstieges. Seine Länge 
 entspricht der Steigung. 
+\[ \boxed{\grad \phi = \frac{\partial \phi}{\partial x} \cdot \vec{e}_x 
++ \frac{\partial \phi}{\partial y} \cdot \vec{e}_y 
+= \left(\begin{array}{@{}l@{}} 
+\frac{\partial \phi}{\partial x} \\
+\frac{\partial \phi}{\partial y} \\
+\end{array}\right)} \]
 \[ \boxed{\grad \phi = \frac{\partial \phi}{\partial x} \cdot \vec{e}_x 
 + \frac{\partial \phi}{\partial y} \cdot \vec{e}_y 
 + \frac{\partial \phi}{\partial z} \cdot \vec{e}_z 
@@ -247,12 +263,15 @@ Die Richtungsableitung ist die Steigung in Richtung von $\vec{a}$.
 \frac{\partial F_y}{\partial x} - \frac{\partial F_x}{\partial y} \\
 \end{array}\right)} \]
 Wenn $\rot\vec{F}=0$, ist das Vektorfeld $\vec{F}$ konservativ. \\
-Weiterhin gilt dann, das $\vec{F}$ ein Potentialfeld haben könnte.
+$\vec{F}$ kann dann ein Potentialfeld haben.
 
 \section{Divergenz}
 \[ \boxed{\diver \vec{F} = \frac{\partial F_x}{\partial x} 
 + \frac{\partial F_y}{\partial y} + \frac{\partial F_z}{\partial z}} \]
-$F_x, F_y, F_z$: Skalare Komponenten des Vektorfeldes $\vec{F}(x,y,z)$
+$F_x, F_y, F_z$: Skalare Komponenten des Vektorfeldes $\vec{F}(x,y,z)$\\
+$\diver > 0$: Quelle \\
+$\diver < 0$: Senke \\
+$\diver = 0$: Quellenfrei
 
 \section{Linienintegral}
 \[ \boxed{\int\limits_{C} \vec{F} \cdot d\vec{r} 
@@ -267,7 +286,7 @@ Linienintegral mittels Anfangs- und Endpunkt des Weges berechnet werden.
 = \iint\limits_{(A)} (\vec{F} \cdot \vec{N}) ~ dA} \]
 
 \subsection{Normalenvektor}
-Der Normalenvektor steht senkrecht auf einer Fläche und hat die Länge $0$. 
+Der Normalenvektor hat die Länge $1$ und steht senkrecht auf einer Fläche. \\
 Plane Fläche: 
 \[ \boxed{\vec{N} 
 = \frac{\overrightarrow{AB} \times \overrightarrow{AC}}
