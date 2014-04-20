@@ -1,0 +1,63 @@
+\section{Bewegungen}
+
+\subsection{Geschwindigkeitsvektor}
+Ist eine Bewegung gegeben durch einen Ortsvektor $\vec{r}(t)$, dann kann 
+die Bewegung eines Punktes $P(t)$ dieser Kurve mittels eines 
+Geschwindigkeitsvektors ausgedrückt werden in der Art
+\[ 
+	\vec{v}(t) = \dot{\vec{r}}(t) 
+	= \begin{pmatrix} 
+		\dot{x}(t) \\ 
+		\dot{y}(t) \\ 
+		\dot{z}(t) 
+	\end{pmatrix} 
+\]
+Dieser Vektor ist somit immer auch ein Tangentialvektor $\vec{t}$ an die 
+Kurve im Punkt $P(t)$. Für den skalaren Wert der Geschwindigkeit selbst wird 
+die Norm des Geschwindigkeitsvektors genommen.
+\[  
+	v(t) 
+	= \left\lVert \dot{\vec{r}}(t) \right\rVert 
+	= \left\lVert \begin{pmatrix} 
+		\dot{x}(t) \\ 
+		\dot{y}(t) \\ 
+		\dot{z}(t) 
+	\end{pmatrix} \right\rVert
+	= \sqrt{\dot{x}^2(t) + \dot{y}^2(t) + \dot{z}^2(t)}
+\]
+
+\subsection{Beschleunigungsvektor}
+Analog zur Geschwindigkeit ist die Beschleunigung die zweite Ableitung
+des Weges einer Kurve $\vec{r}(t)$.
+\[ 
+	\vec{a}(t) 
+	= \dot{\vec{v}}(t) 
+	= \ddot{\vec{r}}(t) 
+	= \begin{pmatrix} 
+		\ddot{x}(t) \\ 
+		\ddot{y}(t) \\ 
+		\ddot{z}(t) 
+	\end{pmatrix} 
+\]
+Genauso kann wie bei der Geschwindigkeit auch bei der Beschleunigung die
+Norm benutzt werden um den skalaren Wert der Beschleunigung zu erhalten
+\[  
+	a(t) 
+	= \left\lVert \ddot{\vec{r}}(t) \right\rVert 
+	= \left\lVert \begin{pmatrix} 
+		\ddot{x}(t) \\ 
+		\ddot{y}(t) \\ 
+		\ddot{z}(t) 
+	\end{pmatrix} \right\rVert
+	= \sqrt{\ddot{x}^2(t) + \ddot{y}^2(t) + \ddot{z}^2(t)}
+\]
+
+\subsection{Bogenlänge}
+Der zurückgelegte Weg einer Kurve $\vec{r}(t)$ von $A(t_1)$ zu $B(t_2)$ kann
+durch das Integral von der Norm der Geschwindigkeit ermittelt werden
+\[  
+	s = \int\limits_{t_1}^{t_2} \left\lVert \vec{v}(t) \right\lVert \, dt
+	= \int\limits_{t_1}^{t_2} \left\lVert \dot{\vec{r}}(t) \right\lVert \, dt
+	= \int\limits_{t_1}^{t_2} 
+		\sqrt{\dot{x}^2(t) + \dot{y}^2(t) + \dot{z}^2(t)} \,dt
+\]
