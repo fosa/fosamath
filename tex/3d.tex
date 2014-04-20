@@ -37,7 +37,7 @@ Partielle Ableitung erst nach $y$ und dann nach $x$: &$f_{yx}$ \\
 $\vdots$ & $\vdots$ 
 \end{tabular} \\
 
-\subsubsection{Satz von Schwarz}
+\subsection{Satz von Schwarz}
 Wenn die partiellen Ableitungen stetig sind, kann die Reihenfolge der 
 Ableitungen beliebig vertauscht werden. 
 \[ \boxed{\begin{array}{l}
@@ -45,6 +45,12 @@ f_{xy} = f_{yx} \\
 f_{xyy} = f_{yxy} = f_{yyx} \\
 f_{yxx} = f_{xyx} = f_{xxy} 
 \end{array}} \]
+Dieser Zusammenhang ist insbesondere nützlich wenn geprüft werden soll,
+ob zwei Funktionen $f_x$ und $f_y$ die selbe Stammfunktion haben. Hierzu 
+wird vor dem Integireren geprüft ob die partiellen Ableitungen
+$f_{xy}$ und $f_{y_x}$ gleich sind. Nur wenn diese Gleichheit gegeben ist,
+können diese auch eine gemeinsame Stammfunktion haben.
+
 
 \section{Kettenregel}
 \[ \boxed{\frac{d f(x,y)}{d t} 
