@@ -13,3 +13,5 @@ autobuild/tmp/*
 autobuild/latestversion
 issue*.txt
 *.swp
+*.x.gnuplot
+*.x.table
